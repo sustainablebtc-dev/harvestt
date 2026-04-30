@@ -3,6 +3,7 @@ import { Geist, Inter } from "next/font/google";
 import "./globals.scss";
 import siteConfigRaw from "@/data/site/config.json";
 import type { SiteConfig } from "@/data/types";
+import Navbar from "@/components/Navbar/Navbar";
 
 const siteConfig = siteConfigRaw as SiteConfig;
 
@@ -36,7 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geist.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+         <Navbar />
+         {children}
+      </body>
     </html>
   );
 }
