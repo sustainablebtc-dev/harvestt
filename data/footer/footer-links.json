@@ -1,0 +1,27 @@
+[
+  {
+    "heading": "Platform",
+    "links": [
+      { "label": "Overview", "href": "/about" },
+      { "label": "Partners", "href": "/partners" },
+      { "label": "Regulatory", "href": "/regulatory" },
+      { "label": "News", "href": "/news" }
+    ]
+  },
+  {
+    "heading": "Company",
+    "links": [
+      { "label": "About Us", "href": "/about" },
+      { "label": "Careers", "href": "/careers" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  },
+  {
+    "heading": "Legal",
+    "links": [
+      { "label": "Privacy Policy", "href": "/legal/privacy" },
+      { "label": "Terms of Service", "href": "/legal/terms" },
+      { "label": "Cookie Policy", "href": "/legal/cookies" }
+    ]
+  }
+]

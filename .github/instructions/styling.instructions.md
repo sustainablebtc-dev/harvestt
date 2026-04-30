@@ -1,41 +1,84 @@
+---
+applyTo: "**/*.tsx,**/*.scss"
+---
+
 # Styling Instructions
 
-## Scope
+## The Rule
 
-Apply to Tailwind utility usage, SCSS globals, reusable UI patterns, and design-system level styling decisions.
+All styles live in SCSS. Tailwind utilities are allowed only inside `@apply` in `.scss` files. No Tailwind classes in JSX `className` props.
 
-## Rules
+## SCSS Module Pattern
 
-1. Use Tailwind for most component and layout styling.
-2. Use SCSS for globals, shared variables, structural patterns, or cases where utilities alone reduce clarity.
-3. Keep visual patterns consistent across routes.
-4. Prefer semantic class composition over long, duplicated utility strings.
-5. Build mobile-first.
+Every component gets a colocated `.module.scss` file:
 
-## Tailwind Guidance
+```
+components/
+  Hero/
+    Hero.tsx
+    Hero.module.scss
+```
 
-- keep utilities readable and grouped by purpose
-- extract repeated patterns into components before utility duplication spreads
-- avoid arbitrary values unless design intent requires them
-- preserve strong focus and hover states without relying on color alone
+Import and use:
 
-## SCSS Guidance
+```tsx
+import styles from './Hero.module.scss'
 
-- reserve SCSS for globals and cross-cutting primitives
-- do not hide component logic in deep selector nesting
-- keep globals stable and low-specificity
-- use CSS variables for shared design tokens when needed
+export default function Hero() {
+  return <section className={styles.hero}>...</section>
+}
+```
 
-## UX Quality Bar
+## Tailwind via @apply
 
-- spacing must remain consistent
-- text should be readable across breakpoints
-- color contrast must support accessibility
-- motion should be meaningful and optional for reduced-motion users
+```scss
+// ✅ Correct
+.hero {
+  @apply flex flex-col items-center text-center;
+  padding: var(--space-24) var(--space-20);
+  background: var(--color-bg-white);
+}
 
-## Delivery Checklist
+// ❌ Wrong
+<section className="flex flex-col items-center text-center py-24 px-20 bg-white">
+```
 
-- responsive layout verified
-- focus states visible
-- no unnecessary style duplication
-- SCSS usage remains structural, not ad hoc
+## Design Token Usage
+
+```scss
+// ✅ Correct
+.card {
+  gap: var(--space-6);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-text-primary);
+}
+
+// ❌ Wrong
+.card {
+  gap: 24px;
+  border: 1px solid #e5e5e5;
+  color: #1b1b1b;
+}
+```
+
+## Responsive Styles
+
+Use `@media` or Tailwind responsive modifiers inside `@apply`:
+
+```scss
+.section {
+  padding: var(--space-12) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-24) var(--space-20);
+  }
+}
+```
+
+## Forbidden Patterns
+
+- Tailwind classes in JSX `className`
+- Hardcoded hex colors in SCSS
+- Hardcoded pixel values not from the spacing scale
+- `style={{}}` props for values that have design tokens
+- Global style mutations inside component SCSS modules

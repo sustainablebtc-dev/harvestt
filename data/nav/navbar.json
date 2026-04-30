@@ -1,0 +1,37 @@
+{
+  "links": [
+    {
+      "label": "Home",
+      "href": "/",
+      "hasDropdown": false
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "hasDropdown": true
+    },
+    {
+      "label": "Partners",
+      "href": "/partners",
+      "hasDropdown": false
+    },
+    {
+      "label": "Regulatory",
+      "href": "/regulatory",
+      "hasDropdown": false
+    },
+    {
+      "label": "News",
+      "href": "/news",
+      "hasDropdown": true
+    }
+  ],
+  "login": {
+    "label": "Login",
+    "href": "/login"
+  },
+  "cta": {
+    "label": "Speak With Our Team",
+    "href": "/contact"
+  }
+}
