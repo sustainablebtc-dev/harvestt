@@ -40,6 +40,36 @@ Apply to App Router routes, layouts, loading states, metadata, route handlers, s
 - no unnecessary browser hooks in server components
 - no server imports leaking into client bundles
 
+## Image and Link Rules
+
+### Images
+
+- Always use `next/image` (`<Image>`) for all image elements.
+- Never use raw `<img>` tags.
+- Provide explicit `width` and `height` props, or use `fill` with a positioned container.
+- Set `priority` on above-the-fold images (hero, LCP candidates).
+
+### Links
+
+- Use `next/link` (`<Link>`) for **internal** links — any href that stays on the same origin (`harvestt.com`).
+- Use a plain `<a>` tag for **external** links — any href pointing to a different domain.
+- External links must always include `target="_blank"` and `rel="noopener noreferrer"`.
+
+```tsx
+// ✅ Internal link
+import Link from 'next/link'
+<Link href="/about">About</Link>
+
+// ✅ External link
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">External</a>
+
+// ❌ Wrong — next/link for external URL
+<Link href="https://example.com">External</Link>
+
+// ❌ Wrong — plain anchor for internal route
+<a href="/about">About</a>
+```
+
 ## Delivery Checklist
 
 - route structure correct
@@ -47,3 +77,5 @@ Apply to App Router routes, layouts, loading states, metadata, route handlers, s
 - metadata included or explicitly deferred
 - loading and error behavior considered
 - no outdated Pages Router patterns introduced
+- all images use `next/image`
+- internal links use `next/link`, external links use `<a>` with `rel="noopener noreferrer"`

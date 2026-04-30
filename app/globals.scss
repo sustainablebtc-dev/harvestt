@@ -1,26 +1,120 @@
 @import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// ─── Design Tokens ─────────────────────────────────────────────────────────────
+// Single source of truth: .github/instructions/design-system/tokens.json
+// Do not add arbitrary values here — extend tokens.json and regenerate.
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  // Colors — Brand
+  --color-brand:        #1b1b1b;
+  --color-accent:       #ff6e00;
+  --color-success:      #289e4b;
+  --color-success-bg:   rgba(40, 158, 75, 0.10);
+
+  // Colors — Text
+  --color-text-dark:      #000000;
+  --color-text-primary:   #1b1b1b;
+  --color-text-body:      #3a3a3a;
+  --color-text-secondary: #555555;
+  --color-text-muted:     #a3a3a3;
+
+  // Colors — Background
+  --color-bg-white: #ffffff;
+  --color-bg-muted: #f5f5f5;
+  --color-bg-warm:  #fff6f0;
+  --color-bg-dark:  #1b1b1b;
+
+  // Colors — Border
+  --color-border-default:  #e5e5e5;
+  --color-border-brand:    #1b1b1b;
+  --color-border-accent:   #ff6e00;
+  --color-border-separator: #a3a3a3;
+
+  // Typography — Font families
+  --font-geist: 'Geist', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  // Typography — Font weights
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  // Typography — Type scale
+  --text-display-1-size:    64px;
+  --text-display-1-lh:      1.2;
+  --text-display-1-ls:      -2px;
+
+  --text-display-2-size:    48px;
+  --text-display-2-lh:      1.2;
+  --text-display-2-ls:      -1px;
+
+  --text-heading-2-size:    36px;
+  --text-heading-2-lh:      1.2;
+  --text-heading-2-ls:      -1px;
+
+  --text-heading-3-size:    24px;
+  --text-heading-3-lh:      1.2;
+  --text-heading-3-ls:      -1px;
+
+  --text-heading-4-size:    20px;
+  --text-heading-4-lh:      1.2;
+  --text-heading-4-ls:      -0.17px;
+
+  --text-heading-5-size:    14px;
+  --text-heading-5-lh:      1.2;
+  --text-heading-5-ls:      -0.17px;
+
+  --text-body-lg-size:      16px;
+  --text-body-lg-lh:        1.6;
+
+  --text-body-sm-size:      14px;
+  --text-body-sm-lh:        1.6;
+
+  --text-body-xs-size:      12px;
+  --text-body-xs-lh:        1.6;
+
+  --text-label-lg-size:     13px;
+  --text-label-lg-lh:       1.4;
+  --text-label-lg-ls:       0.75px;
+
+  // Spacing (8px base grid)
+  --space-0:  0px;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-9:  33px;    // button px — optical, non-grid
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-17: 17px;    // button py — optical, non-grid
+  --space-20: 80px;
+  --space-24: 96px;
+
+  // Border radius — zero radius system
+  --radius-none: 0px;
+
+  // Shadows
+  --shadow-nav:  0 1px 0 #a3a3a3;
+  --shadow-none: none;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+// ─── Base Styles ───────────────────────────────────────────────────────────────
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-family: var(--font-geist), sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-white);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
