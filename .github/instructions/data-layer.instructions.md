@@ -1,4 +1,5 @@
 ---
+description: Apply when touching any TypeScript or TSX file, or any file inside the data/ directory. Enforces the single source of truth for structured content.
 applyTo: "**/*.tsx,**/*.ts,data/**"
 ---
 

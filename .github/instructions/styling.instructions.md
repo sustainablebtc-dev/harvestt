@@ -1,4 +1,5 @@
 ---
+description: Apply when writing or editing any TSX component or SCSS file. Enforces SCSS-only styling, Tailwind via @apply only, and design token usage.
 applyTo: "**/*.tsx,**/*.scss"
 ---
 
@@ -17,6 +18,17 @@ components/
   Hero/
     Hero.tsx
     Hero.module.scss
+```
+
+**Tailwind v4 — CSS Modules require `@reference`:**  
+Do NOT use `@import "tailwindcss"` inside `.module.scss` files. Use `@reference "tailwindcss"` instead. This makes Tailwind utilities available for `@apply` without duplicating the CSS output.
+
+```scss
+// ✅ Correct — top of every .module.scss file
+@reference "tailwindcss";
+
+// ❌ Wrong — causes duplicate CSS output
+@import "tailwindcss";
 ```
 
 Import and use:

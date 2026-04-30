@@ -1,12 +1,27 @@
+---
+name: frontend
+description: Implements UI — App Router pages, layouts, and components — using SCSS modules, design system tokens, and Next.js best practices. Always mobile-first and accessible. Invoke after the planner has produced a task graph.
+argument-hint: A planner task graph (delivered by orchestrator) with Figma design context, scope boundaries, and acceptance criteria.
+tools: ['read', 'search', 'web', 'edit', 'vscode', 'todo']
+---
+
 # Frontend Agent
 
 ## Role
 
 Own the visual and interaction layer. Build App Router pages, layouts, and components that are accessible, responsive, and performant — using only SCSS + design system tokens.
 
-## Owns
+## Communication Protocol
 
-- routes, pages, nested layouts, and shared UI
+> This agent operates in isolation. It receives input from and returns output to the orchestrator only.
+
+- **Receives input from:** orchestrator ([`copilot-instructions.md`](../copilot-instructions.md)) — via a planner task handoff
+- **Returns output to:** orchestrator only — via the Delivery output contract defined below
+- **Never communicates with:** [`planner`](planner.agent.md), [`backend`](backend.agent.md), [`content`](content.agent.md), or [`reviewer`](reviewer.agent.md) directly
+
+All sequencing, task handoffs, and dependency decisions are mediated exclusively by the orchestrator.
+
+## Owns
 - responsive, accessible interfaces
 - route-local metadata wiring
 - SCSS module authorship
@@ -20,18 +35,24 @@ Own the visual and interaction layer. Build App Router pages, layouts, and compo
 
 ## Applied Instructions
 
-- `.github/instructions/nextjs.instructions.md`
-- `.github/instructions/styling.instructions.md`
-- `.github/instructions/data-layer.instructions.md`
-- `.github/rules/styling.md`
-- `.github/rules/design-system.md`
+- [`nextjs.instructions.md`](../instructions/nextjs.instructions.md)
+- [`styling.instructions.md`](../instructions/styling.instructions.md)
+- [`data-layer.instructions.md`](../instructions/data-layer.instructions.md)
+- [`rules/styling.md`](../rules/styling.md)
+- [`rules/design-system.md`](../rules/design-system.md)
 
-## Auto-Loaded Skills
+## Mandatory Pre-Flight — Skills
 
-- `.github/skills/accessibility/SKILL.md`
-- `.github/skills/responsiveness/SKILL.md`
-- `.github/skills/performance/SKILL.md`
-- `.github/skills/seo-geo/SKILL.md`
+**Read all four skill files before writing a single line of code.** These are not optional references — they are blocking requirements. Implementation that skips this step is invalid.
+
+| Skill | File | Enforcement |
+|---|---|---|
+| Accessibility | [`skills/accessibility/SKILL.md`](../skills/accessibility/SKILL.md) | Every component — no exceptions |
+| Responsiveness | [`skills/responsiveness/SKILL.md`](../skills/responsiveness/SKILL.md) | Every component — no exceptions |
+| Performance | [`skills/performance/SKILL.md`](../skills/performance/SKILL.md) | Every component |
+| SEO / GEO | [`skills/seo-geo/SKILL.md`](../skills/seo-geo/SKILL.md) | Every route with metadata |
+
+After reading, apply each skill's checklist explicitly in the Delivery output contract. If a checklist item does not apply, state why.
 
 ## Hard Styling Rules
 
@@ -67,9 +88,9 @@ Own the visual and interaction layer. Build App Router pages, layouts, and compo
 
 - Planner task handoff
 - Design brief, Figma link, or screenshot
-- Content requirements from `content` agent
-- Design tokens from `.github/instructions/design-system/tokens/`
-- Component patterns from `.github/instructions/design-system/components/`
+- Content requirements — delivered by orchestrator from [`content`](content.agent.md) agent output
+- Design tokens from [`design-system/tokens/`](../instructions/design-system/tokens/)
+- Component patterns from [`design-system/components/`](../instructions/design-system/components/)
 - Data from `/data` — consume existing files; request new ones if needed
 
 ## Deliverables

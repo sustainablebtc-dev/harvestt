@@ -1,7 +1,7 @@
 # Harvestt — Copilot Orchestration System
 
 ## Stack
-
+'
 | Layer | Technology |
 |---|---|
 | Framework | Next.js (App Router, latest) |
@@ -19,13 +19,25 @@ Every feature or fix flows through this sequence. No step may be skipped silentl
 planner → frontend → backend → content → reviewer
 ```
 
+## Orchestrator Enforcement
+
+> These rules govern the main Copilot session acting as coordinator.
+
+1. **The orchestrator never writes product code.** Its only job is to read context, dispatch agents via `runSubagent`, and relay results to the user.
+2. **Every Figma link, feature request, or bug fix MUST start by dispatching the `planner` agent.** No exceptions.
+3. **Git safety check runs before the planner is dispatched** — not inside it. The orchestrator checks branch and working tree state first and stops if conditions are not met.
+4. **No agent step may be skipped.** Even for "small" changes, the sequence is: `planner` → specialist(s) → `reviewer`. Skipping any step is a pipeline violation.
+5. **Figma designs are not self-implementing.** A Figma URL in a request means: dispatch `planner` with the node context, let `frontend` implement, let `reviewer` audit.
+6. **The orchestrator may not partially implement then hand off.** Either it delegates entirely or it does nothing.
+7. **All inter-agent communication goes through the orchestrator.** Agents never call, invoke, or read from other agents directly. The orchestrator is the sole channel for task handoffs, outputs, and sequencing decisions.
+
 | Agent | Owns | Does Not Own |
 |---|---|---|
-| `planner` | task graph, sequencing, acceptance mapping | product code, copy, approvals |
-| `frontend` | UI, pages, layouts, components, metadata wiring | server logic, API contracts, copy |
-| `backend` | route handlers, server actions, APIs, forms, validation | UI rendering, copy, approvals |
-| `content` | page copy, metadata text, SEO/GEO content, schema inputs | implementation, design decisions |
-| `reviewer` | quality audit, PR gate, findings with remediation | rewriting other agents' work |
+| [`planner`](agents/planner.agent.md) | task graph, sequencing, acceptance mapping | product code, copy, approvals |
+| [`frontend`](agents/frontend.agent.md) | UI, pages, layouts, components, metadata wiring | server logic, API contracts, copy |
+| [`backend`](agents/backend.agent.md) | route handlers, server actions, APIs, forms, validation | UI rendering, copy, approvals |
+| [`content`](agents/content.agent.md) | page copy, metadata text, SEO/GEO content, schema inputs | implementation, design decisions |
+| [`reviewer`](agents/reviewer.agent.md) | quality audit, PR gate, findings with remediation | rewriting other agents' work |
 
 ## Non-Negotiable Rules
 
@@ -40,6 +52,8 @@ planner → frontend → backend → content → reviewer
 9. No agent may silently expand scope.
 10. If blocked, name the exact missing dependency, decision, or API contract.
 11. Every task names its owner, dependencies, deliverables, and validation method.
+12. **Responsiveness is non-negotiable.** Every UI surface must be mobile-first and pass the responsiveness checklist in [`skills/responsiveness/SKILL.md`](skills/responsiveness/SKILL.md) before delivery. A desktop-only implementation is an incomplete implementation.
+13. **Accessibility is non-negotiable.** Every UI surface must pass the accessibility checklist in [`skills/accessibility/SKILL.md`](skills/accessibility/SKILL.md). Keyboard navigation, semantic HTML, and focus states are required, not optional.
 
 ## Data Layer (Hard Enforcement)
 
@@ -62,7 +76,7 @@ data/
 - Every JSON file has a corresponding interface in `data/types.ts`
 - JSON files are imported with type assertion — `resolveJsonModule` is enabled
 - Markdown files are parsed server-side only — never in client components
-- See `.github/instructions/data-layer.instructions.md` for full rules
+- See [`instructions/data-layer.instructions.md`](instructions/data-layer.instructions.md) for full rules
 
 ## Styling Rules (Hard Enforcement)
 
@@ -80,22 +94,22 @@ data/
 - All class names are defined in `.module.scss` files or `globals.scss`.
 - All spacing, color, radius, shadow values come from design tokens (`var(--token-name)`).
 - Tailwind utility classes are allowed **only** inside `@apply` rules.
-- See `.github/rules/styling.md` for the full rule set.
+- See [`rules/styling.md`](rules/styling.md) for the full rule set.
 
 ## Design System (Hard Enforcement)
 
-- Design tokens live in `.github/instructions/design-system/tokens/`.
-- Component patterns are documented in `.github/instructions/design-system/components/`.
+- Design tokens live in [`instructions/design-system/tokens/`](instructions/design-system/tokens/).
+- Component patterns are documented in [`instructions/design-system/components/`](instructions/design-system/components/).
 - All new UI must trace to a documented token or request a new one explicitly.
-- See `.github/rules/design-system.md` for enforcement rules.
+- See [`rules/design-system.md`](rules/design-system.md) for enforcement rules.
 
 ## Delegation Protocol
 
-1. `planner` reads the brief and produces a bounded task graph.
-2. `frontend` implements UI tasks once planner output exists.
-3. `backend` implements data, forms, and API tasks — can run in parallel with `frontend` after planning.
-4. `content` supplies production copy after information architecture is clear.
-5. `reviewer` validates assembled output and either approves or returns findings with exact remediation steps.
+1. [`planner`](agents/planner.agent.md) reads the brief and produces a bounded task graph.
+2. [`frontend`](agents/frontend.agent.md) implements UI tasks once planner output exists.
+3. [`backend`](agents/backend.agent.md) implements data, forms, and API tasks — can run in parallel with `frontend` after planning.
+4. [`content`](agents/content.agent.md) supplies production copy after information architecture is clear.
+5. [`reviewer`](agents/reviewer.agent.md) validates assembled output and either approves or returns findings with exact remediation steps.
 
 No specialist agent may re-plan the issue unless the issue is malformed or dependencies are impossible.
 
@@ -218,7 +232,7 @@ Every git action requires explicit user request and confirmation — including w
 - Risk notes
 - **Target branch: `dev`** — never open a PR directly to `main`
 
-See `.github/rules/repo-hygiene.md` for the full Git workflow including branch preparation flow and failure handling.
+See [`rules/repo-hygiene.md`](rules/repo-hygiene.md) for the full Git workflow including branch preparation flow and failure handling.
 
 ## Definition of Done
 

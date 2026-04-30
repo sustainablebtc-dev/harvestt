@@ -1,3 +1,8 @@
+---
+description: Apply when working on any Next.js App Router file — pages, layouts, route handlers, server actions, loading/error states, metadata, or component boundaries.
+applyTo: "app/**,components/**,lib/**"
+---
+
 # Next.js 16 Instructions
 
 ## Scope

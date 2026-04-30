@@ -1,4 +1,5 @@
 ---
+description: Apply when implementing route handlers, server actions, form submissions, validation, or any third-party API integration.
 applyTo: "app/api/**,lib/actions/**,lib/integrations/**"
 ---
 
