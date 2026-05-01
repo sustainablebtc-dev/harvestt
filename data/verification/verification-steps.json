@@ -1,0 +1,32 @@
+{
+  "eyebrow": "How It Works",
+  "heading": "The Verification Layer",
+  "description": "Three-step protocol from raw energy data to institutional-grade attestation",
+  "capabilitiesLabel": "Capabilities",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Verify",
+      "subtitleColor": "yellow",
+      "subtitle": "Energy Source Verification",
+      "body": "Real-time metering data is collected from mining facilities and cross-referenced with energy grid operator records. Our protocol integrates directly with smart meter infrastructure and renewable energy certificate registries to establish an unimpeachable data chain from source to hash.",
+      "capabilities": ["IoT meter integration", "Grid operator cross-reference", "REC registry validation", "Third-party audit protocols"]
+    },
+    {
+      "number": "02",
+      "title": "Attest",
+      "subtitleColor": "green",
+      "subtitle": "Cryptographic Attestation",
+      "body": "Verified energy data is cryptographically signed and timestamped to produce an immutable attestation record. Each attestation is anchored to the Bitcoin blockchain, creating a permanent, auditable link between energy consumption and mining output that cannot be retroactively altered.",
+      "capabilities": ["Cryptographic signing", "Bitcoin blockchain anchoring", "Immutable audit trail", "ISO 14064-compliant reporting"]
+    },
+    {
+      "number": "03",
+      "title": "Enable",
+      "subtitleColor": "blue",
+      "subtitle": "Institutional Integration",
+      "body": "Attested energy records are packaged into structured data products that integrate with institutional compliance workflows. SBP Token issuances provide tokenized exposure to verified Bitcoin mining operations, while the Attestation API enables direct integration with asset management platforms.",
+      "capabilities": ["SBP Token issuance", "Compliance documentation", "API-first integration", "Multi-jurisdiction support"]
+    }
+  ]
+}

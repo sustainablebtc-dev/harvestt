@@ -1,0 +1,23 @@
+{
+  "sidebarLabel": "The Problem",
+  "heading": "The Challenge",
+  "bodyColumns": [
+    [
+      "Bitcoin mining consumes approximately 120–150 TWh of electricity annually — a figure that continues to scale with network hashrate growth. For institutional capital allocators operating under ESG mandates, fiduciary obligations, or sovereign regulatory frameworks, this creates a fundamental access problem.",
+      "Pension funds, sovereign wealth vehicles, and licensed asset managers require auditable energy provenance data before any direct or indirect exposure to Bitcoin mining infrastructure. Without this data layer, an estimated $15–16 trillion in institutionally managed capital remains on the sidelines."
+    ],
+    [
+      "The mining industry's current approach to energy disclosure is fragmented, self-reported, and largely unverifiable. Sustainability certifications vary widely in methodology, scope, and auditor independence. This creates material disclosure risk for any regulated entity seeking Bitcoin mining exposure.",
+      "Harvestt was built specifically to resolve this verification gap — providing a standardized, auditable, and cryptographically secured attestation framework that meets institutional compliance requirements across jurisdictions."
+    ]
+  ],
+  "quote": {
+    "text": "\"We don't advocate for any single energy source. We verify and attest.\"",
+    "attribution": "Harvestt — Core Principle"
+  },
+  "stats": [
+    { "value": "70%+", "description": "of listed mining operators make unverified renewable energy claims" },
+    { "value": "$15–16T", "description": "in institutional capital blocked by energy disclosure gaps" },
+    { "value": "120 TWh", "description": "annual Bitcoin network energy consumption requiring attestation" }
+  ]
+}

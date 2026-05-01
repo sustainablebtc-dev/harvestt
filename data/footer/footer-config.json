@@ -1,0 +1,18 @@
+{
+  "tagline": "Institutional-grade energy verification and attestation infrastructure for Bitcoin mining. The trust layer between energy, mining, and capital.",
+  "registeredOffice": {
+    "label": "Registered Office",
+    "lines": [
+      "Abu Dhabi Global Market",
+      "Al Maryah Island, Abu Dhabi, UAE",
+      "ADGM Reg. No. 26026"
+    ]
+  },
+  "copyright": "© 2026 Sustainable Digital Solutions, Limited. All rights reserved.",
+  "bottomLinks": [
+    { "label": "Terms", "href": "#" },
+    { "label": "Privacy", "href": "#" },
+    { "label": "Cookies", "href": "#" },
+    { "label": "Sitemap", "href": "#" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "sectionLabel": "Research & Intelligence",
+  "heading": "Market Insights",
+  "viewAllLabel": "VIEW ALL RESEARCH",
+  "viewAllHref": "/research",
+  "articles": [
+    {
+      "category": "Macro Outlook",
+      "date": "April 2025",
+      "title": "Bitcoin Mining Enters Institutional Phase",
+      "body": "Following the 2024 halving event and ongoing spot ETF inflows, Bitcoin mining has transitioned from retail-dominated speculation to an institutionally relevant asset class. Capital allocators with ESG mandates increasingly require energy provenance data before deployment.",
+      "tags": ["Bitcoin", "Institutional Capital", "ESG"],
+      "readTime": "4 min read",
+      "href": "/research/bitcoin-mining-institutional-phase"
+    },
+    {
+      "category": "Regulatory",
+      "date": "April 2025",
+      "title": "MiCA Compliance and Energy Disclosure Requirements",
+      "body": "Under the EU's Markets in Crypto-Assets Regulation (MiCA) and emerging ADGM frameworks, mining operators must provide auditable energy source documentation. Harvestt's attestation protocol provides the compliance layer required for cross-border capital mobility.",
+      "tags": ["MiCA", "ADGM", "Compliance"],
+      "readTime": "6 min read",
+      "href": "/research/mica-compliance-energy-disclosure"
+    },
+    {
+      "category": "Infrastructure",
+      "date": "April 2025",
+      "title": "The Verification Gap in Bitcoin Energy Claims",
+      "body": "Over 70% of publicly listed mining operators make renewable energy claims without third-party verification. This disclosure gap represents a material risk for institutional investors and sovereign wealth allocators operating under fiduciary obligations. Harvestt closes this gap.",
+      "tags": ["Verification", "Risk", "Disclosure"],
+      "readTime": "5 min read",
+      "href": "/research/verification-gap-bitcoin-energy"
+    }
+  ]
+}

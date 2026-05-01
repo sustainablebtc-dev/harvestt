@@ -1,27 +1,35 @@
 [
   {
-    "heading": "Platform",
+    "heading": "Content & Resources",
     "links": [
-      { "label": "Overview", "href": "/about" },
-      { "label": "Partners", "href": "/partners" },
-      { "label": "Regulatory", "href": "/regulatory" },
-      { "label": "News", "href": "/news" }
+      { "label": "Market Insights", "href": "/market-insights" },
+      { "label": "Research Reports", "href": "#" },
+      { "label": "Verification Standards", "href": "#" },
+      { "label": "Protocol Documentation", "href": "#" },
+      { "label": "API Reference", "href": "#" },
+      { "label": "Case Studies", "href": "#" }
     ]
   },
   {
     "heading": "Company",
     "links": [
-      { "label": "About Us", "href": "/about" },
-      { "label": "Careers", "href": "/careers" },
-      { "label": "Contact", "href": "/contact" }
+      { "label": "About Harvestt", "href": "#" },
+      { "label": "Leadership", "href": "#" },
+      { "label": "Regulatory Status", "href": "#" },
+      { "label": "Press & Media", "href": "#" },
+      { "label": "Careers", "href": "#" },
+      { "label": "Contact", "href": "#" }
     ]
   },
   {
-    "heading": "Legal",
+    "heading": "Legal & Compliance",
     "links": [
-      { "label": "Privacy Policy", "href": "/legal/privacy" },
-      { "label": "Terms of Service", "href": "/legal/terms" },
-      { "label": "Cookie Policy", "href": "/legal/cookies" }
+      { "label": "Terms of Service", "href": "#" },
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Cookie Policy", "href": "#" },
+      { "label": "Regulatory Disclosures", "href": "#" },
+      { "label": "AML Policy", "href": "#" },
+      { "label": "Whistleblower Policy", "href": "#" }
     ]
   }
 ]

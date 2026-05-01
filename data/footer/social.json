@@ -5,8 +5,13 @@
     "label": "Harvestt on LinkedIn"
   },
   {
-    "platform": "X",
+    "platform": "X (Twitter)",
     "href": "https://x.com/harvestt",
     "label": "Harvestt on X"
+  },
+  {
+    "platform": "GitHub",
+    "href": "https://github.com/harvestt",
+    "label": "Harvestt on GitHub"
   }
 ]

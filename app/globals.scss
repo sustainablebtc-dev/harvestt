@@ -30,6 +30,14 @@
   --color-border-brand:    #1b1b1b;
   --color-border-accent:   #ff6e00;
   --color-border-separator: #a3a3a3;
+  --color-border-footer:   #3a3a3a;
+
+  // Colors — Extended
+  --color-bg-black:       #000000;
+  --color-divider-dark:   #333333;
+  --color-accent-yellow:  #edd900;
+  --color-accent-blue:    #3396ff;
+  --color-bullet-green:   #4a7c59;
 
   // Typography — Font families
   --font-geist: 'Geist', sans-serif;
@@ -83,6 +91,41 @@
   --text-label-md-lh:       1.4;
   --text-label-md-ls:       0.5px;
 
+  // Eyebrow / overline
+  --text-eyebrow-size:    11px;
+  --text-eyebrow-lh:      1.5;
+  --text-eyebrow-ls:      1.25px;
+
+  // Label small
+  --text-label-sm-size:   10px;
+  --text-label-sm-lh:     1.4;
+  --text-label-sm-ls:     0.125px;
+
+  // Extended type scale
+  --text-heading-step-size:    26px;
+  --text-heading-step-ls:      -0.17px;
+  --text-step-num-size:        48px;
+  --text-step-num-ls:          -1px;
+  --text-display-huge-size:    120px;
+  --text-display-huge-ls:      -6px;
+  --text-partner-heading-size: 28px;
+  --text-partner-heading-ls:   -0.17px;
+  --text-capabilities-ls:      1px;
+
+  // Hero-specific
+  --text-hero-body-lh:      1.7;
+  --space-hero-gap:         77px;
+  --text-display-3-size:    40px;        // mobile hero headline
+  --hero-content-width:     573px;       // Figma: left column width
+  --hero-image-height:      831px;       // Figma: image stack height (desktop)
+  --hero-image-height-tablet: 560px;    // image stack height (tablet)
+  --hero-image-width-tablet:  380px;    // image stack width (tablet)
+  --hero-image-height-mobile: 320px;    // image stack height (mobile)
+  --space-icon-gap:         10px;        // optical: icon gap inside CTA button
+
+  // Navigation-specific
+  --text-nav-lh:            1.21875; // 19.5px / 16px — Figma nav link line-height
+
   // Spacing (8px base grid)
   --space-0:  0px;
   --space-1:  4px;
@@ -100,6 +143,25 @@
   --space-17: 17px;    // button py — optical, non-grid
   --space-20: 80px;
   --space-24: 96px;
+  --space-23: 92px;    // section vertical padding (optical)
+  --space-accent-line: 48px;
+  --space-marker: 4px;
+  --space-footer-col-gap: 11px;
+
+  // Layout widths — Figma optical column sizes
+  --challenge-sidebar-width:     319px;
+  --challenge-main-width:        929px;
+  --challenge-stat-desc-width:   243px;
+  --regulatory-left-col-width:   576px;
+  --contact-content-width:       672px;
+  --addressable-body-width:      640px;
+
+  // Section overlay
+  --color-bg-muted-overlay:      rgba(245, 245, 245, 0.95);
+
+  // ContactCTA secondary button typography
+  --text-cta-secondary-lh:       18px;
+  --text-cta-secondary-ls:       0.96px;
 
   // Border radius — zero radius system
   --radius-none: 0px;

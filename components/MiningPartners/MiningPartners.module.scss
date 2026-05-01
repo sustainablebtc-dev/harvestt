@@ -1,0 +1,91 @@
+@reference "tailwindcss";
+
+.section {
+  background-color: var(--color-bg-white);
+  width: 100%;
+}
+
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-24) var(--space-20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.heading {
+  font-size: var(--text-partner-heading-size);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  letter-spacing: var(--text-partner-heading-ls);
+  color: var(--color-text-dark);
+  text-align: center;
+}
+
+.logosRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-20);
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  opacity: 0.65;
+  object-fit: contain;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-icon-gap);
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-white);
+  font-size: var(--text-label-lg-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--text-label-lg-lh);
+  letter-spacing: var(--text-label-lg-ls);
+  text-transform: uppercase;
+  padding: var(--space-17) var(--space-9);
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+
+  i {
+    font-size: var(--text-body-sm-size);
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+}
+
+@media (max-width: 767px) {
+  .inner {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta {
+    transition: none;
+  }
+}

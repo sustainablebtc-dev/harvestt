@@ -1,0 +1,49 @@
+@reference "tailwindcss";
+
+.wrapper {
+  background-color: var(--color-bg-black);
+  border-top: 1px solid var(--color-border-footer);
+}
+
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-20);
+  @apply flex flex-col;
+  gap: var(--space-footer-col-gap);
+}
+
+.heading {
+  font-size: var(--text-label-sm-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--text-label-sm-ls);
+}
+
+.paragraph {
+  font-size: var(--text-body-xs-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-secondary);
+  line-height: var(--text-body-xs-lh);
+}
+
+.signature {
+  font-size: var(--text-body-xs-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  line-height: var(--text-body-xs-lh);
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+}
+
+@media (max-width: 767px) {
+  .inner {
+    padding: var(--space-6) var(--space-4);
+  }
+}

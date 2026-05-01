@@ -1,0 +1,243 @@
+@reference "tailwindcss";
+
+// ─── FooterMain ────────────────────────────────────────────────────────────────
+
+.footerMain {
+  background-color: var(--color-bg-dark);
+}
+
+.footerMainInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-20);
+  @apply flex flex-row items-start;
+  gap: var(--space-20);
+}
+
+.leftCol {
+  @apply flex flex-col;
+  width: 320px;
+  min-width: 0;
+  flex-shrink: 0;
+  gap: var(--space-8);
+}
+
+.tagline {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.officeBlock,
+.socialBlock {
+  @apply flex flex-col;
+  gap: var(--space-5);
+}
+
+.blockLabel {
+  display: block;
+  font-size: var(--text-label-sm-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.addressLines {
+  @apply flex flex-col;
+  gap: 2px;
+}
+
+.addressLine {
+  display: block;
+  font-size: var(--text-body-xs-size);
+  line-height: var(--text-body-xs-lh);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.socialList {
+  @apply flex flex-col;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socialLink {
+  font-size: var(--text-body-xs-size);
+  line-height: var(--text-body-xs-lh);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-bg-white);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+// ─── Right col — link groups ───────────────────────────────────────────────────
+
+.rightCol {
+  @apply flex flex-row;
+  gap: var(--space-20);
+  flex: 1;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.linkGroup {
+  @apply flex flex-col;
+  gap: var(--space-5);
+}
+
+.groupHeading {
+  display: block;
+  font-size: var(--text-label-sm-size);
+  font-family: var(--font-inter);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linkList {
+  @apply flex flex-col;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-bg-white);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+// ─── FooterBar ─────────────────────────────────────────────────────────────────
+
+.footerBar {
+  background-color: var(--color-bg-black);
+}
+
+.footerBarInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-20);
+  @apply flex flex-row items-center justify-between;
+}
+
+.copyright {
+  font-size: var(--text-body-xs-size);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+@media (max-width: 1023px) {
+  .footerMainInner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+
+  .footerBarInner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+}
+
+@media (max-width: 767px) {
+  .footerMainInner {
+    flex-direction: column;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .leftCol {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .rightCol {
+    flex-wrap: wrap;
+    gap: var(--space-12);
+  }
+
+  .footerBarInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
+.bottomNav {
+  @apply flex flex-row;
+  gap: var(--space-6);
+}
+
+.bottomLink {
+  font-size: var(--text-eyebrow-size);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+  text-transform: capitalize;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-bg-white);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+// ─── Responsive — mobile-first ─────────────────────────────────────────────────
+
+@media (max-width: 767px) {
+  .footerMain {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .footerMainInner {
+    @apply flex-col;
+  }
+
+  .leftCol {
+    width: auto;
+    min-width: unset;
+  }
+
+  .rightCol {
+    @apply flex-col;
+    width: 100%;
+  }
+
+  .footerBar {
+    padding: var(--space-4);
+  }
+
+  .footerBarInner {
+    @apply flex-col;
+    gap: var(--space-4);
+  }
+}

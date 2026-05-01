@@ -1,0 +1,11 @@
+{
+  "heading": "Our Mining Partners",
+  "partners": [
+    { "name": "ZERO", "logoSrc": "/logos/mining-partners/zero.svg", "width": 122, "height": 32 },
+    { "name": "CleanSpark", "logoSrc": "/logos/mining-partners/cleanspark.svg", "width": 215, "height": 32 },
+    { "name": "MATO", "logoSrc": "/logos/mining-partners/mato.svg", "width": 172, "height": 32 },
+    { "name": "Bitdeer", "logoSrc": "/logos/mining-partners/bitdeer.svg", "width": 167, "height": 32 }
+  ],
+  "ctaLabel": "BECOME A PARTNER",
+  "ctaHref": "/contact"
+}

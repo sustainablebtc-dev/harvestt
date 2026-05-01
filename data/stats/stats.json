@@ -1,0 +1,9 @@
+{
+  "stats": [
+    { "value": "780 EH/s", "label": "Network Hashrate", "accent": false },
+    { "value": "$15T+", "label": "Addressable Market", "accent": false },
+    { "value": "ISO-Aligned", "label": "Verification Standard", "accent": false },
+    { "value": "12", "label": "Partners Onboarded", "accent": false },
+    { "value": "14.2 TWh", "label": "Energy Verified", "accent": true }
+  ]
+}

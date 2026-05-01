@@ -1,0 +1,15 @@
+{
+  "eyebrow": "The Addressable Market",
+  "displayValue": "$15–16T",
+  "displaySuffix": "Trillion",
+  "displaySuffixDescription": [
+    "in institutionally managed capital",
+    "currently unable to access Bitcoin mining"
+  ],
+  "body": "Sovereign wealth funds, pension systems, insurance allocators, and licensed asset managers collectively manage over $15 trillion in capital that is currently restricted from Bitcoin mining exposure due to energy disclosure requirements. Harvestt provides the compliance infrastructure to unlock this capital.",
+  "breakdownStats": [
+    { "value": "$3.6T", "label": "GCC Sovereign Wealth Assets", "sublabel": "Under ESG disclosure mandate" },
+    { "value": "$12T+", "label": "US Institutional AUM", "sublabel": "With energy reporting requirements" },
+    { "value": "120 TWh", "label": "Annual Mining Energy", "sublabel": "Requiring attestation coverage" }
+  ]
+}

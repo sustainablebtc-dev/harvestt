@@ -45,6 +45,29 @@ export interface SocialLink {
   label: string
 }
 
+export interface FooterBarLink {
+  label: string
+  href: string
+}
+
+export interface RegisteredOffice {
+  label: string
+  lines: string[]
+}
+
+export interface FooterConfig {
+  tagline: string
+  registeredOffice: RegisteredOffice
+  copyright: string
+  bottomLinks: FooterBarLink[]
+}
+
+export interface RegulatoryDisclaimerData {
+  heading: string
+  paragraphs: string[]
+  signature: string
+}
+
 // ─── Site Config ────────────────────────────────────────────────────────────────
 
 export interface DefaultMetadata {
@@ -62,9 +85,158 @@ export interface SiteConfig {
   defaultMetadata: DefaultMetadata
 }
 
+// ─── Stats Bar ──────────────────────────────────────────────────────────────────
+
+export interface Stat {
+  value: string
+  label: string
+  /** When true, the value renders in --color-success (green). */
+  accent: boolean
+}
+
+export interface StatsData {
+  stats: Stat[]
+}
+
+// ─── Market Insights ────────────────────────────────────────────────────────────
+
+export interface ArticleCard {
+  category: string
+  date: string
+  title: string
+  body: string
+  tags: string[]
+  readTime: string
+  href: string
+}
+
+export interface MarketInsightsData {
+  sectionLabel: string
+  heading: string
+  viewAllLabel: string
+  viewAllHref: string
+  articles: ArticleCard[]
+}
+
 // ─── Future Extensions ──────────────────────────────────────────────────────────
 //
 // When adding new data files, define their interfaces here first.
+
+// ─── The Challenge ──────────────────────────────────────────────────────────────
+
+export interface ChallengeQuote {
+  text: string
+  attribution: string
+}
+
+export interface ChallengeStat {
+  value: string
+  description: string
+}
+
+export interface ChallengeData {
+  sidebarLabel: string
+  heading: string
+  bodyColumns: string[][]
+  quote: ChallengeQuote
+  stats: ChallengeStat[]
+}
+
+// ─── Addressable Market ─────────────────────────────────────────────────────────
+
+export interface MarketStat {
+  value: string
+  label: string
+  sublabel: string
+}
+
+export interface AddressableMarketData {
+  eyebrow: string
+  displayValue: string
+  displaySuffix: string
+  displaySuffixDescription: string[]
+  body: string
+  breakdownStats: MarketStat[]
+}
+
+// ─── Verification Layer ─────────────────────────────────────────────────────────
+
+export interface VerificationStep {
+  number: string
+  title: string
+  subtitleColor: 'yellow' | 'green' | 'blue'
+  subtitle: string
+  body: string
+  capabilities: string[]
+}
+
+export interface VerificationLayerData {
+  eyebrow: string
+  heading: string
+  description: string
+  capabilitiesLabel: string
+  steps: VerificationStep[]
+}
+
+// ─── Mining Partners ────────────────────────────────────────────────────────────
+
+export interface MiningPartner {
+  name: string
+  logoSrc: string
+  width: number
+  height: number
+}
+
+export interface MiningPartnersData {
+  heading: string
+  partners: MiningPartner[]
+  ctaLabel: string
+  ctaHref: string
+}
+
+// ─── Regulatory Infrastructure ──────────────────────────────────────────────────
+
+export type BadgeVariant = 'monitoring' | 'compliant' | 'licensed' | 'aligned'
+
+export interface RegulatoryItem {
+  name: string
+  description: string
+  badge: string
+  badgeVariant: BadgeVariant
+}
+
+export interface EcosystemLogo {
+  name: string
+  logoSrc: string
+  width: number
+  height: number
+}
+
+export interface RegulatoryData {
+  eyebrow: string
+  heading: string
+  body: string[]
+  panelHeading: string
+  items: RegulatoryItem[]
+  ecosystemHeading: string
+  ecosystemLogos: EcosystemLogo[]
+}
+
+// ─── Contact CTA ────────────────────────────────────────────────────────────────
+
+export interface ContactLocation {
+  city: string
+}
+
+export interface ContactCTAData {
+  eyebrow: string
+  heading: string[]
+  body: string
+  primaryCta: { label: string; href: string }
+  secondaryCta: { label: string; href: string }
+  email: string
+  locations: ContactLocation[]
+}
 // Naming: use PascalCase, suffix with the domain (e.g. PricingTier, TeamMember).
 //
 // i18n: extend each interface with an optional `locale?: string` field when
