@@ -379,6 +379,27 @@ export interface SBPPageData {
   market: SBPMarketData
 }
 
+// ─── Leadership ──────────────────────────────────────────────────────────────────
+
+export interface TeamMember {
+  name: string
+  title: string
+  image: string
+}
+
+export interface LeadershipMetadata {
+  title: string
+  description: string
+  ogTitle: string
+  ogDescription: string
+}
+
+export interface LeadershipData {
+  metadata: LeadershipMetadata
+  coreTeam: TeamMember[]
+  advisors: TeamMember[]
+}
+
 // Naming: use PascalCase, suffix with the domain (e.g. PricingTier, TeamMember).
 //
 // i18n: extend each interface with an optional `locale?: string` field when

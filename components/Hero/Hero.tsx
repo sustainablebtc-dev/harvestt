@@ -35,7 +35,7 @@ export default function Hero() {
         {/* Right: image stack */}
         <div className={styles.heroImageWrap}>
           <Image
-            src="/hero-image.jpg"
+            src="/hero-image.jpeg"
             alt="Modern institutional building"
             fill
             className={styles.heroImg}

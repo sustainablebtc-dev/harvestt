@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Leadership | Harvestt",
+    "description": "Meet the institutional market experts and advisors leading Harvestt's mission to modernize energy commodity infrastructure.",
+    "ogTitle": "Leadership",
+    "ogDescription": "Meet the institutional market experts and advisors leading Harvestt's mission to modernize energy commodity infrastructure."
+  },
+  "coreTeam": [
+    {
+      "name": "Brad van Voorhees",
+      "title": "Founder & CEO",
+      "image": "/team/brad.png"
+    },
+    {
+      "name": "Matthew Twomey",
+      "title": "Co-Founder",
+      "image": "/team/matt.png"
+    },
+    {
+      "name": "Elliot David",
+      "title": "Co-Founder",
+      "image": "/team/elliot.png"
+    },
+    {
+      "name": "John Lilic",
+      "title": "Co-Founder",
+      "image": "/team/john.png"
+    }
+  ],
+  "advisors": [
+    {
+      "name": "Desiree Rexach",
+      "title": "Advisor",
+      "image": "/team/jessica.png"
+    },
+    {
+      "name": "Dragos Rizescu",
+      "title": "Advisor",
+      "image": "/team/dragos.png"
+    },
+    {
+      "name": "Adrian Sabau",
+      "title": "Advisor",
+      "image": "/team/adrian.png"
+    },
+    {
+      "name": "Ali Alnuaimi",
+      "title": "Advisor",
+      "image": "/team/ali.png"
+    },
+    {
+      "name": "Dr. Julia Nesheiwat",
+      "title": "Advisor",
+      "image": "/team/julia.png"
+    },
+    {
+      "name": "Emma Todd",
+      "title": "Advisor",
+      "image": "/team/ema.png"
+    },
+    {
+      "name": "Natasha Barrientos",
+      "title": "Advisor",
+      "image": "/team/natasha.png"
+    },
+    {
+      "name": "Kunal Kanodia",
+      "title": "Advisor",
+      "image": "/team/kunal.png"
+    },
+    {
+      "name": "David Carlin",
+      "title": "Advisor",
+      "image": "/team/david.png"
+    }
+  ]
+}

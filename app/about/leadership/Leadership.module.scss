@@ -1,0 +1,132 @@
+@reference "tailwindcss";
+
+// Leadership page — blackRock-inspired institutional design
+// - Black/white color palette, no gradients or rounded corners
+// - Tight spacing, 1px dividers
+// - Responsive grid: 1 col mobile / 2 col tablet / 4 col desktop
+// - Hover states with opacity change
+
+.page {
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+}
+
+.section {
+  border-top: 1px solid var(--color-border-default);
+  padding: var(--space-24) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding: var(--space-24) var(--space-20);
+  }
+
+  @media (min-width: 1024px) {
+    padding: var(--space-24) var(--space-20);
+  }
+}
+
+.container {
+  @apply mx-auto;
+  max-width: 1440px;
+}
+
+.sectionHeader {
+  margin-bottom: var(--space-20);
+
+  @media (min-width: 768px) {
+    margin-bottom: var(--space-24);
+  }
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--color-text-dark);
+  margin: 0 0 var(--space-6) 0;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.accentLine {
+  width: 48px;
+  height: 2px;
+  background: var(--color-accent);
+  margin-top: var(--space-4);
+}
+
+// Grid layout: responsive columns
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+  gap: var(--space-6);
+
+  @media (min-width: 768px) {
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 1024px) {
+    gap: var(--space-8);
+  }
+}
+
+// Team Card
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+
+    .name {
+      text-decoration: underline;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: var(--space-6);
+  background: var(--color-bg-muted);
+  border: 1px solid var(--color-border-default);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardContent {
+  padding: 0;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  margin: 0 0 var(--space-2) 0;
+  transition: text-decoration 0.2s ease;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
