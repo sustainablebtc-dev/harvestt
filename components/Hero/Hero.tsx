@@ -18,7 +18,7 @@ export default function Hero() {
               Institutional-grade energy verification and attestation for Bitcoin mining infrastructure — enabling compliant capital to access Bitcoin with full energy transparency.
             </p>
             <p className={styles.bodySecondary}>
-              Harvestt operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging a $15–16 trillion addressable market.
+              Sustainable Bitcoin Protocol operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging a $15–16 trillion addressable market.
             </p>
           </div>
           <div className={styles.ctaRow}>

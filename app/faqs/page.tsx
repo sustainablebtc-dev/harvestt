@@ -7,7 +7,7 @@ import styles from './FAQs.module.scss'
 const faqsData = faqsDataRaw as FAQsData
 
 export const metadata: Metadata = {
-  title: 'FAQs | Harvestt',
+  title: 'FAQs | Sustainable Bitcoin Protocol',
   description: 'Answers to frequently asked questions about Bitcoin, clean energy, and Sustainable Bitcoin Protocol',
 }
 

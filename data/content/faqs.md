@@ -1,4 +1,4 @@
-# Harvestt — Frequently Asked Questions
+# Sustainable Bitcoin Protocol — Frequently Asked Questions
 
 <!--
   Format rules:
@@ -9,25 +9,25 @@
   - Each question + answer pair is independently extractable for JSON-LD FAQ schema.
 -->
 
-## What is Harvestt?
+## What is Sustainable Bitcoin Protocol?
 
-Harvestt is an institutional market infrastructure platform. It provides compliance tooling, partner integrations, and market intelligence for organizations operating in regulated financial environments.
+Sustainable Bitcoin Protocol is an institutional market infrastructure platform. It provides compliance tooling, partner integrations, and market intelligence for organizations operating in regulated financial environments.
 
-## Who does Harvestt serve?
+## Who does Sustainable Bitcoin Protocol serve?
 
-Harvestt serves institutional partners — asset managers, compliance teams, and financial infrastructure operators — who require precision tooling and verifiable regulatory alignment.
+Sustainable Bitcoin Protocol serves institutional partners — asset managers, compliance teams, and financial infrastructure operators — who require precision tooling and verifiable regulatory alignment.
 
-## How does Harvestt ensure regulatory compliance?
+## How does Sustainable Bitcoin Protocol ensure regulatory compliance?
 
-Harvestt integrates directly with regulatory frameworks to provide real-time compliance verification. Partners access a dedicated regulatory dashboard that tracks obligations, surfaces risk signals, and maintains audit-ready records.
+Sustainable Bitcoin Protocol integrates directly with regulatory frameworks to provide real-time compliance verification. Partners access a dedicated regulatory dashboard that tracks obligations, surfaces risk signals, and maintains audit-ready records.
 
-## How do I become a Harvestt partner?
+## How do I become a Sustainable Bitcoin Protocol partner?
 
-Prospective partners can begin the onboarding process by requesting a conversation with the Harvestt team via the contact page. Partnerships are assessed on a case-by-case basis to ensure alignment with platform standards.
+Prospective partners can begin the onboarding process by requesting a conversation with the Sustainable Bitcoin Protocol team via the contact page. Partnerships are assessed on a case-by-case basis to ensure alignment with platform standards.
 
-## Is Harvestt available globally?
+## Is Sustainable Bitcoin Protocol available globally?
 
-Harvestt operates across multiple jurisdictions. Availability and feature access may vary by region depending on local regulatory requirements. Contact the team to confirm coverage for your market.
+Sustainable Bitcoin Protocol operates across multiple jurisdictions. Availability and feature access may vary by region depending on local regulatory requirements. Contact the team to confirm coverage for your market.
 
 ## Where can I find market intelligence data?
 

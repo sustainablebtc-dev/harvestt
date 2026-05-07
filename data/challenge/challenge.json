@@ -8,12 +8,12 @@
     ],
     [
       "The mining industry's current approach to energy disclosure is fragmented, self-reported, and largely unverifiable. Sustainability certifications vary widely in methodology, scope, and auditor independence. This creates material disclosure risk for any regulated entity seeking Bitcoin mining exposure.",
-      "Harvestt was built specifically to resolve this verification gap — providing a standardized, auditable, and cryptographically secured attestation framework that meets institutional compliance requirements across jurisdictions."
+      "Sustainable Bitcoin Protocol was built specifically to resolve this verification gap — providing a standardized, auditable, and cryptographically secured attestation framework that meets institutional compliance requirements across jurisdictions."
     ]
   ],
   "quote": {
     "text": "\"We don't advocate for any single energy source. We verify and attest.\"",
-    "attribution": "Harvestt — Core Principle"
+    "attribution": "Sustainable Bitcoin Protocol — Core Principle"
   },
   "stats": [
     { "value": "70%+", "description": "of listed mining operators make unverified renewable energy claims" },

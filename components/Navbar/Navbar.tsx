@@ -83,10 +83,10 @@ export default function Navbar() {
       <div className={styles.navInner}>
         {/* Left group: Logo + nav links */}
         <div className={styles.navLeft}>
-          <Link href="/" aria-label="Harvestt home" onClick={closeMenu}>
+          <Link href="/" aria-label="Sustainable Bitcoin Protocol home" onClick={closeMenu}>
             <Image
               src="/logo.svg"
-              alt="Harvestt"
+              alt="Sustainable Bitcoin Protocol"
               width={127}
               height={24}
               priority
@@ -96,23 +96,31 @@ export default function Navbar() {
           <ul className={styles.navLinks} role="list">
             {navbarData.links.map((link) => (
               <li key={link.href} className={styles.navLinkWrapper}>
-                <button
-                  className={styles.navLinkItem}
-                  onMouseEnter={() => link.hasDropdown && handleNavItemMouseEnter(link.label)}
-                  onMouseLeave={() => link.hasDropdown && handleNavItemMouseLeave()}
-                  onClick={() => !link.hasDropdown && (window.location.href = link.href)}
-                  type="button"
-                >
-                  <span className={styles.navLinkText}>{link.label}</span>
-                  {link.hasDropdown && (
+                {link.hasDropdown ? (
+                  <button
+                    className={styles.navLinkItem}
+                    onMouseEnter={() => handleNavItemMouseEnter(link.label)}
+                    onMouseLeave={() => handleNavItemMouseLeave()}
+                    onClick={(e) => handleMobileDropdownToggle(e, link.label, link.hasDropdown || false)}
+                    type="button"
+                  >
+                    <span className={styles.navLinkText}>{link.label}</span>
                     <i
                       className={`bi bi-chevron-down ${
                         openDropdown === link.label ? styles.chevronOpen : ''
                       }`}
                       aria-hidden="true"
                     />
-                  )}
-                </button>
+                  </button>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={styles.navLinkItem}
+                    onClick={closeMenu}
+                  >
+                    <span className={styles.navLinkText}>{link.label}</span>
+                  </Link>
+                )}
 
                 {/* Desktop Dropdown */}
                 {link.hasDropdown && link.children && openDropdown === link.label && (
@@ -129,6 +137,7 @@ export default function Navbar() {
                         href={item.href}
                         className={styles.dropdownItem}
                         role="menuitem"
+                        onClick={closeMenu}
                       >
                         {item.label}
                       </Link>

@@ -20,7 +20,7 @@ export default function Footer() {
         <div className={styles.footerMainInner}>
           {/* Left column */}
           <div className={styles.leftCol}>
-            <img src="/logo-light.svg" alt="Harvestt" width={126} height={24} />
+            <img src="/logo-light.svg" alt="Sustainable Bitcoin Protocol" width={126} height={24} />
 
             <p className={styles.tagline}>{footerConfig.tagline}</p>
 
