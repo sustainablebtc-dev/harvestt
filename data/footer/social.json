@@ -1,17 +1,17 @@
 [
   {
     "platform": "LinkedIn",
-    "href": "https://linkedin.com/company/harvestt",
-    "label": "Harvestt on LinkedIn"
+    "href": "https://www.linkedin.com/company/sustainablebtc/",
+    "label": "Sustainable Bitcoin Protocol on LinkedIn"
   },
   {
     "platform": "X (Twitter)",
-    "href": "https://x.com/harvestt",
-    "label": "Harvestt on X"
+    "href": "https://twitter.com/sustainablebtc?lang=en",
+    "label": "Sustainable Bitcoin Protocol on X"
   },
   {
-    "platform": "GitHub",
-    "href": "https://github.com/harvestt",
-    "label": "Harvestt on GitHub"
+    "platform": "Youtube",
+    "href": "https://www.youtube.com/@Sustainablebtc",
+    "label": "Sustainable Bitcoin Protocol on Youtube"
   }
 ]

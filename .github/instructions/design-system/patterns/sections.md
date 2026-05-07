@@ -205,13 +205,13 @@ Used in: Regulatory Infrastructure, The Challenge, The Verification Layer
         SPEAK WITH OUR TEAM
       </a>
       <!-- Secondary CTA -->
-      <a href="mailto:hello@harvestt.com" class="inline-flex items-center justify-center px-[33px] py-[17px] bg-white border border-border-default font-geist font-medium text-[13px] text-brand tracking-[0.75px] uppercase rounded-none hover:border-brand transition-colors">
+      <a href="mailto:info@sustainablebtc.org" class="inline-flex items-center justify-center px-[33px] py-[17px] bg-white border border-border-default font-geist font-medium text-[13px] text-brand tracking-[0.75px] uppercase rounded-none hover:border-brand transition-colors">
         SEND AN EMAIL
       </a>
     </div>
 
-    <a href="mailto:hello@harvestt.com" class="font-geist font-normal text-[16px] text-text-muted border-b border-border-default pb-1 hover:text-text-primary transition-colors">
-      hello@harvestt.com
+    <a href="mailto:info@sustainablebtc.org" class="font-geist font-normal text-[16px] text-text-muted border-b border-border-default pb-1 hover:text-text-primary transition-colors">
+      info@sustainablebtc.org
     </a>
 
     <div class="flex items-center gap-8 flex-wrap justify-center border-t border-border-default pt-[42px] w-full max-w-[672px]">

@@ -3,8 +3,8 @@
   "heading": ["Speak With", "Our Team"],
   "body": "We work exclusively with institutional counterparties — asset managers, sovereign wealth funds, mining operators, and regulated financial entities. All inquiries are treated with the strictest confidentiality.",
   "primaryCta": { "label": "SPEAK WITH OUR TEAM", "href": "/contact" },
-  "secondaryCta": { "label": "SEND AN EMAIL", "href": "mailto:hello@harvestt.com" },
-  "email": "hello@harvestt.com",
+  "secondaryCta": { "label": "SEND AN EMAIL", "href": "mailto:info@sustainablebtc.org" },
+  "email": "info@sustainablebtc.org",
   "locations": [
     { "city": "Abu Dhabi, UAE" },
     { "city": "New York" },

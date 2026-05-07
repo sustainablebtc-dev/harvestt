@@ -97,7 +97,7 @@
         leading-[1.6] tracking-[0]
         max-w-[480px]
       ">
-        Harvestt operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging a $15–16 trillion addressable market.
+        Sustainable Bitcoin Protocol operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging a $15–16 trillion addressable market.
       </p>
     </div>
 

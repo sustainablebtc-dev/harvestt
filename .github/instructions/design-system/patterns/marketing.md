@@ -56,7 +56,7 @@ See full implementation in [`components/card.md`](../components/card.md).
 
 **Purpose:** Build institutional trust via regulatory proof. Converts sceptical institutional visitors.
 
-The table pattern makes compliance visible at a glance — licensed/compliant/monitoring statuses signal that Harvestt is operating within regulated frameworks.
+The table pattern makes compliance visible at a glance — licensed/compliant/monitoring statuses signal that Sustainable Bitcoin Protocol is operating within regulated frameworks.
 
 | Design choice | Marketing intent |
 |---|---|

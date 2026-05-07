@@ -1,4 +1,4 @@
-# Harvestt — Copilot Orchestration System
+# Sustainable Bitcoin Protocol — Copilot Orchestration System
 
 ## Stack
 '

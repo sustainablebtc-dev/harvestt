@@ -56,7 +56,7 @@ Apply to App Router routes, layouts, loading states, metadata, route handlers, s
 
 ### Links
 
-- Use `next/link` (`<Link>`) for **internal** links — any href that stays on the same origin (`harvestt.com`).
+- Use `next/link` (`<Link>`) for **internal** links — any href that stays on the same origin (`sustainablebtc.org`).
 - Use a plain `<a>` tag for **external** links — any href pointing to a different domain.
 - External links must always include `target="_blank"` and `rel="noopener noreferrer"`.
 

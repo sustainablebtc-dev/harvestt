@@ -50,8 +50,8 @@
     <div class="flex items-center gap-20">
 
       <!-- Logo -->
-      <a href="/" class="block h-6 w-[126px] shrink-0" aria-label="Harvestt home">
-        <img src="/logo.svg" alt="Harvestt" class="h-full w-full object-contain" />
+      <a href="/" class="block h-6 w-[126px] shrink-0" aria-label="Sustainable Bitcoin Protocol home">
+        <img src="/logo.svg" alt="Sustainable Bitcoin Protocol" class="h-full w-full object-contain" />
       </a>
 
       <!-- Nav Links -->

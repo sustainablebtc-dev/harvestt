@@ -17,7 +17,7 @@
       "category": "Regulatory",
       "date": "April 2025",
       "title": "MiCA Compliance and Energy Disclosure Requirements",
-      "body": "Under the EU's Markets in Crypto-Assets Regulation (MiCA) and emerging ADGM frameworks, mining operators must provide auditable energy source documentation. Harvestt's attestation protocol provides the compliance layer required for cross-border capital mobility.",
+      "body": "Under the EU's Markets in Crypto-Assets Regulation (MiCA) and emerging ADGM frameworks, mining operators must provide auditable energy source documentation. Sustainable Bitcoin Protocol's attestation protocol provides the compliance layer required for cross-border capital mobility.",
       "tags": ["MiCA", "ADGM", "Compliance"],
       "readTime": "6 min read",
       "href": "/research/mica-compliance-energy-disclosure"
@@ -26,7 +26,7 @@
       "category": "Infrastructure",
       "date": "April 2025",
       "title": "The Verification Gap in Bitcoin Energy Claims",
-      "body": "Over 70% of publicly listed mining operators make renewable energy claims without third-party verification. This disclosure gap represents a material risk for institutional investors and sovereign wealth allocators operating under fiduciary obligations. Harvestt closes this gap.",
+      "body": "Over 70% of publicly listed mining operators make renewable energy claims without third-party verification. This disclosure gap represents a material risk for institutional investors and sovereign wealth allocators operating under fiduciary obligations. Sustainable Bitcoin Protocol closes this gap.",
       "tags": ["Verification", "Risk", "Disclosure"],
       "readTime": "5 min read",
       "href": "/research/verification-gap-bitcoin-energy"

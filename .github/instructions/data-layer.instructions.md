@@ -133,13 +133,13 @@ export default function Navbar() {
 Each question is an H2. Answers are plain paragraphs. This maps directly to JSON-LD FAQ schema with no transformation overhead.
 
 ```md
-## What is Harvestt?
+## What is Sustainable Bitcoin Protocol?
 
-Harvestt is an institutional market infrastructure platform...
+Sustainable Bitcoin Protocol is an institutional market infrastructure platform...
 
-## Who does Harvestt serve?
+## Who does Sustainable Bitcoin Protocol serve?
 
-Harvestt serves institutional partners...
+Sustainable Bitcoin Protocol serves institutional partners...
 ```
 
 ## Future Extensions

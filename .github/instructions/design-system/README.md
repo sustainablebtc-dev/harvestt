@@ -1,4 +1,4 @@
-# Harvestt Design System
+# Sustainable Bitcoin Protocol Design System
 
 > Production-grade design language extracted from Figma: `FRYoDiBSYuje0Nk9fNedRp`  
 > Node reference: `5:1089` — Home Page (Full)  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-The Harvestt design system is an **institutional-grade, engineering-first design language** built for a financial infrastructure product targeting sovereign wealth funds, asset managers, and regulated capital allocators. Every decision prioritises trust, legibility, and systemic precision over decorative styling.
+The Sustainable Bitcoin Protocol design system is an **institutional-grade, engineering-first design language** built for a financial infrastructure product targeting sovereign wealth funds, asset managers, and regulated capital allocators. Every decision prioritises trust, legibility, and systemic precision over decorative styling.
 
 ---
 

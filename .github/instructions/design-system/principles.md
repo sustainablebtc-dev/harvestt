@@ -9,7 +9,7 @@
 
 **Institutional Minimalism.**
 
-The Harvestt visual language is built on restraint. Every element earns its presence by serving information. Decoration exists only where it signals structure (accent dividers) or status (colour-coded badges). The aesthetic target is a Bloomberg terminal crossed with a premium asset management firm — trusted, dense, and precise.
+The Sustainable Bitcoin Protocol visual language is built on restraint. Every element earns its presence by serving information. Decoration exists only where it signals structure (accent dividers) or status (colour-coded badges). The aesthetic target is a Bloomberg terminal crossed with a premium asset management firm — trusted, dense, and precise.
 
 | Principle | Implementation |
 |---|---|

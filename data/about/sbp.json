@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Sustainable Bitcoin Protocol (SBP) | Harvestt",
+    "title": "Sustainable Bitcoin Protocol (SBP) | Sustainable Bitcoin Protocol",
     "description": "Learn how Sustainable Bitcoin Protocol gives Bitcoin mining a verifiable clean-energy attestation layer for institutional capital and compliance teams.",
-    "ogTitle": "Sustainable Bitcoin Protocol (SBP) | Harvestt",
+    "ogTitle": "Sustainable Bitcoin Protocol (SBP) | Sustainable Bitcoin Protocol",
     "ogDescription": "Verification and attestation infrastructure designed to align Bitcoin mining with verified clean energy use and institutional disclosure requirements."
   },
   "hero": {
@@ -37,7 +37,7 @@
     "actions": [
       {
         "label": "EMAIL OUR TEAM",
-        "href": "mailto:hello@harvestt.com",
+        "href": "mailto:info@sustainablebtc.org",
         "variant": "primary"
       },
       {
@@ -65,7 +65,7 @@
       },
       {
         "src": "/hero-image.jpeg",
-        "alt": "Modern building exterior for Harvestt brand imagery"
+        "alt": "Modern building exterior for Sustainable Bitcoin Protocol brand imagery"
       }
     ]
   },
@@ -97,7 +97,7 @@
     "cards": [
       {
         "title": "Standardize disclosure",
-        "body": "Harvestt was built specifically to resolve this verification gap by providing a standardized, auditable, and cryptographically secured attestation framework."
+        "body": "Sustainable Bitcoin Protocol was built specifically to resolve this verification gap by providing a standardized, auditable, and cryptographically secured attestation framework."
       },
       {
         "title": "Preserve Bitcoin's fungibility",
@@ -112,7 +112,7 @@
   "proof": {
     "sectionLabel": "Trust & Proof",
     "heading": "Compact facts for diligence teams",
-    "intro": "Each proof point below is already reflected elsewhere in approved Harvestt material and is assembled here for route-specific review.",
+    "intro": "Each proof point below is already reflected elsewhere in approved Sustainable Bitcoin Protocol material and is assembled here for route-specific review.",
     "items": [
       {
         "value": "70%+",
@@ -128,7 +128,7 @@
       },
       {
         "value": "14.2 TWh",
-        "label": "energy verified across approved Harvestt materials"
+        "label": "energy verified across approved Sustainable Bitcoin Protocol materials"
       }
     ]
   },
@@ -164,7 +164,7 @@
         "number": "03",
         "title": "Enable",
         "subtitle": "Institutional Integration",
-        "body": "Attested energy records are packaged into structured data products that integrate with institutional compliance workflows, while Harvestt continues to build integrations across software, hardware, firmware, and pools.",
+        "body": "Attested energy records are packaged into structured data products that integrate with institutional compliance workflows, while Sustainable Bitcoin Protocol continues to build integrations across software, hardware, firmware, and pools.",
         "bullets": [
           "Compliance documentation",
           "API-first integration",

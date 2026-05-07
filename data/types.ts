@@ -48,7 +48,7 @@ export interface SocialLink {
   /** Platform name — e.g. "LinkedIn", "X", "GitHub" */
   platform: string
   href: string
-  /** Accessible label for screen readers — e.g. "Harvestt on LinkedIn" */
+  /** Accessible label for screen readers — e.g. "Sustainable Bitcoin Protocol on LinkedIn" */
   label: string
 }
 

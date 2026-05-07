@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Harvestt Design System — Tailwind Configuration
+ * Sustainable Bitcoin Protocol Design System — Tailwind Configuration
  *
  * This config is the engineering implementation of tokens defined in:
  *   .github/instructions/design-system/tokens.json

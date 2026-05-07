@@ -7,7 +7,7 @@
 
 ## System: Zero Radius
 
-**The Harvestt design system uses zero border radius everywhere.**
+**The Sustainable Bitcoin Protocol design system uses zero border radius everywhere.**
 
 Every container, button, card, badge, input, and table cell is **square-cornered**. This is a deliberate, non-negotiable design choice that communicates institutional precision and authority. Rounded corners are associated with consumer products — this system deliberately rejects that aesthetic.
 
