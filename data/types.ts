@@ -244,6 +244,19 @@ export interface ContactCTAData {
   email: string
   locations: ContactLocation[]
 }
+
+// ─── FAQs ───────────────────────────────────────────────────────────────────────
+
+export interface FAQ {
+  question: string
+  answer: string
+}
+
+export interface FAQsData {
+  title: string
+  faqs: FAQ[]
+}
+
 // Naming: use PascalCase, suffix with the domain (e.g. PricingTier, TeamMember).
 //
 // i18n: extend each interface with an optional `locale?: string` field when

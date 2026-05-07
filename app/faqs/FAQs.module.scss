@@ -1,0 +1,37 @@
+// ─── FAQs Section ───────────────────────────────────────────────────────────────
+
+.faqs {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  padding: var(--space-20) var(--space-6);
+
+  @media (min-width: 1024px) {
+    padding: var(--space-24) 0;
+  }
+}
+
+// ─── Container ──────────────────────────────────────────────────────────────────
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+// ─── Title ──────────────────────────────────────────────────────────────────────
+
+.title {
+  font-family: var(--font-geist);
+  font-size: var(--text-heading-2-size);
+  line-height: var(--text-heading-2-lh);
+  letter-spacing: var(--text-heading-2-ls);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-dark);
+  margin: 0 0 var(--space-20) 0;
+  text-align: center;
+
+  @media (max-width: 1023px) {
+    font-size: var(--text-heading-3-size);
+    line-height: var(--text-heading-3-lh);
+    margin-bottom: var(--space-16);
+  }
+}
