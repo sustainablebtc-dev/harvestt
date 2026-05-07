@@ -1,0 +1,527 @@
+@reference "tailwindcss";
+
+.page {
+  background-color: var(--color-bg-white);
+}
+
+.heroSection {
+  background-color: var(--color-bg-white);
+}
+
+.container {
+  max-width: var(--layout-sbp-content-width);
+  margin: 0 auto;
+  padding: var(--space-24) var(--space-4);
+
+  @media (min-width: 768px) {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: var(--space-20);
+    padding-right: var(--space-20);
+  }
+}
+
+.heroGrid {
+  display: grid;
+  gap: var(--space-8);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: var(--space-12);
+  }
+}
+
+.heroImagePanel,
+.heroContent,
+.heroIntro,
+.heroThesisBlock,
+.heroNarrative,
+.heroBody,
+.heroAside,
+.heroMediaStack,
+.pillarsGrid,
+.sectionShell,
+.sectionIntro,
+.overviewGrid,
+.proofGrid,
+.stepsList,
+.standardsGrid,
+.marketShell,
+.marketContent,
+.marketHighlights {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.heroImagePanel {
+  align-content: start;
+}
+
+.heroMediaStack {
+  gap: var(--space-4);
+}
+
+.heroImageFrame {
+  position: relative;
+  min-height: 360px;
+  border: 1px solid var(--color-border-default);
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    min-height: 560px;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 720px;
+  }
+}
+
+.heroImage {
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.heroImageRow {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.heroImageSecondaryFrame {
+  position: relative;
+  min-height: 180px;
+  border: 1px solid var(--color-border-default);
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    min-height: 220px;
+  }
+}
+
+.heroProofRail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--color-border-default);
+  border-left: 1px solid var(--color-border-default);
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.proofRailItem {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-right: 1px solid var(--color-border-default);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.section {
+  background-color: var(--color-bg-white);
+}
+
+.sectionMuted {
+  background-color: var(--color-bg-muted);
+}
+
+.sectionHeader {
+  display: grid;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+.sectionShell,
+.marketShell {
+  padding-bottom: var(--space-2);
+}
+
+.sectionShell,
+.marketShell {
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.sectionLabel,
+.cardLabel,
+.asideLabel {
+  font-size: var(--text-eyebrow-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--text-eyebrow-lh);
+  letter-spacing: var(--text-eyebrow-ls);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: var(--text-display-3-size);
+  line-height: var(--text-display-1-lh);
+  letter-spacing: var(--text-display-2-ls);
+  color: var(--color-text-dark);
+
+  @media (min-width: 768px) {
+    font-size: var(--text-display-2-size);
+    line-height: var(--text-display-2-lh);
+    letter-spacing: var(--text-display-2-ls);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--text-display-1-size);
+    line-height: var(--text-display-1-lh);
+    letter-spacing: var(--text-display-1-ls);
+  }
+}
+
+.accentLine {
+  width: var(--space-accent-line);
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.sectionTitle {
+  font-size: var(--text-heading-2-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-display-2-lh);
+  letter-spacing: var(--text-display-2-ls);
+  color: var(--color-text-dark);
+
+  @media (min-width: 768px) {
+    font-size: var(--text-display-2-size);
+  }
+}
+
+.heroLead {
+  color: var(--color-text-dark);
+}
+
+.heroLead,
+.cardBody,
+.sectionDescription,
+.heroSupportingText,
+.proofLabel,
+.marketLabel {
+  font-size: var(--text-body-lg-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--text-body-lg-lh);
+}
+
+.heroLead {
+  max-width: 640px;
+  color: var(--color-text-body);
+}
+
+.heroThesis {
+  font-size: var(--text-heading-3-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--text-heading-3-lh);
+  letter-spacing: var(--text-heading-3-ls);
+  color: var(--color-text-dark);
+}
+
+.heroSupportingText,
+.sectionDescription {
+  color: var(--color-text-secondary);
+  max-width: 720px;
+}
+
+.heroBody,
+.asideBody,
+.stepBullets {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.heroNarrative {
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(0, 1.1fr) minmax(var(--layout-sbp-aside-min-width), 0.8fr);
+    gap: var(--space-8);
+    align-items: start;
+  }
+}
+
+.heroBody p,
+.asideBody p,
+.cardBody,
+.sectionDescription {
+  color: var(--color-text-secondary);
+}
+
+.cardBody {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+}
+
+.heroAside,
+.pillarCard,
+.overviewCard,
+.proofCard,
+.stepCard,
+.standardCard,
+.marketCard {
+  border: 1px solid var(--color-border-default);
+  background-color: var(--color-bg-white);
+}
+
+.heroAside,
+.pillarCard,
+.overviewCard,
+.proofCard,
+.standardCard,
+.marketCard {
+  padding: var(--space-6);
+}
+
+.stepCard {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-6);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 88px minmax(0, 0.85fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.stepContent,
+.stepHeader,
+.cardHeader {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.stepNumberWrap {
+  padding-top: var(--space-1);
+}
+
+.stepNumber {
+  font-size: var(--text-display-2-size);
+  line-height: var(--text-display-2-lh);
+  letter-spacing: var(--text-display-2-ls);
+  color: var(--color-text-muted);
+}
+
+.stepBullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stepBullets li {
+  position: relative;
+  padding-left: var(--space-4);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+}
+
+.stepBullets li::before {
+  content: '';
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: var(--space-1);
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-4);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  min-height: 44px;
+  width: 100%;
+  padding: var(--space-17) var(--space-9);
+  font-size: var(--text-label-lg-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--text-label-lg-lh);
+  letter-spacing: var(--text-label-lg-ls);
+  transition:
+    opacity 0.15s ease,
+    border-color 0.15s ease;
+
+  @media (min-width: 768px) {
+    width: fit-content;
+  }
+}
+
+.primaryButton {
+  background-color: var(--color-bg-dark);
+  color: var(--color-bg-white);
+  border: 1px solid var(--color-bg-dark);
+}
+
+.secondaryButton {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border-default);
+}
+
+.primaryButton:hover {
+  opacity: 0.85;
+}
+
+.secondaryButton:hover {
+  opacity: 0.7;
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 2px solid var(--color-border-brand);
+  outline-offset: 2px;
+}
+
+.pillarsGrid {
+  margin-top: var(--space-8);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.overviewGrid,
+.proofGrid,
+.standardsGrid {
+  margin-top: var(--space-8);
+}
+
+.overviewGrid,
+.proofGrid,
+.standardsGrid {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.overviewGrid {
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.proofGrid {
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.cardTitle {
+  font-size: var(--text-heading-4-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--text-heading-4-lh);
+  letter-spacing: var(--text-heading-4-ls);
+  color: var(--color-text-dark);
+}
+
+.subsectionTitle {
+  font-size: var(--text-heading-4-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--text-heading-4-lh);
+  letter-spacing: var(--text-heading-4-ls);
+  color: var(--color-text-dark);
+}
+
+.proofValue {
+  font-size: var(--text-heading-2-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-heading-2-lh);
+  letter-spacing: var(--text-heading-2-ls);
+  color: var(--color-text-dark);
+}
+
+.proofLabel {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+}
+
+// Market Section — Editorial Layout
+.marketSection {
+  background-color: var(--color-bg-white);
+}
+
+.marketLayout {
+  display: grid;
+  gap: var(--space-16);
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+}
+
+.marketContent {
+  display: grid;
+  gap: var(--space-12);
+}
+
+.marketIntro {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.marketStats {
+  display: grid;
+  gap: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.marketStat {
+  display: grid;
+  gap: var(--space-2);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border-default);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.marketValue {
+  font-size: var(--text-display-2-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-display-2-lh);
+  letter-spacing: var(--text-display-2-ls);
+  color: var(--color-text-dark);
+}
+
+.marketStatLabel {
+  font-size: var(--text-heading-4-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--text-heading-4-lh);
+  letter-spacing: var(--text-heading-4-ls);
+  color: var(--color-text-dark);
+}
+
+.marketStatBody {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton {
+    transition: none;
+  }
+}

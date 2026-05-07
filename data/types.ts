@@ -257,6 +257,128 @@ export interface FAQsData {
   faqs: FAQ[]
 }
 
+// ─── About / SBP ───────────────────────────────────────────────────────────────
+
+export interface SBPHeroData {
+  sectionLabel: string
+  title: string
+  lead: string
+  body: string[]
+  asideLabel: string
+  asideBody: string[]
+  thesis: string
+  supportingText: string
+  proofRail: SBPProofItem[]
+  actions: SBPAction[]
+  image: SBPImage
+  imageOptions: SBPImage[]
+}
+
+export interface SBPPillar {
+  title: string
+  subtitle: string
+  body: string
+}
+
+export interface SBPPillarsData {
+  sectionLabel: string
+  heading: string
+  items: SBPPillar[]
+}
+
+export interface SBPMetadata {
+  title: string
+  description: string
+  ogTitle: string
+  ogDescription: string
+}
+
+export interface SBPAction {
+  label: string
+  href: string
+  variant: 'primary' | 'secondary'
+}
+
+export interface SBPImage {
+  src: string
+  alt: string
+}
+
+export interface SBPCard {
+  title: string
+  body: string
+}
+
+export interface SBPProofItem {
+  value: string
+  label: string
+}
+
+export interface SBPOverviewData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  cards: SBPCard[]
+}
+
+export interface SBPProofData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  items: SBPProofItem[]
+}
+
+export interface SBPProcessStep {
+  number: string
+  title: string
+  subtitle: string
+  body: string
+  bullets: string[]
+}
+
+export interface SBPOperatingModelData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  steps: SBPProcessStep[]
+}
+
+export interface SBPStandardItem {
+  title: string
+  body: string
+}
+
+export interface SBPStandardsData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  items: SBPStandardItem[]
+}
+
+export interface SBPMarketHighlight {
+  value: string
+  label: string
+  body: string
+}
+
+export interface SBPMarketData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  highlights: SBPMarketHighlight[]
+}
+
+export interface SBPPageData {
+  metadata: SBPMetadata
+  hero: SBPHeroData
+  pillars: SBPPillarsData
+  overview: SBPOverviewData
+  proof: SBPProofData
+  operatingModel: SBPOperatingModelData
+  standards: SBPStandardsData
+  market: SBPMarketData
+}
+
 // Naming: use PascalCase, suffix with the domain (e.g. PricingTier, TeamMember).
 //
 // i18n: extend each interface with an optional `locale?: string` field when
