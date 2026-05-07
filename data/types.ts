@@ -6,11 +6,18 @@
 
 // ─── Navigation ────────────────────────────────────────────────────────────────
 
+export interface DropdownItem {
+  label: string
+  href: string
+}
+
 export interface NavLink {
   label: string
   href: string
   /** When true, the item renders a dropdown indicator and expects children. */
   hasDropdown?: boolean
+  /** Optional dropdown items — present only when hasDropdown is true. */
+  children?: DropdownItem[]
 }
 
 export interface NavbarData {

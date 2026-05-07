@@ -48,6 +48,7 @@
 | `border-brand` | `#1b1b1b` | `hsl(0, 0%, 11%)` | Button borders, ghost CTA underlines |
 | `border-accent` | `#ff6e00` | `hsl(26, 100%, 50%)` | Section top-border accent (CTA section) |
 | `border-separator` | `#a3a3a3` | `hsl(0, 0%, 64%)` | Nav drop-shadow color |
+| `border-dropdown` | `#2563EB` | `hsl(217, 91%, 60%)` | Dropdown top border accent |
 
 ---
 
@@ -83,6 +84,7 @@ Add to `app/globals.scss` or a `:root` block:
   --color-border-brand:     #1b1b1b;
   --color-border-accent:    #ff6e00;
   --color-border-separator: #a3a3a3;
+  --color-border-dropdown:  #2563EB;
 }
 ```
 
@@ -119,6 +121,7 @@ colors: {
     brand:     '#1b1b1b',
     accent:    '#ff6e00',
     separator: '#a3a3a3',
+    dropdown:  '#2563EB',
   },
 }
 ```

@@ -8,7 +8,17 @@
     {
       "label": "About",
       "href": "/about",
-      "hasDropdown": true
+      "hasDropdown": true,
+      "children": [
+        {
+          "label": "About SBP",
+          "href": "/about/sbp"
+        },
+        {
+          "label": "Leadership",
+          "href": "/about/leadership"
+        }
+      ]
     },
     {
       "label": "Partners",
@@ -21,9 +31,19 @@
       "hasDropdown": false
     },
     {
-      "label": "News",
+      "label": "Learn",
       "href": "/news",
-      "hasDropdown": true
+      "hasDropdown": true,
+      "children": [
+        {
+          "label": "FAQs",
+          "href": "/faqs"
+        },
+        {
+          "label": "News",
+          "href": "/news"
+        }
+      ]
     }
   ],
   "login": {

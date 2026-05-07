@@ -159,6 +159,7 @@
   height: var(--hero-image-height);
   align-self: stretch;
   min-width: 0;
+  object-fit: contain;
 }
 
 .heroImg {

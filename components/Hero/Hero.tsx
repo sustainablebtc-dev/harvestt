@@ -35,19 +35,11 @@ export default function Hero() {
         {/* Right: image stack */}
         <div className={styles.heroImageWrap}>
           <Image
-            src="/hero-building-1.jpg"
+            src="/hero-image.jpg"
             alt="Modern institutional building"
             fill
             className={styles.heroImg}
             priority
-          />
-          <Image
-            src="/hero-building-2.jpg"
-            alt=""
-            fill
-            className={styles.heroImgOverlay}
-            priority
-            aria-hidden={true}
           />
         </div>
       </div>
