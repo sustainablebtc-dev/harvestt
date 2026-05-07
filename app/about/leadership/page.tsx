@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { Linkedin } from 'react-bootstrap-icons'
 import styles from './Leadership.module.scss'
 import leadershipDataRaw from '@/data/team/team.json'
-import type { LeadershipData } from '@/data/types'
+import type { LeadershipData, TeamMember } from '@/data/types'
 
 const leadershipData = leadershipDataRaw as LeadershipData
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   },
 }
 
-function TeamCard({ member }: { member: (typeof leadershipData.coreTeam)[0] }) {
+function TeamCard({ member }: { member: TeamMember }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
@@ -28,8 +29,21 @@ function TeamCard({ member }: { member: (typeof leadershipData.coreTeam)[0] }) {
         />
       </div>
       <div className={styles.cardContent}>
-        <h3 className={styles.name}>{member.name}</h3>
-        <p className={styles.title}>{member.title}</p>
+        <div className={styles.nameRow}>
+          <h3 className={styles.name}>{member.name}</h3>
+          {member.linkedin && (
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.linkedinLink}
+              aria-label={`${member.name} on LinkedIn`}
+            >
+              <Linkedin size={16} />
+            </a>
+          )}
+        </div>
+        <p className={styles.role}>{member.role}</p>
       </div>
     </div>
   )
@@ -43,12 +57,12 @@ export default function LeadershipPage() {
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
             <h1 id="core-team-heading" className={styles.sectionTitle}>
-              Core Team
+              Leadership
             </h1>
             <div className={styles.accentLine} aria-hidden="true" />
           </div>
           <div className={styles.grid}>
-            {leadershipData.coreTeam.map((member) => (
+            {leadershipData.team.map((member) => (
               <TeamCard key={member.name} member={member} />
             ))}
           </div>

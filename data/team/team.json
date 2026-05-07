@@ -5,73 +5,99 @@
     "ogTitle": "Leadership",
     "ogDescription": "Meet the institutional market experts and advisors leading Harvestt's mission to modernize energy commodity infrastructure."
   },
-  "coreTeam": [
+  "team": [
     {
       "name": "Brad van Voorhees",
-      "title": "Founder & CEO",
-      "image": "/team/brad.png"
+      "role": "Co-founder & CEO",
+      "previous": "VF Corporation",
+      "image": "/team/brad.png",
+      "linkedin": "https://www.linkedin.com/in/bvanvoorhees/"
     },
     {
       "name": "Matthew Twomey",
-      "title": "Co-Founder",
-      "image": "/team/matt.png"
+      "role": "Co-founder & Head of Institutional Adoption",
+      "previous": "Goldman Sachs, OSL, Deutsche Bank",
+      "image": "/team/matt.png",
+      "linkedin": "https://www.linkedin.com/in/matthew-twomey-32247028/"
     },
     {
       "name": "Elliot David",
-      "title": "Co-Founder",
-      "image": "/team/elliot.png"
+      "role": "Head of Climate Strategy & Partnerships",
+      "previous": "U.S. Department of Energy, Clinton Health Access Initiative, Schwarzman Scholars",
+      "image": "/team/elliot.png",
+      "linkedin": "https://www.linkedin.com/in/elliot-david-101/"
     },
     {
       "name": "John Lilic",
-      "title": "Co-Founder",
-      "image": "/team/john.png"
+      "role": "Senior Advisor & Board Member",
+      "previous": "Bitcoin center, Polygon, Consensys",
+      "image": "/team/john.png",
+      "linkedin": "https://www.linkedin.com/in/jlilic/"
+    },
+    {
+      "name": "Jessica Chen",
+      "role": "Research Analyst",
+      "previous": "Climate Asset Management",
+      "image": "/team/jessica.png",
+      "linkedin": null
+    },
+    {
+      "name": "Dragos Rizescu",
+      "role": "Head of Product",
+      "previous": "Consensys",
+      "image": "/team/dragos.png",
+      "linkedin": null
+    },
+    {
+      "name": "Adrian Sabau",
+      "role": "VP of Engineering",
+      "previous": "Consensys",
+      "image": "/team/adrian.png",
+      "linkedin": "https://www.linkedin.com/in/adriansabau/"
     }
   ],
   "advisors": [
     {
-      "name": "Desiree Rexach",
-      "title": "Advisor",
-      "image": "/team/jessica.png"
-    },
-    {
-      "name": "Dragos Rizescu",
-      "title": "Advisor",
-      "image": "/team/dragos.png"
-    },
-    {
-      "name": "Adrian Sabau",
-      "title": "Advisor",
-      "image": "/team/adrian.png"
-    },
-    {
       "name": "Ali Alnuaimi",
-      "title": "Advisor",
-      "image": "/team/ali.png"
+      "role": "Senior Advisor",
+      "previous": "Nawah Energy Company, Shafra",
+      "image": "/team/ali.png",
+      "linkedin": "https://www.linkedin.com/in/alialnuaimi/"
     },
     {
       "name": "Dr. Julia Nesheiwat",
-      "title": "Advisor",
-      "image": "/team/julia.png"
+      "role": "Advisor",
+      "previous": "Atlantic Council, TC Energy",
+      "image": "/team/julia.png",
+      "linkedin": "https://www.linkedin.com/in/dr-julia-nesheiwat-837b2122/"
     },
     {
       "name": "Emma Todd",
-      "title": "Advisor",
-      "image": "/team/ema.png"
+      "role": "Advisor",
+      "previous": "World Economic Forum, MMH",
+      "image": "/team/ema.png",
+      "linkedin": "https://www.linkedin.com/in/emmatodd/"
     },
     {
       "name": "Natasha Barrientos",
-      "title": "Advisor",
-      "image": "/team/natasha.png"
+      "role": "Advisor",
+      "previous": "S&P Global, United Nations",
+      "image": "/team/natasha.png",
+      "linkedin": "https://www.linkedin.com/in/natashabarrientos/"
     },
     {
       "name": "Kunal Kanodia",
-      "title": "Advisor",
-      "image": "/team/kunal.png"
+      "role": "Senior Advisor",
+      "previous": "Hashkey, MUFG",
+      "image": "/team/kunal.png",
+      "linkedin": "https://www.linkedin.com/in/kunal-kanodia/"
     },
     {
       "name": "David Carlin",
-      "title": "Advisor",
-      "image": "/team/david.png"
+      "role": "Advisor",
+      "previous": "UN Environment Programme",
+      "image": "/team/david.png",
+      "linkedin": "https://www.linkedin.com/in/david-carlin7/"
     }
   ]
 }

@@ -383,8 +383,10 @@ export interface SBPPageData {
 
 export interface TeamMember {
   name: string
-  title: string
+  role: string
+  previous: string
   image: string
+  linkedin: string | null
 }
 
 export interface LeadershipMetadata {
@@ -396,7 +398,7 @@ export interface LeadershipMetadata {
 
 export interface LeadershipData {
   metadata: LeadershipMetadata
-  coreTeam: TeamMember[]
+  team: TeamMember[]
   advisors: TeamMember[]
 }
 
