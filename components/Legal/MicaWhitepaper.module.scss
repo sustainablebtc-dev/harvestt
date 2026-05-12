@@ -1,0 +1,243 @@
+@reference "tailwindcss";
+
+// Error state color tokens
+$error-color: #dc2626;
+$error-bg: rgba(220, 38, 38, 0.05);
+$error-border: rgba(220, 38, 38, 0.2);
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Wrapper and Layout
+// ─────────────────────────────────────────────────────────────────────────────
+
+.wrapper {
+  width: 100%;
+  background-color: var(--color-bg-white);
+}
+
+.container {
+  @apply px-4 mx-auto;
+  max-width: 1100px;
+
+  @media (min-width: 768px) {
+    @apply px-6;
+  }
+
+  @media (min-width: 1024px) {
+    @apply px-20;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Hero Section
+// ─────────────────────────────────────────────────────────────────────────────
+
+.hero {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  padding: var(--space-16) 0 var(--space-24) 0;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: var(--space-20) 0 var(--space-24) 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: var(--space-24) 0 var(--space-24) 0;
+  }
+}
+
+.heroContent {
+  @apply flex flex-col items-center gap-6;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-display-3-size);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--color-text-dark);
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: var(--text-display-2-size);
+    letter-spacing: -1px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--text-display-1-size);
+    line-height: var(--text-display-1-lh);
+    letter-spacing: var(--text-display-1-ls);
+  }
+}
+
+.notification {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-body-lg-lh);
+  color: var(--color-text-body);
+  margin: 0;
+  max-width: 750px;
+
+  @media (min-width: 768px) {
+    font-size: var(--text-body-lg-size);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Download Link
+// ─────────────────────────────────────────────────────────────────────────────
+
+.downloadLink {
+  @apply inline-flex items-center gap-2;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-brand);
+  background-color: transparent;
+  color: var(--color-brand);
+  text-decoration: none;
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  transition: opacity 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  i {
+    font-size: 14px;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Content Section
+// ─────────────────────────────────────────────────────────────────────────────
+
+.contentSection {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  padding: 0 0 var(--space-24) 0;
+
+  @media (min-width: 768px) {
+    padding: 0 0 var(--space-24) 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 0 var(--space-24) 0;
+  }
+}
+
+.viewerWrapper {
+  @apply flex flex-col items-center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.whitepaperContent {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  overflow-x: auto;
+  border: 1px solid var(--color-border-default);
+  padding: var(--space-2);
+
+  @media (min-width: 768px) {
+    padding: var(--space-3);
+  }
+
+  @media (min-width: 1024px) {
+    padding: var(--space-4);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Loading State
+// ─────────────────────────────────────────────────────────────────────────────
+
+.loadingState {
+  width: 100%;
+  padding: var(--space-12) var(--space-6);
+  text-align: center;
+
+  p {
+    font-family: var(--font-geist);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--text-body-lg-size);
+    line-height: var(--text-body-lg-lh);
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: var(--space-16) var(--space-8);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Error State
+// ─────────────────────────────────────────────────────────────────────────────
+
+.errorState {
+  width: 100%;
+  padding: var(--space-6) var(--space-6);
+  background-color: $error-bg;
+  border: 1px solid $error-border;
+  margin-bottom: var(--space-6);
+
+  p {
+    font-family: var(--font-geist);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--text-body-lg-size);
+    line-height: var(--text-body-lg-lh);
+    color: $error-color;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: var(--space-4);
+    }
+
+    strong {
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: var(--space-8) var(--space-8);
+  }
+}
+
+.errorFallback {
+  font-size: var(--text-body-sm-size) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Accessibility
+// ─────────────────────────────────────────────────────────────────────────────
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

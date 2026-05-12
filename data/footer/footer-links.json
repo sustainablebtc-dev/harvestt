@@ -29,7 +29,8 @@
       { "label": "Cookie Policy", "href": "#" },
       { "label": "Regulatory Disclosures", "href": "#" },
       { "label": "AML Policy", "href": "#" },
-      { "label": "Whistleblower Policy", "href": "#" }
+      { "label": "Whistleblower Policy", "href": "#" },
+      { "label": "MiCA Whitepaper", "href": "/legal/mica-whitepaper" }
     ]
   }
 ]
