@@ -170,7 +170,7 @@ The cards sit in a flex row with 1px vertical dividers. Dividers are NOT borders
     </div>
     <!-- Status badge: Monitoring -->
     <span class="inline-flex items-center justify-center px-2 py-1 bg-bg-muted font-geist font-medium text-[11px] text-text-muted tracking-[0.5px] uppercase leading-[15px] rounded-none">
-      Monitoring
+      Compliant
     </span>
   </div>
 
@@ -180,13 +180,10 @@ The cards sit in a flex row with 1px vertical dividers. Dividers are NOT borders
       <p class="font-geist font-semibold text-[14px] text-black leading-[1.2] tracking-[-0.17px] whitespace-nowrap">
         SEC Digital Asset Framework
       </p>
-      <p class="font-geist font-normal text-[12px] text-text-muted leading-[1.4] whitespace-nowrap">
-        Attestation documentation aligned
-      </p>
     </div>
     <!-- Status badge: Compliant -->
     <span class="inline-flex items-center justify-center px-2 py-1 bg-success-bg font-geist font-medium text-[11px] text-success tracking-[0.5px] uppercase leading-[15px] rounded-none">
-      Compliant
+      Monitoring
     </span>
   </div>
 
