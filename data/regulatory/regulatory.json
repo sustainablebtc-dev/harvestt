@@ -7,8 +7,8 @@
   ],
   "panelHeading": "Regulatory Alignment Status",
   "items": [
-    { "name": "EU MiCA", "description": "Energy disclosure provisions under review", "badge": "MONITORING", "badgeVariant": "monitoring" },
-    { "name": "SEC Digital Asset Framework", "description": "Attestation documentation aligned", "badge": "COMPLIANT", "badgeVariant": "compliant" },
+    { "name": "EU MiCA", "description": "Energy disclosure provisions under review", "badge": "COMPLIANT", "badgeVariant": "compliant" },
+    { "name": "SEC Digital Asset Framework", "description": "", "badge": "MONITORING", "badgeVariant": "monitoring" },
     { "name": "FSRA ADGM", "description": "Category 3C Virtual Asset License", "badge": "LICENSED", "badgeVariant": "licensed" },
     { "name": "ISO 14064", "description": "GHG verification standard", "badge": "ALIGNED", "badgeVariant": "aligned" }
   ],
