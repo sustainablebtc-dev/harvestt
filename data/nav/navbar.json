@@ -32,7 +32,7 @@
     },
     {
       "label": "Learn",
-      "href": "/news",
+      "href": "/learn/news",
       "hasDropdown": true,
       "children": [
         {
@@ -41,7 +41,7 @@
         },
         {
           "label": "News",
-          "href": "/news"
+          "href": "/learn/news"
         },
         {
           "label": "MiCA Whitepaper",
