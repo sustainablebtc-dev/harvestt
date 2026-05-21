@@ -299,6 +299,40 @@ export interface SBPAction {
   variant: 'primary' | 'secondary'
 }
 
+// ─── Contact Us ─────────────────────────────────────────────────────────────────
+
+export interface ContactFormFieldLabels {
+  fullName: string
+  contactNumber: string
+  email: string
+  companyName: string
+  service: string
+  message: string
+}
+
+export interface ContactFormService {
+  label: string
+  value: string
+}
+
+export interface ContactData {
+  metadata: {
+    title: string
+    description: string
+  }
+  hero: {
+    title: string
+    subtitle: string
+  }
+  form: {
+    labels: ContactFormFieldLabels
+    placeholders: ContactFormFieldLabels
+    services: ContactFormService[]
+    submitButton: string
+    successMessage: string
+  }
+}
+
 export interface SBPImage {
   src: string
   alt: string

@@ -1,0 +1,111 @@
+@reference "tailwindcss";
+
+$color-error: #ef4444;
+
+.contactForm {
+   @apply flex flex-col gap-[var(--space-6)];
+
+   .section {
+      @apply flex flex-col gap-[var(--space-3)];
+      border: none;
+      padding: 0;
+      margin: var(--space-2) 0;
+
+      .sectionTitle {
+         @apply mb-[var(--space-2)];
+
+         h3 {
+            font-size: var(--text-heading-4-size);
+            font-weight: var(--font-weight-semibold);            
+            text-transform: none;
+         }
+      }
+   }
+
+   .grid {
+      @apply grid grid-cols-1 md:grid-cols-2 gap-[var(--space-3)];
+   }
+
+   .formGroup {
+      @apply flex flex-col gap-[var(--space-1)];
+
+      label {
+         @apply text-[var(--text-body-sm-size)] font-medium text-[var(--color-text-primary)];
+         text-transform: none;
+      }
+
+      input,
+      select,
+      textarea {
+         @apply py-3 px-4 border border-[var(--color-border-default)] bg-transparent text-[var(--color-text-primary)] transition-all duration-200 outline-none rounded-none;
+         @apply text-[var(--text-body-lg-size)] font-[var(--font-geist)];
+
+         &:focus {
+            @apply border-[var(--color-border-brand)] ring-0;
+         }
+
+         &::placeholder {
+            @apply text-[var(--color-text-muted)];
+         }
+
+         &.inputError {
+            border-color: $color-error;
+         }
+      }
+
+      textarea {
+         @apply min-h-[120px] resize-none;
+      }
+
+      .error {
+         @apply text-[var(--text-body-xs-size)] mt-[var(--space-1)] min-h-[var(--text-body-xs-lh)];
+         color: $color-error;
+      }
+   }
+
+   .submitBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      white-space: nowrap;
+      background-color: var(--color-bg-dark);
+      color: var(--color-bg-white);
+      font-family: var(--font-geist);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--text-label-lg-size);
+      letter-spacing: var(--text-label-lg-ls);
+      text-transform: uppercase;
+      padding: var(--space-17) var(--space-9);
+      border: none;
+      border-radius: 0;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+
+      &:hover {
+         opacity: 0.8;
+      }
+
+      &:hover:not(:disabled) {
+         @apply opacity-80;
+      }
+
+      &:disabled {
+         @apply opacity-50 cursor-not-allowed;
+      }
+
+      i {
+         @apply text-lg;
+      }
+   }
+
+   .successMessage {
+      @apply p-4 bg-[var(--color-success-bg)] text-[var(--color-success)] text-[var(--text-body-sm-size)] font-medium text-center;
+   }
+
+   .formError {
+      @apply mt-[var(--space-4)] text-[var(--text-body-sm-size)];
+      color: $color-error;
+   }
+}

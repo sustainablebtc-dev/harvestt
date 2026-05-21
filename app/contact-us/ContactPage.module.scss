@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+.contactPage {
+   @apply min-h-screen bg-[var(--color-bg-white)] pt-[var(--space-20)] pb-[var(--space-20)];
+
+   .container {
+      @apply max-w-[var(--contact-content-width)] mx-auto px-[var(--space-6)];
+   }
+
+   .header {
+      @apply mb-[var(--space-8)] text-center;
+
+      .title {
+         font-family: var(--font-geist);
+         font-size: var(--text-heading-2-size);
+         line-height: var(--text-heading-2-lh);
+         letter-spacing: var(--text-heading-2-ls);
+         font-weight: var(--font-weight-bold);
+         color: var(--color-text-dark);
+         margin: 0 0 var(--space-4) 0;
+         text-align: center;
+
+         @media (max-width: 1023px) {
+            font-size: var(--text-heading-3-size);
+            line-height: var(--text-heading-3-lh);
+            margin-bottom: var(--space-4);
+         }
+      }
+
+      .subtitle {
+         @apply text-[var(--text-body-lg-size)] leading-[var(--text-body-lg-lh)] text-[var(--color-text-secondary)];
+         margin: 0 0 var(--space-10) 0;
+      }
+   }
+
+   .grid {
+      @apply flex flex-col gap-[var(--space-6)];
+   }
+}
