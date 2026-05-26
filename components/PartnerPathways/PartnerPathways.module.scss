@@ -118,6 +118,7 @@
   color: var(--color-text-body);
   cursor: pointer;
   transition: border-color 150ms ease, color 150ms ease;
+  // Pulls tab border flush with .tabList border-bottom
   margin-bottom: calc(var(--space-4) * -1);
 
   @media (prefers-reduced-motion: reduce) {
@@ -161,8 +162,7 @@
   font-weight: var(--font-weight-regular);
   line-height: var(--text-body-lg-lh);
   color: var(--color-text-body);
-  margin: 0;
-  margin-bottom: var(--space-4);
+  margin: 0 0 var(--space-4) 0;
 }
 
 // ─── Benefits Grid ────────────────────────────────────────────────────────────
@@ -208,8 +208,7 @@
   line-height: var(--text-heading-4-lh);
   letter-spacing: var(--text-heading-4-ls);
   color: var(--color-text-dark);
-  margin: 0;
-  margin-bottom: var(--space-2);
+  margin: 0 0 var(--space-2) 0;
 }
 
 // ─── Key Points List ──────────────────────────────────────────────────────────
