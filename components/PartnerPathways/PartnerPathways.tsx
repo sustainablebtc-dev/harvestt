@@ -13,9 +13,10 @@ export default function PartnerPathways({ data }: PartnerPathwaysProps) {
 
   const activeTab = data.tabs.find(tab => tab.id === activeTabId)
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>, tabId: string) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault()
+      setActiveTabId(tabId)
     }
   }
 
@@ -43,7 +44,7 @@ export default function PartnerPathways({ data }: PartnerPathwaysProps) {
                 aria-selected={activeTabId === tab.id}
                 aria-controls={`panel-${tab.id}`}
                 onClick={() => setActiveTabId(tab.id)}
-                onKeyDown={handleKeyDown}
+                onKeyDown={(e) => handleKeyDown(e, tab.id)}
               >
                 {tab.label}
               </button>
@@ -59,8 +60,8 @@ export default function PartnerPathways({ data }: PartnerPathwaysProps) {
                   <div key={benefit.title} className={styles.benefitCard}>
                     <h3 className={styles.benefitTitle}>{benefit.title}</h3>
                     <ul className={styles.keyPointsList}>
-                      {benefit.keyPoints.map((point, index) => (
-                        <li key={index} className={styles.keyPoint}>
+                      {benefit.keyPoints.map((point) => (
+                        <li key={point} className={styles.keyPoint}>
                           {point}
                         </li>
                       ))}
