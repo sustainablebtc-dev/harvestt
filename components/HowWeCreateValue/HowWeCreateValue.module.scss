@@ -119,7 +119,7 @@
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-8);
   }
 }
@@ -148,14 +148,6 @@
 
   @media (prefers-reduced-motion: reduce) {
     transition: none;
-  }
-}
-
-// ─── First Card Asymmetrical Span ─────────────────────────────────────────────
-
-.card:first-child {
-  @media (min-width: 1024px) {
-    grid-column: span 2;
   }
 }
 
