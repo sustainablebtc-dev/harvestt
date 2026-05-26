@@ -1,0 +1,157 @@
+@reference "tailwindcss";
+
+// ─── Figure Container ──────────────────────────────────────────────────────────
+
+.diagramFigure {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+
+  // Hide SVG diagram on mobile — replaced by .mobileSummary below
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+// ─── Mobile Summary (shown only on mobile in place of the SVG diagram) ─────────
+
+.mobileSummary {
+  display: none;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
+
+.mobileSummaryCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border-default);
+  border-left: 3px solid var(--color-text-muted);
+  background-color: var(--color-bg-muted);
+}
+
+.mobileSummaryTitle {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.mobileSummaryBody {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+// ─── SVG ──────────────────────────────────────────────────────────────────────
+
+.svg {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+
+  // Enforce minimum readable height on small screens
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
+}
+
+// ─── Node Groups ──────────────────────────────────────────────────────────────
+
+.node {
+  // Each node group — allows future hover treatment
+}
+
+.nodeCircle {
+  fill: var(--color-bg-white);
+  stroke: var(--color-border-default);
+  stroke-width: 1.5;
+}
+
+// ─── Node Icons ───────────────────────────────────────────────────────────────
+
+.nodeIcon {
+  color: var(--color-text-muted);
+}
+
+.nodeIconCenter {
+  // Center node (SBP) gets slightly stronger icon color
+  color: var(--color-text-secondary);
+}
+
+// ─── Node Labels ──────────────────────────────────────────────────────────────
+
+.nodeLabel {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-medium);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  fill: var(--color-text-secondary);
+}
+
+.nodeLabelCenter {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  fill: var(--color-text-primary);
+}
+
+// ─── Flow Lines ───────────────────────────────────────────────────────────────
+
+.flowForward {
+  // Forward flow — solid, primary direction
+}
+
+.flowReturn {
+  // Return flow — dashed, secondary direction
+}
+
+// ─── Flow Labels ──────────────────────────────────────────────────────────────
+
+.flowLabel {
+  font-family: var(--font-geist);
+  font-size: 9px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--color-text-muted);
+}
+
+.flowLabelReturn {
+  font-family: var(--font-geist);
+  font-size: 9px;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  fill: var(--color-text-muted);
+}
+
+// ─── Accessible Caption ────────────────────────────────────────────────────────
+
+.caption {
+  // Visually hidden — available to screen readers only
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

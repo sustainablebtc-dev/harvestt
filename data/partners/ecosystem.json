@@ -1,0 +1,34 @@
+{
+  "sectionLabel": "The Network",
+  "heading": "Three Principals. One Standard. Shared Credibility.",
+  "intro": "Capital requires proof, not promises. SBP sits at the intersection of energy disclosure mandates and mining infrastructure — converting compliance requirements into structured access.",
+  "columns": [
+    {
+      "title": "Mining Partners",
+      "intro": "Verified energy credentials convert clean energy investment into auditable, institution-ready proof.",
+      "bullets": [
+        "[Institutional credibility: SBP verification vs. self-reported claims]",
+        "[Capital access: verified status unlocks ESG-mandated allocator pools]",
+        "[Competitive edge: energy credentials as a long-term capital differentiator]"
+      ]
+    },
+    {
+      "title": "Sustainable BTC",
+      "intro": "SBP verifies and attests — neutral, cryptographically anchored, permanently auditable.",
+      "bullets": [
+        "[Attestation layer: cryptographic anchoring and ISO-aligned records]",
+        "[Protocol neutrality: standards-aligned infrastructure, not an advocate]",
+        "[Compliance-ready data: audit trails that plug into institutional workflows]"
+      ]
+    },
+    {
+      "title": "Investment Partners",
+      "intro": "Disclosure mandates no longer block exposure — SBP converts compliance constraints into structured access.",
+      "bullets": [
+        "[ESG compatibility: verified mining satisfies cross-jurisdiction disclosure requirements]",
+        "[Diligence-grade documentation: ISO-aligned records for reporting and filings]",
+        "[Governance confidence: third-party auditing and cryptographic anchoring for investment committees]"
+      ]
+    }
+  ]
+}

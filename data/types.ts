@@ -429,6 +429,21 @@ export interface PartnersHeroData {
   ecosystemNodes: EcosystemNode[]
 }
 
+// ─── Partners Ecosystem ──────────────────────────────────────────────────────────
+
+export interface EcosystemColumn {
+  title: string
+  intro: string
+  bullets: string[]
+}
+
+export interface PartnersEcosystemData {
+  sectionLabel?: string
+  heading: string
+  intro: string
+  columns: EcosystemColumn[]
+}
+
 // ─── Leadership ──────────────────────────────────────────────────────────────────
 
 export interface TeamMember {
