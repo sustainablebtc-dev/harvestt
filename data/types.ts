@@ -125,6 +125,21 @@ export interface MarketInsightsData {
   articles: ArticleCard[]
 }
 
+// ─── How We Create Value ────────────────────────────────────────────────────
+
+export interface ValueCard {
+  title: string
+  description: string
+  supportingStatement: string
+}
+
+export interface HowWeCreateValueData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  cards: ValueCard[]
+}
+
 // ─── Future Extensions ──────────────────────────────────────────────────────────
 //
 // When adding new data files, define their interfaces here first.
