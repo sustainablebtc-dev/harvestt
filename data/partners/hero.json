@@ -1,0 +1,27 @@
+{
+  "eyebrow": "Strategic Partnerships",
+  "headline": "Institutional Capital For Sustainable Bitcoin Mining",
+  "body": "Sustainable BTC bridges Bitcoin mining operations and institutional capital. We connect renewable-powered mining infrastructure with compliant investors through a trust layer enabling transparent energy verification, institutional-grade governance, and proven environmental impact at scale.",
+  "primaryCta": {
+    "label": "Start a Partnership",
+    "href": "/contact?intent=partnership"
+  },
+  "secondaryCta": {
+    "label": "Learn About SBP",
+    "href": "/about/sbp"
+  },
+  "ecosystemNodes": [
+    {
+      "label": "Mining Operators",
+      "description": "Leading Bitcoin mining operations powered by renewable energy"
+    },
+    {
+      "label": "Sustainable BTC",
+      "description": "Trust layer enabling transparent energy verification and attestation"
+    },
+    {
+      "label": "Institutional Capital",
+      "description": "Compliant allocators accessing Bitcoin through verified sustainable sources"
+    }
+  ]
+}

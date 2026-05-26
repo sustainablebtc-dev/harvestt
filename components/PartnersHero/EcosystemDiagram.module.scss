@@ -1,0 +1,101 @@
+@reference "tailwindcss";
+
+// ─── Diagram Container ────────────────────────────────────────────────────────
+
+.diagram {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+// ─── SVG Styling ──────────────────────────────────────────────────────────────
+
+.svg {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  min-height: 200px;
+
+  @media (max-width: 768px) {
+    min-height: 150px;
+  }
+}
+
+// ─── Nodes ────────────────────────────────────────────────────────────────────
+
+.nodesGroup {
+  // Group for SVG nodes
+}
+
+.node {
+  fill: var(--color-bg-white);
+  stroke: var(--color-border-default);
+  stroke-width: 2;
+  transition: all 0.3s ease;
+}
+
+.nodeLabel {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-body-lg-size);
+  fill: var(--color-text-dark);
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    font-size: var(--text-body-sm-size);
+  }
+}
+
+// ─── Arrows ───────────────────────────────────────────────────────────────────
+
+.arrowsGroup {
+  // Group for SVG arrows
+}
+
+.arrow {
+  stroke: var(--color-border-default);
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.arrowhead {
+  fill: var(--color-border-default);
+  transition: fill 0.3s ease;
+}
+
+// ─── Descriptions (Accessible Text) ───────────────────────────────────────────
+
+.descriptions {
+  @apply flex flex-col gap-8;
+  width: 100%;
+  max-width: 1000px;
+
+  @media (min-width: 768px) {
+    @apply flex-row;
+    @apply gap-6;
+  }
+}
+
+.description {
+  @apply flex-1 text-center;
+}
+
+.nodeLabelText {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-heading-4-size);
+  line-height: var(--text-heading-4-lh);
+  color: var(--color-text-dark);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.nodeDescription {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-secondary);
+  margin: 0;
+}

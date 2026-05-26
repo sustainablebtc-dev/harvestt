@@ -1,0 +1,176 @@
+@reference "tailwindcss";
+
+// ─── Hero Section ─────────────────────────────────────────────────────────────
+
+.hero {
+  background-color: var(--color-bg-white);
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-24) var(--space-20);
+  gap: var(--space-24);
+
+  @media (min-width: 1024px) {
+    gap: var(--space-20);
+    padding: var(--space-24) var(--space-20);
+  }
+}
+
+// ─── Content (Headline + Copy + CTAs) ──────────────────────────────────────────
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 768px;
+  text-align: center;
+  z-index: 1;
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.eyebrow {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-eyebrow-size);
+  line-height: var(--text-eyebrow-lh);
+  letter-spacing: var(--text-eyebrow-ls);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.headline {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-display-2-size);
+  line-height: var(--text-display-2-lh);
+  letter-spacing: var(--text-display-2-ls);
+  color: var(--color-text-dark);
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: var(--text-display-3-size);
+    /* Intentionally uses display-2 line-height for optical balance on mobile */
+  }
+}
+
+.accentLine {
+  width: var(--space-12);
+  height: 1px;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.bodyPrimary {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-hero-body-lh);
+  color: var(--color-text-body);
+  margin: 0;
+}
+
+.ctaRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+// ─── CTA Buttons ──────────────────────────────────────────────────────────────
+
+.ctaPrimary {
+  @apply inline-flex items-center justify-center font-medium rounded-none transition-all duration-200;
+  padding: var(--space-17) var(--space-9);
+  background-color: var(--color-brand);
+  color: var(--color-bg-white);
+  font-size: var(--text-body-lg-size);
+  line-height: 1.2;
+  text-decoration: none;
+  border: 1px solid var(--color-brand);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-dark);
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.ctaSecondary {
+  @apply inline-flex items-center justify-center gap-2 font-medium rounded-none transition-all duration-200;
+  padding: var(--space-17) var(--space-9);
+  background-color: transparent;
+  color: var(--color-text-dark);
+  font-size: var(--text-body-lg-size);
+  line-height: 1.2;
+  text-decoration: none;
+  border: 1px solid var(--color-border-default);
+  cursor: pointer;
+
+  i {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: var(--color-bg-muted);
+    border-color: var(--color-text-dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: var(--color-bg-muted);
+    border-color: var(--color-text-dark);
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+// ─── Diagram Wrapper ──────────────────────────────────────────────────────────
+
+.diagramWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

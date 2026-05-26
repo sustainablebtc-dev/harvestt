@@ -413,6 +413,22 @@ export interface SBPPageData {
   market: SBPMarketData
 }
 
+// ─── Partners ────────────────────────────────────────────────────────────────────
+
+export interface EcosystemNode {
+  label: string
+  description: string
+}
+
+export interface PartnersHeroData {
+  eyebrow: string
+  headline: string
+  body: string
+  primaryCta: { label: string; href: string }
+  secondaryCta: { label: string; href: string }
+  ecosystemNodes: EcosystemNode[]
+}
+
 // ─── Leadership ──────────────────────────────────────────────────────────────────
 
 export interface TeamMember {
