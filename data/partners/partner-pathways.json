@@ -1,0 +1,69 @@
+{
+  "sectionLabel": "[To be written by content agent]",
+  "heading": "[To be written by content agent]",
+  "intro": "[To be written by content agent]",
+  "tabs": [
+    {
+      "id": "mining-partners",
+      "label": "Mining Partners",
+      "description": "[To be written by content agent]",
+      "benefits": [
+        {
+          "title": "Growth Capital",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        },
+        {
+          "title": "Strategic Support",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        },
+        {
+          "title": "Long-Term Alignment",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investment-partners",
+      "label": "Investment Partners",
+      "description": "[To be written by content agent]",
+      "benefits": [
+        {
+          "title": "Infrastructure Exposure",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        },
+        {
+          "title": "Governance",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        },
+        {
+          "title": "Reporting & Transparency",
+          "keyPoints": [
+            "[To be written by content agent]",
+            "[To be written by content agent]",
+            "[To be written by content agent]"
+          ]
+        }
+      ]
+    }
+  ]
+}
