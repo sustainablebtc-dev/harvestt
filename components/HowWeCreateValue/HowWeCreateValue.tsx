@@ -23,14 +23,18 @@ export default function HowWeCreateValue({ data }: HowWeCreateValueProps) {
 
         {/* Cards Grid */}
         <div className={styles.cardsGrid}>
-          {data.cards.map((card, index) => (
-            <ValueCard
-              key={`${card.title}-${index}`}
-              title={card.title}
-              description={card.description}
-              supportingStatement={card.supportingStatement}
-            />
-          ))}
+          {data.cards.map((card, index) => {
+            const variant = card.title.toLowerCase() as 'access' | 'transparency' | 'sustainability'
+            return (
+              <ValueCard
+                key={`${card.title}-${index}`}
+                title={card.title}
+                description={card.description}
+                supportingStatement={card.supportingStatement}
+                variant={variant}
+              />
+            )
+          })}
         </div>
       </div>
     </section>
