@@ -140,6 +140,27 @@ export interface HowWeCreateValueData {
   cards: ValueCard[]
 }
 
+// ─── Partner Pathways ───────────────────────────────────────────────────────
+
+export interface TabContent {
+  title: string
+  keyPoints: string[]
+}
+
+export interface PartnerTab {
+  id: string
+  label: string
+  description: string
+  benefits: TabContent[]
+}
+
+export interface PartnerPathwaysData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  tabs: PartnerTab[]
+}
+
 // ─── Future Extensions ──────────────────────────────────────────────────────────
 //
 // When adding new data files, define their interfaces here first.
