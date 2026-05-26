@@ -1,0 +1,22 @@
+{
+  "sectionLabel": "Our Value Proposition",
+  "heading": "How We Create Value",
+  "intro": "Three pillars that drive institutional confidence and sustainable growth.",
+  "cards": [
+    {
+      "title": "Access",
+      "description": "Enable institutional capital and mining operators to connect through verified infrastructure, removing friction from sustainable Bitcoin deployment.",
+      "supportingStatement": "Capital flows to credibility"
+    },
+    {
+      "title": "Transparency",
+      "description": "Provide cryptographic anchoring and audit-ready records that satisfy institutional disclosure mandates and compliance requirements.",
+      "supportingStatement": "Trust through verification"
+    },
+    {
+      "title": "Sustainability",
+      "description": "Convert renewable energy commitments into auditable proof, creating a long-term competitive advantage for partners and institutional credibility.",
+      "supportingStatement": "Impact at scale"
+    }
+  ]
+}
