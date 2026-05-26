@@ -1,35 +1,35 @@
 {
-  "sectionLabel": "[To be written by content agent]",
-  "heading": "[To be written by content agent]",
-  "intro": "[To be written by content agent]",
+  "sectionLabel": "Partnership Models",
+  "heading": "Pathways Built for Your Role",
+  "intro": "Tailored partnership structures that deliver institutional-grade capital access, transparency, and long-term alignment for mining operators and institutional investors.",
   "tabs": [
     {
       "id": "mining-partners",
       "label": "Mining Partners",
-      "description": "[To be written by content agent]",
+      "description": "Access institutional capital and strategic support designed for renewable-powered mining operations. Harvestt connects you with compliant investors, provides operational governance framework, and anchors your sustainability credentials through cryptographic verification.",
       "benefits": [
         {
           "title": "Growth Capital",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Direct access to institutional capital allocators vetted for regulatory compliance and long-term commitment",
+            "Flexible funding structures aligned to mining operation lifecycle and infrastructure expansion timelines",
+            "Reduced cost of capital through verified sustainability credentials and transparent energy attestation"
           ]
         },
         {
           "title": "Strategic Support",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Operational governance framework ensuring compliance with investor disclosure mandates and ESG standards",
+            "Real-time compliance reporting through cryptographic anchoring and audit-ready documentation",
+            "Network access to institutional partners, equipment suppliers, and energy providers in the sustainable mining ecosystem"
           ]
         },
         {
           "title": "Long-Term Alignment",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Fixed partnership commitments reducing counterparty risk and market volatility exposure",
+            "Sustainable energy verification creates durable competitive advantage in institutional markets",
+            "Shared accountability framework aligning operational performance with investor impact theses"
           ]
         }
       ]
@@ -37,30 +37,30 @@
     {
       "id": "investment-partners",
       "label": "Investment Partners",
-      "description": "[To be written by content agent]",
+      "description": "Gain institutional-grade exposure to verified Bitcoin mining infrastructure powered by renewable energy. Harvestt provides cryptographic transparency, governance safeguards, and audit-ready reporting that satisfy regulatory mandates and institutional disclosure requirements.",
       "benefits": [
         {
           "title": "Infrastructure Exposure",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Access to Bitcoin mining operations with 3+ years verified renewable energy deployment and operational track record",
+            "Diversified portfolio access to multiple mining operators through single institutional relationship",
+            "Infrastructure-level returns with transparent energy attestation reducing regulatory and reputational risk"
           ]
         },
         {
           "title": "Governance",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Board-level oversight and quarterly performance reporting aligned to institutional investor standards",
+            "Cryptographic verification of all capital flows, operational metrics, and sustainability claims",
+            "Compliance-ready documentation meeting SEC, ESG, and international regulatory disclosure requirements"
           ]
         },
         {
           "title": "Reporting & Transparency",
           "keyPoints": [
-            "[To be written by content agent]",
-            "[To be written by content agent]",
-            "[To be written by content agent]"
+            "Real-time audit-ready dashboards with energy source verification and carbon impact measurement",
+            "Standardized reporting aligned to TCFD, SASB, and institutional impact measurement frameworks",
+            "Cryptographic anchoring of renewable energy certificates creating immutable proof of sustainable deployment"
           ]
         }
       ]
