@@ -11,35 +11,35 @@ const footerConfig = footerConfigRaw as FooterConfig;
 
 export default function Footer() {
   return (
-    <footer>
-      {/* —— Contact Us —— */}
+    <footer className={styles.footer}>
+      {/* ──────── Contact CTA ──────── */}
       <ContactCTA />
 
-      {/* ── FooterMain ── */}
-      <div className={styles.footerMain}>
+      {/* ──────── Main Content ──────── */}
+      <section className={styles.footerMain} aria-label="Footer main content">
         <div className={styles.footerMainInner}>
-          {/* Left column */}
-          <div className={styles.leftCol}>
-            <img src="/logo-light.svg" alt="Sustainable Bitcoin Protocol" width={126} height={24} />
+          {/* Left column: branding, office, social */}
+          <section className={styles.brandingZone} aria-label="Company information">
+            <img src="/logo-light.svg" alt="Sustainable Bitcoin Protocol logo" width={126} height={24} />
 
             <p className={styles.tagline}>{footerConfig.tagline}</p>
 
             <div className={styles.officeBlock}>
-              <span className={styles.blockLabel}>
+              <h3 className={styles.blockLabel}>
                 {footerConfig.registeredOffice.label}
-              </span>
-              <div className={styles.addressLines}>
+              </h3>
+              <address className={styles.addressLines}>
                 {footerConfig.registeredOffice.lines.map((line) => (
                   <span key={line} className={styles.addressLine}>
                     {line}
                   </span>
                 ))}
-              </div>
+              </address>
             </div>
 
             <div className={styles.socialBlock}>
-              <span className={styles.blockLabel}>Social</span>
-              <ul className={styles.socialList}>
+              <h3 className={styles.blockLabel}>Follow</h3>
+              <ul className={styles.socialList} role="list">
                 {social.map((s) => (
                   <li key={s.platform}>
                     <a
@@ -55,14 +55,14 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-          </div>
+          </section>
 
-          {/* Right column — link groups */}
-          <nav aria-label="Footer navigation" className={styles.rightCol}>
+          {/* Right column: link groups */}
+          <nav aria-label="Footer navigation" className={styles.navigationZone}>
             {footerLinks.map((group) => (
-              <div key={group.heading} className={styles.linkGroup}>
-                <span className={styles.groupHeading}>{group.heading}</span>
-                <ul className={styles.linkList}>
+              <section key={group.heading} className={styles.linkGroup}>
+                <h3 className={styles.groupHeading}>{group.heading}</h3>
+                <ul className={styles.linkList} role="list">
                   {group.links.map((link) => (
                     <li key={link.label}>
                       <a href={link.href} className={styles.footerLink}>
@@ -71,17 +71,17 @@ export default function Footer() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </section>
             ))}
           </nav>
         </div>
-      </div>
+      </section>
 
-      {/* ── FooterBar ── */}
-      <div className={styles.footerBar}>
+      {/* ──────── Footer Bottom Bar ──────── */}
+      <section className={styles.footerBar} aria-label="Footer legal">
         <div className={styles.footerBarInner}>
-          <span className={styles.copyright}>{footerConfig.copyright}</span>
-          <nav aria-label="Footer bottom links" className={styles.bottomNav}>
+          <small className={styles.copyright}>{footerConfig.copyright}</small>
+          <nav aria-label="Footer legal links" className={styles.bottomNav}>
             {footerConfig.bottomLinks.map((link) => (
               <a key={link.label} href={link.href} className={styles.bottomLink}>
                 {link.label}
@@ -89,7 +89,7 @@ export default function Footer() {
             ))}
           </nav>
         </div>
-      </div>
+      </section>
     </footer>
   );
 }
