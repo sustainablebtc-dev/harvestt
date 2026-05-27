@@ -1,0 +1,14 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <!-- Experience/expertise symbol -->
+  <g>
+    <!-- Main badge/seal -->
+    <circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+    <!-- Inner verification check -->
+    <path d="M24 32 L28 36 L40 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Decorative elements for expertise -->
+    <circle cx="24" cy="18" r="2" fill="currentColor" opacity="0.7"/>
+    <circle cx="40" cy="18" r="2" fill="currentColor" opacity="0.7"/>
+    <circle cx="20" cy="48" r="2" fill="currentColor" opacity="0.7"/>
+    <circle cx="44" cy="48" r="2" fill="currentColor" opacity="0.7"/>
+  </g>
+</svg>
