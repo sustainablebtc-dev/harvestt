@@ -22,11 +22,11 @@ export default function Hero() {
             </p>
           </div>
           <div className={styles.ctaRow}>
-            <Link href="/contact" className={styles.ctaPrimary}>
-              Speak With Our Team
+            <Link href="/contact-us" className={styles.ctaPrimary}>
+              SPEAK WITH OUR TEAM
             </Link>
             <Link href="/insights" className={styles.ctaSecondary}>
-              Explore Insights
+              EXPLORE INSIGHTS
               <i className="bi bi-arrow-right" aria-hidden="true" />
             </Link>
           </div>
