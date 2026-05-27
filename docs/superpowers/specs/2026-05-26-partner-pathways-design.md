@@ -217,7 +217,7 @@ const [activeTabId, setActiveTabId] = useState<string>(data.tabs[0].id)
 - Font: body-lg weight-medium
 
 **Tab Active (`.tabActive`):**
-- Bottom border: 2px solid `var(--color-accent)` (orange)
+- Bottom border: 2px solid `var(--color-accent)` (blue (#339DFF))
 - Text color: text-dark (bold appearance via weight)
 
 **Tab Hover (desktop only):**

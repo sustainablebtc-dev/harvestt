@@ -116,7 +116,7 @@ interface ValueCardProps {
 - Section label: eyebrow style (uppercase, muted)
 - Heading: `--text-heading-2-size` (responsive to heading-3 on mobile)
 - Intro: body-lg, secondary text color
-- Accent line below heading (12px wide, orange accent)
+- Accent line below heading (12px wide, blue accent (#339DFF))
 
 **Cards Grid:**
 - **Mobile (< 768px):** 1 column, 16px gap, 4px left/right padding

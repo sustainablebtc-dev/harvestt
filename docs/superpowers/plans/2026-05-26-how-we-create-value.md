@@ -645,7 +645,7 @@ Check that the page has, in order:
   - Cards have equal width
   - Header block (sectionLabel, heading, accentLine, intro) is centered
   - Each card shows: illustration (blueprint SVG), title, description, supporting statement
-  - Left border on each card is visible (orange/accent color)
+  - Left border on each card is visible (blue (#339DFF)/accent color)
   - Spacing between cards matches `var(--space-8)` (32px)
   - Background pattern is visible behind content (muted by overlay)
 
