@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import partnersHeroDataRaw from '@/data/partners/hero.json'
-import type { PartnersHeroData } from '@/data/types'
+import institutionalPartnersDataRaw from '@/data/partners/institutional-partners.json'
+import type { PartnersHeroData, MiningPartnersData } from '@/data/types'
 import styles from './PartnersHero.module.scss'
 
 const data = partnersHeroDataRaw as PartnersHeroData
+const partnersData = institutionalPartnersDataRaw as MiningPartnersData
 
 export default function PartnersHero() {
   return (
@@ -31,6 +34,27 @@ export default function PartnersHero() {
               <i className="bi bi-arrow-right" aria-hidden="true" />
             </Link>
           </div>
+        </div>
+
+        {/* Institutional Partners Section */}
+        <div className={styles.partnersSection}>
+          <h2 className={styles.partnersHeading}>{partnersData.heading}</h2>
+          <div className={styles.logosRow}>
+            {partnersData.partners.map((partner) => (
+              <Image
+                key={partner.name}
+                src={partner.logoSrc}
+                alt={partner.name}
+                width={partner.width}
+                height={partner.height}
+                className={styles.logo}
+              />
+            ))}
+          </div>
+          <Link href={partnersData.ctaHref} className={styles.partnersCta}>
+            {partnersData.ctaLabel}
+            <i className="bi bi-arrow-right" aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>

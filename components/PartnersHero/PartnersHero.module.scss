@@ -174,3 +174,90 @@
   justify-content: center;
   align-items: center;
 }
+
+// ─── Partners Section ──────────────────────────────────────────────────────────
+
+.partnersSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  align-items: center;
+  padding-top: var(--space-20);
+  border-top: 1px solid var(--color-border-default);
+  margin-top: var(--space-20);
+}
+
+.partnersHeading {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-body-lg-lh);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--text-eyebrow-ls);
+  margin: 0;
+}
+
+.logosRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    gap: var(--space-12);
+  }
+
+  @media (max-width: 640px) {
+    gap: var(--space-8);
+  }
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.partnersCta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-body-sm-size);
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--text-eyebrow-ls);
+  background-color: transparent;
+  color: var(--color-text-dark);
+  border: none;
+  cursor: pointer;
+
+  i {
+    font-size: 14px;
+    transition: transform 150ms ease;
+  }
+
+  &:hover {
+    i {
+      transform: translateX(4px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}

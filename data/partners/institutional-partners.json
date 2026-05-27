@@ -1,0 +1,11 @@
+{
+  "heading": "Our Institutional Partners",
+  "partners": [
+    { "name": "Placeholder 1", "logoSrc": "/logos/partners/placeholder-1.svg", "width": 120, "height": 32 },
+    { "name": "Placeholder 2", "logoSrc": "/logos/partners/placeholder-2.svg", "width": 120, "height": 32 },
+    { "name": "Placeholder 3", "logoSrc": "/logos/partners/placeholder-3.svg", "width": 120, "height": 32 },
+    { "name": "Placeholder 4", "logoSrc": "/logos/partners/placeholder-4.svg", "width": 120, "height": 32 }
+  ],
+  "ctaLabel": "BECOME A PARTNER",
+  "ctaHref": "/contact"
+}
