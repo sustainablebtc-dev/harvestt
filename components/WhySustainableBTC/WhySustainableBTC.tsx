@@ -26,7 +26,6 @@ export default function WhySustainableBTC({ data }: WhySustainableBTCProps) {
             <PrincipleCard
               key={`${principle.id}-${index}`}
               principle={principle}
-              iconPath={`/icons/principles/${principle.id}.svg`}
             />
           ))}
         </div>
