@@ -1,18 +1,21 @@
 import type { Metadata } from 'next'
 import siteConfigRaw from '@/data/site/config.json'
-import type { SiteConfig, PartnersEcosystemData, HowWeCreateValueData, PartnerPathwaysData } from '@/data/types'
+import type { SiteConfig, PartnersEcosystemData, HowWeCreateValueData, PartnerPathwaysData, WhySustainableBTCData } from '@/data/types'
 import PartnersHero from '@/components/PartnersHero/PartnersHero'
 import PartnersEcosystem from '@/components/PartnersEcosystem/PartnersEcosystem'
 import HowWeCreateValue from '@/components/HowWeCreateValue/HowWeCreateValue'
 import PartnerPathways from '@/components/PartnerPathways/PartnerPathways'
+import WhySustainableBTC from '@/components/WhySustainableBTC/WhySustainableBTC'
 import ecosystemDataRaw from '@/data/partners/ecosystem.json'
 import howWeCreateValueDataRaw from '@/data/partners/how-we-create-value.json'
 import partnerPathwaysDataRaw from '@/data/partners/partner-pathways.json'
+import whySustainableBTCDataRaw from '@/data/partners/why-sustainable-btc.json'
 
 const siteConfig = siteConfigRaw as SiteConfig
 const ecosystemData = ecosystemDataRaw as PartnersEcosystemData
 const howWeCreateValueData = howWeCreateValueDataRaw as HowWeCreateValueData
 const partnerPathwaysData = partnerPathwaysDataRaw as PartnerPathwaysData
+const whySustainableBTCData = whySustainableBTCDataRaw as WhySustainableBTCData
 
 export const metadata: Metadata = {
   title: 'Bitcoin Mining Partnerships | Sustainable BTC',
@@ -40,6 +43,7 @@ export default function PartnersPage() {
       <PartnersEcosystem data={ecosystemData} />
       <HowWeCreateValue data={howWeCreateValueData} />
       <PartnerPathways data={partnerPathwaysData} />
+      <WhySustainableBTC data={whySustainableBTCData} />
     </main>
   )
 }
