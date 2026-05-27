@@ -1,13 +1,15 @@
+@reference "tailwindcss";
+
 .container {
   @apply min-h-screen bg-white;
-  padding: var(--space-40) var(--space-24);
+  padding: var(--space-20) var(--space-24);
 
   @media (min-width: 768px) {
-    padding: var(--space-60) var(--space-40);
+    padding: var(--space-24) var(--space-20);
   }
 
   @media (min-width: 1024px) {
-    padding: var(--space-80) var(--space-24);
+    padding: var(--space-24) var(--space-24);
   }
 }
 
@@ -19,8 +21,8 @@
 
 .title {
   @apply text-3xl font-bold mb-8;
-  color: var(--color-primary);
-  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-geist);
 
   @media (min-width: 768px) {
     @apply text-4xl;
@@ -34,27 +36,29 @@
   color: var(--color-text-primary);
 
   p {
-    margin-bottom: var(--space-16);
+    margin-bottom: var(--space-12);
 
     @media (min-width: 768px) {
-      margin-bottom: var(--space-20);
+      margin-bottom: var(--space-12);
     }
   }
 
   h2 {
-    @apply text-2xl font-bold mt-8 mb-4;
-    color: var(--color-primary);
-    font-family: var(--font-primary);
+    @apply text-2xl font-bold;
+    color: var(--color-text-primary);
+    font-family: var(--font-geist);
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-8);
 
     @media (min-width: 768px) {
-      margin-top: var(--space-32);
-      margin-bottom: var(--space-16);
+      margin-top: var(--space-16);
+      margin-bottom: var(--space-8);
     }
   }
 
   h3 {
     @apply text-xl font-bold mt-6 mb-3;
-    color: var(--color-secondary);
+    color: var(--color-text-secondary);
   }
 
   strong,
@@ -74,11 +78,11 @@
     transition: color 0.2s ease;
 
     &:hover {
-      color: var(--color-accent-dark);
+      color: var(--color-brand);
     }
 
     &:focus {
-      outline: 2px solid var(--color-focus);
+      outline: 2px solid var(--color-accent);
       outline-offset: 2px;
     }
   }
@@ -109,13 +113,13 @@
 
     th,
     td {
-      border: 1px solid var(--color-border);
+      border: 1px solid var(--color-border-default);
       padding: var(--space-12);
       text-align: left;
     }
 
     th {
-      background-color: var(--color-background-secondary);
+      background-color: var(--color-bg-muted);
       font-weight: 700;
     }
 
@@ -125,7 +129,7 @@
   }
 
   code {
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-bg-muted);
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
@@ -133,7 +137,7 @@
   }
 
   pre {
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-bg-muted);
     padding: var(--space-16);
     border-radius: 4px;
     overflow-x: auto;
@@ -161,12 +165,12 @@
 }
 
 .error {
-  background-color: #fee;
-  border: 1px solid #fcc;
+  background-color: var(--color-bg-warm);
+  border: 1px solid var(--color-border-default);
   border-radius: 4px;
   padding: var(--space-16);
   margin-bottom: var(--space-24);
-  color: #c00;
+  color: var(--color-text-primary);
 
   p {
     margin: 0 0 var(--space-12) 0;
@@ -177,6 +181,6 @@
   }
 
   strong {
-    color: #900;
+    color: var(--color-text-primary);
   }
 }
