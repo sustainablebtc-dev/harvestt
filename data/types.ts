@@ -161,6 +161,21 @@ export interface PartnerPathwaysData {
   tabs: PartnerTab[]
 }
 
+// ─── Why Sustainable Bitcoin ────────────────────────────────────────────────────
+
+export interface Principle {
+  id: string
+  title: string
+  description: string
+}
+
+export interface WhySustainableBTCData {
+  sectionLabel: string
+  heading: string
+  intro: string
+  principles: Principle[]
+}
+
 // ─── Future Extensions ──────────────────────────────────────────────────────────
 //
 // When adding new data files, define their interfaces here first.

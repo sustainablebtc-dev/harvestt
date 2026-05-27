@@ -1,0 +1,37 @@
+{
+  "sectionLabel": "Why Sustainable Bitcoin",
+  "heading": "Institutional-Grade Standards Driving Partnership Value",
+  "intro": "Sustainable Bitcoin leadership requires more than commitment—it demands verifiable frameworks, transparent reporting, and proven operational excellence that institutional partners expect and stakeholders demand.",
+  "principles": [
+    {
+      "id": "institutional-framework",
+      "title": "Institutional Framework",
+      "description": "Board-level governance structures with segregated oversight committees, formal risk management protocols, and compliance mandates exceeding regulatory baseline requirements. Institutional partners gain direct visibility into capital allocation and operational decision-making through formalized reporting structures."
+    },
+    {
+      "id": "transparent-reporting",
+      "title": "Transparent Reporting",
+      "description": "Cryptographic verification systems creating immutable audit trails for all capital flows and energy consumption metrics. Real-time dashboards enable institutional investors to track ESG performance, hash rate allocation, and sustainability benchmarks against TCFD and SASB disclosure standards."
+    },
+    {
+      "id": "governance-standards",
+      "title": "Governance Standards",
+      "description": "Multi-stakeholder oversight mechanisms integrating environmental consultants, compliance officers, and independent auditors into quarterly governance reviews. Risk management frameworks address regulatory, operational, and climate-related exposures with documented mitigation strategies and stakeholder accountability."
+    },
+    {
+      "id": "responsible-mining",
+      "title": "Responsible Mining",
+      "description": "100% renewable energy commitment with verifiable power purchase agreements and real-time carbon offset tracking. Mining operations maintain sub-industry-average PUE ratios with continuous optimization, meeting institutional ESG thresholds and positioning partners for climate-aligned portfolio allocation."
+    },
+    {
+      "id": "industry-expertise",
+      "title": "Industry Expertise",
+      "description": "Operational teams with 3+ years of proven sustainable mining deployment, technical depth across ASIC optimization and energy economics, and direct relationships with tier-one infrastructure providers. Track record demonstrating consistent uptime, energy efficiency improvements, and regulatory adaptation."
+    },
+    {
+      "id": "long-term-vision",
+      "title": "Long-Term Vision",
+      "description": "Durable partnership model built on mutual accountability, shared margin structures, and multi-year service level agreements. Long-term market positioning anchored in sustainable operations ensures partner resilience through regulatory evolution and industry consolidation cycles."
+    }
+  ]
+}
