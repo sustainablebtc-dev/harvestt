@@ -1,0 +1,180 @@
+@reference "tailwindcss";
+
+// ─── Section Container ────────────────────────────────────────────────────────
+
+.section {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-bg-white);
+}
+
+// ─── Inner Container ──────────────────────────────────────────────────────────
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-24) var(--space-20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+
+  @media (max-width: 1023px) {
+    padding: var(--space-20) var(--space-10);
+    gap: var(--space-16);
+  }
+
+  @media (max-width: 767px) {
+    padding: var(--space-16) var(--space-4);
+    gap: var(--space-12);
+  }
+}
+
+// ─── Header Block ────────────────────────────────────────────────────────────
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+// ─── Section Label ────────────────────────────────────────────────────────────
+
+.sectionLabel {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-eyebrow-size);
+  line-height: var(--text-eyebrow-lh);
+  letter-spacing: var(--text-eyebrow-ls);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+// ─── Heading ──────────────────────────────────────────────────────────────────
+
+.heading {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-heading-2-size);
+  line-height: var(--text-heading-2-lh);
+  letter-spacing: var(--text-heading-2-ls);
+  color: var(--color-text-dark);
+  margin: 0;
+
+  @media (max-width: 767px) {
+    font-size: var(--text-heading-3-size);
+    letter-spacing: -0.5px;
+  }
+}
+
+// ─── Accent Line ──────────────────────────────────────────────────────────────
+
+.accentLine {
+  width: var(--space-12);
+  height: 1px;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+// ─── Intro Paragraph ──────────────────────────────────────────────────────────
+
+.intro {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-body-lg-lh);
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 680px;
+}
+
+// ─── Principles Grid ──────────────────────────────────────────────────────────
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+// ─── Card Container ───────────────────────────────────────────────────────────
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background-color: var(--color-bg-white);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 1024px) {
+    padding: var(--space-10);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-bg-muted);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// ─── Card Icon ────────────────────────────────────────────────────────────────
+
+.icon {
+  width: 64px;
+  height: 64px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+
+  @media (min-width: 1024px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+// ─── Card Title ───────────────────────────────────────────────────────────────
+
+.cardTitle {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-heading-4-size);
+  line-height: var(--text-heading-4-lh);
+  letter-spacing: var(--text-heading-4-ls);
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+// ─── Card Description ─────────────────────────────────────────────────────────
+
+.cardDescription {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-body);
+  margin: 0;
+}
