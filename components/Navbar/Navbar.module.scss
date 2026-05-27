@@ -328,6 +328,13 @@
   }
 }
 
+// Hide CTA button on very small mobile devices to prevent overlap with logo
+@media (max-width: 640px) {
+  .ctaButton {
+    display: none !important;
+  }
+}
+
 // Reveal the desktop CTA only when there's comfortable room
 @media (min-width: 1281px) {
   .ctaButton {
