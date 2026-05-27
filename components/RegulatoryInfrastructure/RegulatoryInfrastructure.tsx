@@ -38,9 +38,11 @@ export default function RegulatoryInfrastructure() {
                   <p className={styles.itemName}>{item.name}</p>
                   <p className={styles.itemDesc}>{item.description}</p>
                 </div>
-                <span className={`${styles.badge} ${badgeClass[item.badgeVariant]}`}>
-                  {item.badge}
-                </span>
+                {item.badgeVariant && (
+                  <span className={`${styles.badge} ${badgeClass[item.badgeVariant]}`}>
+                     {item.badge}
+                  </span>
+                )}
               </div>
             ))}
           </div>

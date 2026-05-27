@@ -9,7 +9,7 @@
   "items": [
     { "name": "EU MiCA", "description": "Energy disclosure provisions under review", "badge": "COMPLIANT", "badgeVariant": "compliant" },
     { "name": "SEC Digital Asset Framework", "description": "", "badge": "MONITORING", "badgeVariant": "monitoring" },
-    { "name": "FSRA ADGM", "description": "Category 3C Virtual Asset License", "badge": "LICENSED", "badgeVariant": "licensed" },
+    { "name": "FSRA ADGM", "description": "Category 3C Virtual Asset License", "badge": null, "badgeVariant": null },
     { "name": "ISO 14064", "description": "GHG verification standard", "badge": "ALIGNED", "badgeVariant": "aligned" }
   ],
   "ecosystemHeading": "Built within sovereign-backed institutional ecosystem",
