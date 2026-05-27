@@ -24,13 +24,14 @@
   {
     "heading": "Legal & Compliance",
     "links": [
-      { "label": "Terms of Service", "href": "#" },
-      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms of Service", "href": "/legal/terms-and-conditions" },
+      { "label": "Privacy Policy", "href": "/legal/privacy-policy" },
       { "label": "Cookie Policy", "href": "#" },
       { "label": "Regulatory Disclosures", "href": "#" },
       { "label": "AML Policy", "href": "#" },
       { "label": "Whistleblower Policy", "href": "#" },
-      { "label": "MiCA Whitepaper", "href": "/legal/mica-whitepaper" }
+      { "label": "MiCA Whitepaper", "href": "/legal/mica-whitepaper" },
+      { "label": "Disclaimer", "href": "/legal/disclaimer" }
     ]
   }
 ]
