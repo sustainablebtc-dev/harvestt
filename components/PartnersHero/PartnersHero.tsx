@@ -2,7 +2,6 @@ import Link from 'next/link'
 import partnersHeroDataRaw from '@/data/partners/hero.json'
 import type { PartnersHeroData } from '@/data/types'
 import styles from './PartnersHero.module.scss'
-import EcosystemDiagram from './EcosystemDiagram'
 
 const data = partnersHeroDataRaw as PartnersHeroData
 
@@ -32,11 +31,6 @@ export default function PartnersHero() {
               <i className="bi bi-arrow-right" aria-hidden="true" />
             </Link>
           </div>
-        </div>
-
-        {/* Bottom: ecosystem diagram */}
-        <div className={styles.diagramWrapper}>
-          <EcosystemDiagram nodes={data.ecosystemNodes} />
         </div>
       </div>
     </section>
