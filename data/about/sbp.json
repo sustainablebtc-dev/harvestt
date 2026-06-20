@@ -8,22 +8,22 @@
   "hero": {
     "sectionLabel": "About SBP",
     "title": "Sustainable Bitcoin Protocol",
-    "lead": "The trust layer between energy, mining, and capital.",
+    "lead": "The trust layer between clean energy mining and capital.",
     "body": [
-      "The Sustainable Bitcoin Protocol (SBP) is designed to incentivize Bitcoin miners to use verified clean energy while allowing investors to possess BTC in a manner that is verifiably beneficial for the climate, without compromising Bitcoin's fungibility.",
+      "Sustainable Bitcoin Protocol (SBP) is designed to incentivize Bitcoin miners to use verified clean energy while allowing investors to possess BTC in a manner that is verifiably beneficial for the climate, without compromising Bitcoin's fungibility.",
       "Sustainable Bitcoin Protocol built SBP to resolve the verification gap in Bitcoin mining energy claims with a standardized, auditable, and cryptographically secured attestation framework."
     ],
     "asideLabel": "Why this protocol exists",
     "asideBody": [
       "The mining industry's current approach to energy disclosure is fragmented, self-reported, and largely unverifiable.",
-      "Institutional capital allocators require auditable energy provenance data before any direct or indirect exposure to Bitcoin mining infrastructure."
+      "Institutional capital allocators require auditable energy provenance data before any direct or indirect exposure to Bitcoin investments."
     ],
     "thesis": "Verification and attestation infrastructure designed to align Bitcoin mining with verified clean energy use and institutional disclosure requirements.",
-    "supportingText": "SBP turns clean energy verification into an institutional data layer that can be reviewed by miners, investors, auditors, and compliance teams.",
+    "supportingText": "SBP turns clean energy verification into an institutional grade investable environmental commodity. Our data layer can be reviewed by miners, investors, auditors, and compliance teams.",
     "proofRail": [
       {
-        "value": "$15–16T",
-        "label": "institutional capital blocked by energy disclosure gaps"
+        "value": "$15-16T",
+        "label": "institutional capital blocked by climate mandates."
       },
       {
         "value": "120 TWh",
@@ -81,12 +81,12 @@
       {
         "title": "Attest",
         "subtitle": "Cryptographic Attestation",
-        "body": "Verified energy data is cryptographically signed and timestamped to produce an immutable attestation record. Each attestation is anchored to the Bitcoin blockchain, creating a permanent, auditable link between energy consumption and mining output that cannot be retroactively altered."
+        "body": "Verified energy data is cryptographically signed and timestamped to produce an immutable attestation record. Each attestation is tokenized on the Base blockchain, creating a permanent, auditable link between energy consumption and mining output that cannot be retroactively altered."
       },
       {
         "title": "Enable",
         "subtitle": "Institutional Integration",
-        "body": "Attested energy records are packaged into structured data products that integrate with institutional compliance workflows."
+        "body": "Attested clean energy bitcoin production records are packaged into structured SBP tokens that integrate with institutional compliance workflows."
       }
     ]
   },
@@ -112,14 +112,14 @@
   "proof": {
     "sectionLabel": "Trust & Proof",
     "heading": "Compact facts for diligence teams",
-    "intro": "Each proof point below is already reflected elsewhere in approved Sustainable Bitcoin Protocol material and is assembled here for route-specific review.",
+    "intro": "",
     "items": [
       {
         "value": "70%+",
         "label": "of listed mining operators make unverified renewable energy claims"
       },
       {
-        "value": "$15–16T",
+        "value": "$15-16T",
         "label": "in institutionally managed capital remains blocked by energy disclosure gaps"
       },
       {
@@ -141,7 +141,7 @@
         "number": "01",
         "title": "Verify",
         "subtitle": "Energy Source Verification",
-        "body": "The foundational and initial layer of verification provides a comprehensive understanding of a miner's energy sourcing and ensures that each BitREC genuinely reflects clean energy attributes.",
+        "body": "The foundational and initial layer of verification provides a comprehensive understanding of a miner's energy sourcing and ensures that each SBP tokens genuinely reflects a miner's investment into clean energy attributes.",
         "bullets": [
           "Collect data on miners' energy consumption by connecting to existing mining infrastructure",
           "Match energy data with proof of clean energy consumption through EACs and other methods",
@@ -152,10 +152,10 @@
         "number": "02",
         "title": "Attest",
         "subtitle": "Cryptographic Attestation",
-        "body": "Verified energy data is cryptographically signed and timestamped to produce an immutable attestation record anchored to the Bitcoin blockchain.",
+        "body": "Verified energy data is cryptographically signed and timestamped to produce an immutable attestation record anchored to the Base blockchain.",
         "bullets": [
           "Cryptographic signing",
-          "Bitcoin blockchain anchoring",
+          "Base blockchain anchoring",
           "Immutable audit trail",
           "ISO 14064-compliant reporting"
         ]
@@ -164,7 +164,7 @@
         "number": "03",
         "title": "Enable",
         "subtitle": "Institutional Integration",
-        "body": "Attested energy records are packaged into structured data products that integrate with institutional compliance workflows, while Sustainable Bitcoin Protocol continues to build integrations across software, hardware, firmware, and pools.",
+        "body": "Attested clean energy Bitcoin production records are minted as SBP tokens that integrate with institutional compliance workflows, while Sustainable Bitcoin Protocol continues to build integrations across software, hardware, firmware, and pools.",
         "bullets": [
           "Compliance documentation",
           "API-first integration",
@@ -200,7 +200,7 @@
   "market": {
     "sectionLabel": "Market Opportunity",
     "heading": "Compliance infrastructure unlocks institutional capital",
-    "intro": "Sovereign wealth funds, pension systems, insurance allocators, and licensed asset managers collectively manage over $15 trillion in capital that is currently restricted from Bitcoin mining exposure due to energy disclosure requirements. SBP provides the regulatory infrastructure these institutions need to allocate.",
+    "intro": "Sovereign wealth funds, pension systems, insurance allocators, and climate mandated asset managers collectively manage over $15 trillion in capital that is currently restricted from Bitcoin exposure due to sustainability risks. Sustainable Bitcoin Protocol provides the compliance infrastructure to unlock this capital.",
     "highlights": [
       {
         "value": "$3.6T",
@@ -209,8 +209,8 @@
       },
       {
         "value": "$12T+",
-        "label": "US institutional AUM",
-        "body": "With energy reporting requirements"
+        "label": "Global Institutional AUM",
+        "body": "With climate mandate requirements"
       },
       {
         "value": "120 TWh",

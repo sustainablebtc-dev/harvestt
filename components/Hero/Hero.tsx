@@ -18,14 +18,14 @@ export default function Hero() {
               Institutional-grade energy verification and attestation for Bitcoin mining infrastructure — enabling compliant capital to access Bitcoin with full energy transparency.
             </p>
             <p className={styles.bodySecondary}>
-              Sustainable Bitcoin Protocol operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging a $15–16 trillion addressable market.
+              Sustainable Bitcoin Protocol operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging the $15-16 trillion of climate mandated capital of Bitcoin.
             </p>
           </div>
           <div className={styles.ctaRow}>
             <Link href="/contact-us" className={styles.ctaPrimary}>
               SPEAK WITH OUR TEAM
             </Link>
-            <Link href="/insights" className={styles.ctaSecondary}>
+            <Link href="/partners" className={styles.ctaSecondary}>
               EXPLORE INSIGHTS
               <i className="bi bi-arrow-right" aria-hidden="true" />
             </Link>

@@ -1,16 +1,9 @@
 @reference "tailwindcss";
 
-// ─── Footer Container ────────────────────────────────────────────────────────
-
-.footer {
-  background-color: var(--color-bg-dark);
-}
-
-// ─── FooterMain (Branding + Navigation) ──────────────────────────────────────
+// ─── FooterMain ────────────────────────────────────────────────────────────────
 
 .footerMain {
   background-color: var(--color-bg-dark);
-  border-bottom: 1px solid var(--color-divider-dark);
 }
 
 .footerMainInner {
@@ -21,9 +14,7 @@
   gap: var(--space-20);
 }
 
-// ─── Branding Zone (Left column) ──────────────────────────────────────────────
-
-.brandingZone {
+.leftCol {
   @apply flex flex-col;
   width: 320px;
   min-width: 0;
@@ -31,17 +22,11 @@
   gap: var(--space-8);
 }
 
-.brandingZone img {
-  display: block;
-  height: auto;
-}
-
 .tagline {
   font-size: var(--text-body-sm-size);
   line-height: var(--text-body-sm-lh);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-regular);
-  margin: 0;
 }
 
 .officeBlock,
@@ -56,13 +41,12 @@
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.125px;
-  margin: 0;
+  letter-spacing: 1px;
 }
 
 .addressLines {
   @apply flex flex-col;
-  gap: var(--space-1);
+  gap: 2px;
 }
 
 .addressLine {
@@ -71,8 +55,6 @@
   line-height: var(--text-body-xs-lh);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-regular);
-  font-style: normal;
-  margin: 0;
 }
 
 .socialList {
@@ -89,8 +71,6 @@
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-regular);
   text-decoration: none;
-  display: inline-block;
-  transition: color 150ms ease-out;
 
   &:hover {
     color: var(--color-bg-white);
@@ -99,13 +79,12 @@
   &:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
-    border-radius: 2px;
   }
 }
 
-// ─── Navigation Zone (Right column — link groups) ────────────────────────────
+// ─── Right col — link groups ───────────────────────────────────────────────────
 
-.navigationZone {
+.rightCol {
   @apply flex flex-row;
   gap: var(--space-20);
   flex: 1;
@@ -121,11 +100,11 @@
 .groupHeading {
   display: block;
   font-size: var(--text-label-sm-size);
+  font-family: var(--font-inter);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.125px;
-  margin: 0;
+  letter-spacing: 1px;
 }
 
 .linkList {
@@ -142,8 +121,6 @@
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-regular);
   text-decoration: none;
-  display: inline-block;
-  transition: color 150ms ease-out;
 
   &:hover {
     color: var(--color-bg-white);
@@ -152,11 +129,10 @@
   &:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
-    border-radius: 2px;
   }
 }
 
-// ─── Footer Bar (Legal links + copyright) ───────────────────────────────────
+// ─── FooterBar ─────────────────────────────────────────────────────────────────
 
 .footerBar {
   background-color: var(--color-bg-black);
@@ -167,7 +143,6 @@
   margin: 0 auto;
   padding: var(--space-6) var(--space-20);
   @apply flex flex-row items-center justify-between;
-  gap: var(--space-6);
 }
 
 .copyright {
@@ -176,12 +151,47 @@
   font-weight: var(--font-weight-regular);
 }
 
+@media (max-width: 1023px) {
+  .footerMainInner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+
+  .footerBarInner {
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+}
+
+@media (max-width: 767px) {
+  .footerMainInner {
+    flex-direction: column;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .leftCol {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .rightCol {
+    flex-wrap: wrap;
+    gap: var(--space-12);
+  }
+
+  .footerBarInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
 .bottomNav {
   @apply flex flex-row;
   gap: var(--space-6);
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .bottomLink {
@@ -190,8 +200,6 @@
   font-weight: var(--font-weight-regular);
   text-transform: capitalize;
   text-decoration: none;
-  display: inline-block;
-  transition: color 150ms ease-out;
 
   &:hover {
     color: var(--color-bg-white);
@@ -200,55 +208,36 @@
   &:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
-    border-radius: 2px;
   }
 }
 
-// ─── Responsive: Tablet (768px–1023px) ──────────────────────────────────────
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footerMainInner {
-    padding-left: var(--space-10);
-    padding-right: var(--space-10);
-  }
-
-  .footerBarInner {
-    padding-left: var(--space-10);
-    padding-right: var(--space-10);
-  }
-}
-
-// ─── Responsive: Mobile (<768px) ─────────────────────────────────────────────
+// ─── Responsive — mobile-first ─────────────────────────────────────────────────
 
 @media (max-width: 767px) {
+  .footerMain {
+    padding: var(--space-8) var(--space-4);
+  }
+
   .footerMainInner {
     @apply flex-col;
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-    gap: var(--space-12);
   }
 
-  .brandingZone {
-    width: 100%;
-    min-width: 0;
+  .leftCol {
+    width: auto;
+    min-width: unset;
   }
 
-  .navigationZone {
-    width: 100%;
+  .rightCol {
     @apply flex-col;
-    gap: var(--space-12);
+    width: 100%;
+  }
+
+  .footerBar {
+    padding: var(--space-4);
   }
 
   .footerBarInner {
     @apply flex-col;
-    align-items: flex-start;
-    gap: var(--space-3);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-  }
-
-  .bottomNav {
-    width: 100%;
-    @apply flex-col;
+    gap: var(--space-4);
   }
 }
