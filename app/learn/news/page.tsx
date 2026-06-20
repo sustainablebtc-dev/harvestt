@@ -2,8 +2,8 @@ import NewsPage from "@/components/News/NewsPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-   title: "News & Insights | Harvestt",
-   description: "Stay up to date with the latest research and insights from Harvestt.",
+   title: "News & Insights | Sustainable Bitcoin Protocol",
+   description: "Stay up to date with the latest research and insights from Sustainable Bitcoin Protocol.",
 };
 
 export default function page() {

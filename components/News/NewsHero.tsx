@@ -49,7 +49,7 @@ const NewsHero = ({ newsPageData }: { newsPageData: any }) => {
                   News & Insights
                </h1>
                <p className={styles.heroSubHeading}>
-                  Stay up to date with the latest research and insights from Harvestt.
+                  Stay up to date with the latest research and insights from Sustainable Bitcoin Protocol.
                </p>
             </div>
 

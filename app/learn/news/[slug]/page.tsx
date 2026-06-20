@@ -10,8 +10,8 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
    const { slug } = await params;
    return {
-      title: `${slug} | News | Harvestt`,
-      description: "Read the latest article from Harvestt.",
+      title: `${slug} | News | Sustainable Bitcoin Protocol`,
+      description: "Read the latest article from Sustainable Bitcoin Protocol.",
    };
 }
 
