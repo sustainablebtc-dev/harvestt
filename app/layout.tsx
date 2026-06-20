@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: [siteConfig.defaultMetadata.ogImage],
   },
+  verification: {
+    google: "45270151e7091077",
+  },
 };
 
 export default function RootLayout({
