@@ -1,30 +1,28 @@
 [
-  {
-    "heading": "Navigation",
-    "links": [
-      { "label": "Home", "href": "/" },
-      { "label": "About SBP", "href": "/about/sbp" },
-      { "label": "Leadership", "href": "/about/leadership" },
-      { "label": "Partners", "href": "/partners" },
-      { "label": "Regulatory", "href": "/regulatory" },
-      { "label": "FAQs", "href": "/faqs" },
-      { "label": "News", "href": "/learn/news" }
-    ]
-  },
-  {
-    "heading": "Company",
-    "links": [
-      { "label": "Press & Media", "href": "/learn/news" },
-      { "label": "Contact Us", "href": "/contact-us" }
-    ]
-  },
-  {
-    "heading": "Legal & Compliance",
-    "links": [
-      { "label": "Terms of Service", "href": "/legal/terms-and-conditions" },
-      { "label": "Privacy Policy", "href": "/legal/privacy-policy" },
-      { "label": "MiCA Whitepaper", "href": "/legal/mica-whitepaper" },
-      { "label": "Disclaimer", "href": "/legal/disclaimer" }
-    ]
-  }
+   {
+      "heading": "Navigation",
+      "links": [
+         { "label": "Home", "href": "/" },
+         { "label": "About SBP", "href": "/about/sbp" },
+         { "label": "Leadership", "href": "/about/leadership" },
+         { "label": "Partners", "href": "/partners" }
+      ]
+   },
+   {
+      "heading": "Company",
+      "links": [
+         { "label": "News", "href": "/learn/news" },
+         { "label": "FAQs", "href": "/faqs" },
+         { "label": "Contact Us", "href": "/contact-us" }
+      ]
+   },
+   {
+      "heading": "Legal & Compliance",
+      "links": [
+         { "label": "MiCA Whitepaper", "href": "/legal/mica-whitepaper" },
+         { "label": "Terms of Service", "href": "/legal/terms-and-conditions" },
+         { "label": "Privacy Policy", "href": "/legal/privacy-policy" },
+         { "label": "Disclaimer", "href": "/legal/disclaimer" }
+      ]
+   }
 ]
