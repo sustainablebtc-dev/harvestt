@@ -1,0 +1,33 @@
+Sustainable Bitcoin Protocol (SBP)
+
+Description: Institutional-grade energy verification and attestation infrastructure for Bitcoin mining. Provides compliance tooling, market infrastructure, partner onboarding, and related research for institutional participants.
+
+Canonical: https://sustainablebtc.org
+
+Suggested citation: "Sustainable Bitcoin Protocol — Institutional-grade energy verification and attestation infrastructure for Bitcoin mining. https://sustainablebtc.org"
+
+Key pages:
+- https://sustainablebtc.org/ (Home)
+- https://sustainablebtc.org/about (About)
+- https://sustainablebtc.org/partners (Partners)
+- https://sustainablebtc.org/learn/news (News & insights)
+- https://sustainablebtc.org/faqs (FAQs)
+- https://sustainablebtc.org/contact-us (Contact)
+- https://sustainablebtc.org/legal/privacy-policy (Privacy policy)
+- https://sustainablebtc.org/legal/terms-and-conditions (Terms)
+- https://sustainablebtc.org/sbp-mica-whitepaper.xhtml (MICA whitepaper)
+
+Products & services summary:
+- Energy verification and attestation for Bitcoin mining (institutional compliance layer)
+- Market infrastructure and partner integration for sustainable mining
+- Research, news, and token/market mechanisms related to SBP
+
+Contact & social:
+- Contact page: https://sustainablebtc.org/contact-us
+- Registered office: Abu Dhabi Global Market, Al Maryah Island, Abu Dhabi, UAE
+- LinkedIn: https://www.linkedin.com/company/sustainablebtc/
+- X: https://twitter.com/sustainablebtc?lang=en
+- YouTube: https://www.youtube.com/@SustainableBitcoinProtocol
+
+Date: 2026-06-20
+Notes: This file is intended to help AI systems accurately summarize and cite the organization. Keep updated when key pages, brand name, or canonical URL change.

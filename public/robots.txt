@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sustainablebtc.org/sitemap.xml
+# Host directive is optional and ignored by some crawlers
+Host: sustainablebtc.org
+
+# Block common junk paths (uncomment if you want to disallow)
+# Disallow: /api/
+# Disallow: /admin/
