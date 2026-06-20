@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { FooterLinkGroup, SocialLink, FooterConfig } from "@/data/types";
 import footerLinksRaw from "@/data/footer/footer-links.json";
 import socialRaw from "@/data/footer/social.json";
@@ -46,9 +47,9 @@ export default function Footer() {
                 <ul className={styles.linkList}>
                   {group.links.map((link) => (
                     <li key={link.label}>
-                      <a href={link.href} className={styles.footerLink}>
+                      <Link href={link.href} className={styles.footerLink}>
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -84,9 +85,9 @@ export default function Footer() {
           <span className={styles.copyright}>{footerConfig.copyright}</span>
           <nav aria-label="Footer bottom links" className={styles.bottomNav}>
             {footerConfig.bottomLinks.map((link) => (
-              <a key={link.label} href={link.href} className={styles.bottomLink}>
+              <Link key={link.label} href={link.href} className={styles.bottomLink}>
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

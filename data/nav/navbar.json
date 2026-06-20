@@ -26,11 +26,6 @@
       "hasDropdown": false
     },
     {
-      "label": "Regulatory",
-      "href": "/regulatory",
-      "hasDropdown": false
-    },
-    {
       "label": "Learn",
       "href": "/learn/news",
       "hasDropdown": true,
