@@ -36,25 +36,6 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-
-            <div className={styles.socialBlock}>
-              <span className={styles.blockLabel}>Social</span>
-              <ul className={styles.socialList}>
-                {social.map((s) => (
-                  <li key={s.platform}>
-                    <a
-                      href={s.href}
-                      aria-label={s.label}
-                      className={styles.socialLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {s.platform}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           {/* Right column — link groups */}
@@ -73,6 +54,26 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
+
+            {/* Social as an additional link column */}
+            <div className={styles.linkGroup}>
+              <span className={styles.groupHeading}>Social</span>
+              <ul className={styles.linkList}>
+                {social.map((s) => (
+                  <li key={s.platform}>
+                    <a
+                      href={s.href}
+                      aria-label={s.label}
+                      className={styles.footerLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {s.platform}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </nav>
         </div>
       </div>

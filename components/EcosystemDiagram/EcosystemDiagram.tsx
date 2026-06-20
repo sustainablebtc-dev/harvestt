@@ -156,7 +156,7 @@ export default function EcosystemDiagram({ columns }: EcosystemDiagramProps) {
           Capital Access
         </text>
         <text x="610" y="215" textAnchor="middle" className={styles.flowLabelReturn}>
-          ESG Mandate Fulfilment
+          Climate Mandate Fulfillment
         </text>
 
         {/* ── Nodes ───────────────────────────────────────────────────────── */}

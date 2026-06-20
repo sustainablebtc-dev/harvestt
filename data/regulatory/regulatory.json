@@ -3,7 +3,7 @@
   "heading": "Regulatory Infrastructure",
   "body": [
     "Sustainable Bitcoin Protocol operates within a multi-jurisdictional regulatory framework designed for institutional compliance. Our verification protocol adheres to international standards and is recognized by leading regulatory bodies across the GCC, EU, and North American markets.",
-    "The platform's attestation infrastructure integrates with existing AML/KYC pipelines, enabling seamless capital deployment for sovereign wealth funds, pension allocators, and licensed financial institutions."
+    "The platform's attestation infrastructure integrates with existing mining infrastucture, enabling capital deployment for sovereign wealth funds, pension and other climate mandated institutions into Bitcoin."
   ],
   "panelHeading": "Regulatory Alignment Status",
   "items": [
@@ -12,7 +12,7 @@
     { "name": "FSRA ADGM", "description": "Category 3C Virtual Asset License", "badge": null, "badgeVariant": null },
     { "name": "ISO 14064", "description": "GHG verification standard", "badge": "ALIGNED", "badgeVariant": "aligned" }
   ],
-  "ecosystemHeading": "Built within sovereign-backed institutional ecosystem",
+  "ecosystemHeading": "Built within a sovereign-backed institutional ecosystem",
   "ecosystemLogos": [
     { "name": "ADGM", "logoSrc": "/logos/ecosystem/adgm.svg", "width": 136, "height": 48 },
     { "name": "Mubadala", "logoSrc": "/logos/ecosystem/mubadala.svg", "width": 145, "height": 52 },
