@@ -8,11 +8,9 @@
       "ADGM Reg. No. 26026"
     ]
   },
-  "copyright": "© 2026 Sustainable Digital Solutions, Limited. All rights reserved.",
+  "copyright": "© 2021-26 Sustainable Bitcoin Protocol. All rights reserved.",
   "bottomLinks": [
-    { "label": "Terms", "href": "#" },
-    { "label": "Privacy", "href": "#" },
-    { "label": "Cookies", "href": "#" },
-    { "label": "Sitemap", "href": "#" }
+    { "label": "Terms", "href": "/legal/terms-and-conditions" },
+    { "label": "Privacy", "href": "/legal/privacy-policy" }
   ]
 }

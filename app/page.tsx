@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Hero />
       <StatsBar />
-      <MarketInsights />
+      {/* <MarketInsights /> */}
       <RegulatoryInfrastructure />
       <TheChallenge />
       <VerificationLayer />
