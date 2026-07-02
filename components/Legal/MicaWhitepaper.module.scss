@@ -125,6 +125,37 @@ $error-border: rgba(220, 38, 38, 0.2);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Amendment Section
+// ─────────────────────────────────────────────────────────────────────────────
+
+.amendmentSection {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  padding: 0 0 var(--space-16) 0;
+}
+
+.amendmentContent {
+  @apply flex flex-col items-center gap-6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.amendmentNotice {
+  font-family: var(--font-geist);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-muted);
+  margin: 0;
+  text-align: left;
+}
+
+.archivedLinks {
+  @apply flex flex-wrap flex-col items-start justify-start gap-6 w-full;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Content Section
 // ─────────────────────────────────────────────────────────────────────────────
 
