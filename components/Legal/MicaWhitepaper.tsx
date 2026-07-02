@@ -81,7 +81,7 @@ export default function MicaWhitepaper() {
               MiCA Whitepaper
             </h1>
             <p className={styles.notification}>
-              This whitepaper was notified to the Central Bank of Ireland in accordance with Regulation (EU) 2023/1114 on February 27th, 2026. It was subsequently amended on March 31st, 2026 to include the Digital Token Identifier (DTI) and Equivalent Digital Token Group Identifier (FFG/EDTG). These updates are non-material and do not affect the rights, obligations, or characteristics of the SBP token.
+              This whitepaper was notified to the Central Bank of Ireland in accordance with Regulation (EU) 2023/1114 on February 27th, 2026. It was subsequently amended on March 31st, 2026, and June 25th, 2026. Amendment details and archived versions can be found below.
             </p>
             <a
               href="/sbp-mica-whitepaper.xhtml"
@@ -122,6 +122,39 @@ export default function MicaWhitepaper() {
               role="document"
               aria-label="MiCA Whitepaper document"
             />
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Amendment Notifications */}
+      <section className={styles.amendmentSection} aria-labelledby="amendment-heading">
+        <div className={styles.container}>
+          <div className={styles.amendmentContent}>
+            <p className={styles.amendmentNotice}>
+              This whitepaper was notified to the Central Bank of Ireland in accordance with Regulation (EU) 2023/1114 on February 27th, 2026. It was subsequently amended on March 31st, 2026 to include the Digital Token Identifier (DTI) and Equivalent Digital Token Group Identifier (FFG/EDTG). Another amendment was made on June 25th, 2026 removing references to specific third-party market makers, custodians, investors, and service providers, replacing them with generic references to institutional-grade market makers, institutional-grade custody providers, institutional investors, and related service providers. These updates are non-material and do not affect the rights, obligations, or characteristics of the SBP token.
+            </p>
+            <div className={styles.archivedLinks}>
+              <a
+                href="/whitepaper/mica/archived/sbp-mica-whitepaper-v1.pdf"
+                download="sbp-mica-whitepaper-v1.pdf"
+                className={styles.downloadLink}
+                aria-label="Download SBP Whitepaper Version 1"
+              >
+                <i className="bi bi-download" aria-hidden="true" />
+                SBP Whitepaper V1
+              </a>
+              <a
+                href="/whitepaper/mica/archived/sbp-mica-whitepaper-v2.xhtml"
+                download="sbp-mica-whitepaper-v2.xhtml"
+                className={styles.downloadLink}
+                aria-label="Download SBP Whitepaper Version 2"
+              >
+                <i className="bi bi-download" aria-hidden="true" />
+                SBP Whitepaper V2
+              </a>
+            </div>
           </div>
         </div>
       </section>
