@@ -1,0 +1,49 @@
+{
+  "sectionLabel": "Our Partners",
+  "heading": "Public Miners. Sovereign Backers. Global Regulators.",
+  "intro": "Credibility is the product. SBP's network spans public and sovereign-scale miners, institutional investors, and the regulators who oversee digital asset markets.",
+  "categories": [
+    {
+      "id": "mining",
+      "title": "Verified Mining Partners",
+      "partners": [
+        { "name": "ZERO", "credential": "Sovereign-Scale — Abu Dhabi", "logoSrc": "/logos/mining-partners/zero.svg", "width": 122, "height": 32 },
+        { "name": "CleanSpark", "credential": "Nasdaq: CLSK", "logoSrc": "/logos/mining-partners/cleanspark.svg", "width": 215, "height": 32 },
+        { "name": "Bitdeer", "credential": "Nasdaq: BTDR", "logoSrc": "/logos/mining-partners/bitdeer.svg", "width": 167, "height": 32 }
+      ],
+      "additionalNames": [],
+      "footnote": "Selection of mining partners. SBP miners represent approximately 24% of global Bitcoin hashrate"
+    },
+    {
+      "id": "investors",
+      "title": "Backing & Investors",
+      "partners": [
+        { "name": "Hawksburn Capital", "credential": null, "logoSrc": "/logos/partners/hawksburn.svg", "width": 65, "height": 32 },
+        { "name": "New Layer Capital", "credential": null, "logoSrc": "/logos/partners/new-layer.svg", "width": 125, "height": 32 },
+        { "name": "BlackPine", "credential": null, "logoSrc": "/logos/partners/blackpine.webp", "width": 157, "height": 32 },
+        { "name": "Mubadala", "credential": null, "logoSrc": "/logos/ecosystem/mubadala.svg", "width": 145, "height": 52 },
+        { "name": "Hub71", "credential": null, "logoSrc": "/logos/ecosystem/hub71.svg", "width": 132, "height": 36 },
+        { "name": "Cerulean Ventures", "credential": null, "logoSrc": "/logos/partners/cerulean.webp", "width": 118, "height": 32 },
+        { "name": "Bitcoin Frontier Fund", "credential": null, "logoSrc": "/logos/partners/bitcoin-frontier-fund.png", "width": 122, "height": 32 },
+        { "name": "Melanion Capital", "credential": null, "logoSrc": "/logos/partners/melanion.svg", "width": 104, "height": 32 },
+        { "name": "Token Bay Capital", "credential": null, "logoSrc": "/logos/partners/token-bay.svg", "width": 218, "height": 32 }
+      ],
+      "additionalNames": [],
+      "footnote": null
+    },
+    {
+      "id": "regulation",
+      "title": "Regulation & Standards",
+      "partners": [
+        { "name": "ADGM", "credential": "Abu Dhabi Global Market — Regulator", "logoSrc": "/logos/ecosystem/adgm.svg", "width": 136, "height": 48 },
+        { "name": "Energy Web", "credential": "Methodology Validation", "logoSrc": "/logos/partners/energy-web.svg", "width": 108, "height": 32 },
+        { "name": "Global Alliance for a Sustainable Planet", "credential": null, "logoSrc": "/logos/partners/global-alliance.png", "width": 210, "height": 32 },
+        { "name": "iMasons Climate Accord", "credential": null, "logoSrc": "/logos/partners/imasons.png", "width": 173, "height": 32 }
+      ],
+      "additionalNames": [],
+      "footnote": null
+    }
+  ],
+  "ctaLabel": "BECOME A PARTNER",
+  "ctaHref": "/contact-us"
+}

@@ -40,6 +40,13 @@
   object-fit: contain;
 }
 
+.footnote {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-lh);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
 .cta {
   display: inline-flex;
   align-items: center;

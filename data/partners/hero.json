@@ -1,14 +1,10 @@
 {
   "eyebrow": "Strategic Partnerships",
-  "headline": "Powering the Institutional Standard for Sustainable Bitcoin",
-  "body": "SBP partners with leading miners, custodians, and energy producers to verify clean-energy hashrate at scale. Our trust layer turns renewable mining into an investable, auditable asset class — backed by transparent attestation and institutional-grade governance.",
+  "headline": "Serious Infrastructure, Built with Serious Institutions",
+  "body": "SBP works with public and sovereign-scale miners, regulated market infrastructure, and global capital allocators — verifying clean-energy hashrate and making it investable, auditable, and compliant.",
   "primaryCta": {
     "label": "START A PARTNERSHIP",
     "href": "/contact-us?intent=partnership"
-  },
-  "secondaryCta": {
-    "label": "LEARN ABOUT SBP",
-    "href": "/about/sbp"
   },
   "ecosystemNodes": [
     {

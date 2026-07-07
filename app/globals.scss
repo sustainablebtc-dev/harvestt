@@ -41,6 +41,13 @@
   --color-accent-blue:    #3396ff;
   --color-bullet-green:   #4a7c59;
 
+  // Colors — Brand accents
+  --color-ewf-purple: #5D2E8C;
+  --color-sbp-cyan:   #00C2FF;
+  --color-sbp-green:  #2EFF92;
+  --color-deal-gold:  #FFD700;
+  --color-deep-navy:  #0F172A;
+
   // Typography — Font families
   --font-geist: 'Geist', sans-serif;
   --font-inter: 'Inter', sans-serif;
@@ -183,11 +190,11 @@
   --color-body: var(--color-text-body);
   --color-border-default: var(--color-border-default);
 
-  --color-ewf-purple: #5D2E8C;
-  --color-sbp-cyan:   #00C2FF;
-  --color-sbp-green:  #2EFF92;
-  --color-deal-gold:  #FFD700;
-  --color-deep-navy:  #0F172A;
+  --color-ewf-purple: var(--color-ewf-purple);
+  --color-sbp-cyan:   var(--color-sbp-cyan);
+  --color-sbp-green:  var(--color-sbp-green);
+  --color-deal-gold:  var(--color-deal-gold);
+  --color-deep-navy:  var(--color-deep-navy);
 }
 
 // ─── Base Styles ───────────────────────────────────────────────────────────────

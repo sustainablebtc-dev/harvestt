@@ -23,6 +23,7 @@ export default function MiningPartners() {
             />
           ))}
         </div>
+        <p className={styles.footnote}>{data.footnote}</p>
         <Link href={data.ctaHref} className={styles.cta}>
           {data.ctaLabel}
           <i className="bi bi-arrow-right" aria-hidden="true" />
