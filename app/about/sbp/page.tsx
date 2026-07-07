@@ -60,19 +60,6 @@ export default function SBPPage() {
                     className={styles.heroImage}
                   />
                 </div>
-                <div className={styles.heroImageRow}>
-                  {sbpPageData.hero.imageOptions.slice(1, 3).map((image) => (
-                    <div key={image.src} className={styles.heroImageSecondaryFrame}>
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        fill
-                        sizes="(min-width: 1280px) 16rem, (min-width: 1024px) 20vw, 50vw"
-                        className={styles.heroImage}
-                      />
-                    </div>
-                  ))}
-                </div>
               </div>
               <div className={styles.heroProofRail} aria-label="SBP proof points">
                 {sbpPageData.hero.proofRail.map((item) => (
@@ -95,28 +82,8 @@ export default function SBPPage() {
               </div>
 
               <div className={styles.heroThesisBlock}>
-                <p className={styles.asideLabel}>{sbpPageData.hero.asideLabel}</p>
+                <p className={styles.asideLabel}>{sbpPageData.hero.thesisLabel}</p>
                 <p className={styles.heroThesis}>{sbpPageData.hero.thesis}</p>
-                <p className={styles.heroSupportingText}>{sbpPageData.hero.supportingText}</p>
-              </div>
-
-              <div className={styles.heroNarrative}>
-                <div className={styles.heroBody}>
-                  {sbpPageData.hero.body.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                </div>
-
-                <aside className={styles.heroAside} aria-labelledby="sbp-why-heading">
-                  <p id="sbp-why-heading" className={styles.asideLabel}>
-                    {sbpPageData.hero.asideLabel}
-                  </p>
-                  <div className={styles.asideBody}>
-                    {sbpPageData.hero.asideBody.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-                  </div>
-                </aside>
               </div>
 
               <div className={styles.buttonRow}>
@@ -129,28 +96,6 @@ export default function SBPPage() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.section} aria-labelledby="pillars-heading">
-        <div className={styles.container}>
-          <div className={styles.sectionHeader}>
-            <p className={styles.sectionLabel}>{sbpPageData.pillars.sectionLabel}</p>
-            <h2 id="pillars-heading" className={styles.sectionTitle}>
-              {sbpPageData.pillars.heading}
-            </h2>
-          </div>
-          <div className={styles.pillarsGrid}>
-            {sbpPageData.pillars.items.map((pillar) => (
-              <article key={pillar.title} className={styles.pillarCard}>
-                <div className={styles.cardHeader}>
-                  <h3 className={styles.cardTitle}>{pillar.title}</h3>
-                  <p className={styles.cardLabel}>{pillar.subtitle}</p>
-                </div>
-                <p className={styles.cardBody}>{pillar.body}</p>
-              </article>
-            ))}
           </div>
         </div>
       </section>
@@ -178,7 +123,7 @@ export default function SBPPage() {
         </div>
       </section>
 
-      <section className={styles.section} aria-labelledby="proof-heading">
+      <section className={`${styles.section} ${styles.sectionDark}`} aria-labelledby="proof-heading">
         <div className={styles.container}>
           <div className={styles.sectionShell}>
             <div className={styles.sectionIntro}>
@@ -260,31 +205,6 @@ export default function SBPPage() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.marketSection}`} aria-labelledby="market-heading">
-        <div className={styles.container}>
-          <div className={styles.marketLayout}>
-            <div className={styles.marketContent}>
-              <div className={styles.marketIntro}>
-                <p className={styles.sectionLabel}>{sbpPageData.market.sectionLabel}</p>
-                <h2 id="market-heading" className={styles.sectionTitle}>
-                  {sbpPageData.market.heading}
-                </h2>
-                <p className={styles.sectionDescription}>{sbpPageData.market.intro}</p>
-              </div>
-
-              <div className={styles.marketStats}>
-                {sbpPageData.market.highlights.map((highlight) => (
-                  <div key={highlight.label} className={styles.marketStat}>
-                    <p className={styles.marketValue}>{highlight.value}</p>
-                    <p className={styles.marketStatLabel}>{highlight.label}</p>
-                    <p className={styles.marketStatBody}>{highlight.body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }

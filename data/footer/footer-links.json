@@ -4,7 +4,6 @@
       "links": [
          { "label": "Home", "href": "/" },
          { "label": "About SBP", "href": "/about/sbp" },
-         { "label": "Leadership", "href": "/about/leadership" },
          { "label": "Partners", "href": "/partners" }
       ]
    },
