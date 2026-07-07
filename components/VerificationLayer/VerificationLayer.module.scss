@@ -61,7 +61,7 @@
 
   @media (min-width: 1024px) {
     text-align: right;
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 
@@ -140,7 +140,7 @@
 
 .subtitleYellow { color: var(--color-accent-yellow); }
 .subtitleGreen  { color: var(--color-success); }
-.subtitleBlue   { color: var(--color-accent-blue); }
+.subtitleBlue   { color: var(--color-sbp-cyan); }
 
 .stepBody {
   font-size: var(--text-body-lg-size);

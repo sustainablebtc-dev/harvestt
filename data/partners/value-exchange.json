@@ -1,0 +1,22 @@
+{
+  "sectionLabel": "Why It Works",
+  "heading": "A Simple Exchange of Value",
+  "paths": [
+    {
+      "id": "miners",
+      "label": "For Miners",
+      "title": "Clean energy earns more",
+      "body": "Mine with verified clean energy and mint SBP tokens alongside the Bitcoin you produce — a second revenue stream for the same work, and a direct line to climate-mandated capital."
+    },
+    {
+      "id": "investors",
+      "label": "For Investors",
+      "title": "SBP tokens make Bitcoin climate-aligned",
+      "body": "Pairing BTC with SBP tokens gives climate-aligned capital a verifiable way to invest in Bitcoin — clean-energy proof with the audit trail mandates require."
+    }
+  ],
+  "cta": {
+    "label": "START A PARTNERSHIP",
+    "href": "/contact-us?intent=partnership"
+  }
+}

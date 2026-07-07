@@ -10,15 +10,15 @@ export default function Hero() {
         <div className={styles.heroContent}>
           <div className={styles.titleGroup}>
             <p className={styles.eyebrow}>Institutional Energy Infrastructure — 2026</p>
-            <h1 id="hero-heading" className={styles.headline}>Navigating the New Era of Capital</h1>
+            <h1 id="hero-heading" className={styles.headline}>Where Climate Mandated Capital Meets Bitcoin</h1>
             <div className={styles.accentLine} aria-hidden="true" />
           </div>
           <div className={styles.bodyGroup}>
             <p className={styles.bodyPrimary}>
-              Institutional-grade energy verification and attestation for Bitcoin mining infrastructure — enabling compliant capital to access Bitcoin with full energy transparency.
+              Institutional-grade energy verification for Bitcoin mining infrastructure. Enabling climate mandated capital to access Bitcoin with full energy transparency.
             </p>
             <p className={styles.bodySecondary}>
-              Sustainable Bitcoin Protocol operates as the trust layer between renewable energy sources, Bitcoin mining operations, and institutional capital allocators — bridging the $15-16 trillion of climate mandated capital of Bitcoin.
+              The SBP token turns verified clean-energy mining into an investable environmental commodity - bridging the $15-16 trillion of climate mandated capital with Bitcoin.
             </p>
           </div>
           <div className={styles.ctaRow}>

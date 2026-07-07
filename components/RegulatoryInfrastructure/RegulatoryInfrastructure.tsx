@@ -16,7 +16,24 @@ export default function RegulatoryInfrastructure() {
   return (
     <section className={styles.section} aria-labelledby="regulatory-heading">
       <div className={styles.inner}>
-        {/* Top: two-column layout */}
+        {/* Ecosystem logos */}
+        <div className={styles.ecosystem}>
+          <p className={styles.ecosystemHeading}>{data.ecosystemHeading}</p>
+          <div className={styles.logosRow}>
+            {data.ecosystemLogos.map((logo) => (
+              <Image
+                key={logo.name}
+                src={logo.logoSrc}
+                alt={logo.name}
+                width={logo.width}
+                height={logo.height}
+                className={styles.logo}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Two-column layout */}
         <div className={styles.topRow}>
           <div className={styles.leftCol}>
             <div className={styles.headingGroup}>
@@ -48,22 +65,6 @@ export default function RegulatoryInfrastructure() {
           </div>
         </div>
 
-        {/* Bottom: ecosystem logos */}
-        <div className={styles.ecosystem}>
-          <p className={styles.ecosystemHeading}>{data.ecosystemHeading}</p>
-          <div className={styles.logosRow}>
-            {data.ecosystemLogos.map((logo) => (
-              <Image
-                key={logo.name}
-                src={logo.logoSrc}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className={styles.logo}
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )

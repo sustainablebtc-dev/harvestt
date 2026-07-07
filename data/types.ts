@@ -125,55 +125,20 @@ export interface MarketInsightsData {
   articles: ArticleCard[]
 }
 
-// ─── How We Create Value ────────────────────────────────────────────────────
+// ─── Value Exchange ─────────────────────────────────────────────────────────
 
-export interface ValueCard {
-  title: string
-  description: string
-  supportingStatement: string
-}
-
-export interface HowWeCreateValueData {
-  sectionLabel: string
-  heading: string
-  intro: string
-  cards: ValueCard[]
-}
-
-// ─── Partner Pathways ───────────────────────────────────────────────────────
-
-export interface TabContent {
-  title: string
-  keyPoints: string[]
-}
-
-export interface PartnerTab {
+export interface ValueExchangePath {
   id: string
   label: string
-  description: string
-  benefits: TabContent[]
-}
-
-export interface PartnerPathwaysData {
-  sectionLabel: string
-  heading: string
-  intro: string
-  tabs: PartnerTab[]
-}
-
-// ─── Why Sustainable Bitcoin ────────────────────────────────────────────────────
-
-export interface Principle {
-  id: string
   title: string
-  description: string
+  body: string
 }
 
-export interface WhySustainableBTCData {
+export interface ValueExchangeData {
   sectionLabel: string
   heading: string
-  intro: string
-  principles: Principle[]
+  paths: ValueExchangePath[]
+  cta: { label: string; href: string }
 }
 
 // ─── Future Extensions ──────────────────────────────────────────────────────────
@@ -198,23 +163,6 @@ export interface ChallengeData {
   bodyColumns: string[][]
   quote: ChallengeQuote
   stats: ChallengeStat[]
-}
-
-// ─── Addressable Market ─────────────────────────────────────────────────────────
-
-export interface MarketStat {
-  value: string
-  label: string
-  sublabel: string
-}
-
-export interface AddressableMarketData {
-  eyebrow: string
-  displayValue: string
-  displaySuffix: string
-  displaySuffixDescription: string[]
-  body: string
-  breakdownStats: MarketStat[]
 }
 
 // ─── Verification Layer ─────────────────────────────────────────────────────────
@@ -248,6 +196,7 @@ export interface MiningPartner {
 export interface MiningPartnersData {
   heading: string
   partners: MiningPartner[]
+  footnote: string
   ctaLabel: string
   ctaHref: string
 }
@@ -314,27 +263,12 @@ export interface SBPHeroData {
   sectionLabel: string
   title: string
   lead: string
-  body: string[]
-  asideLabel: string
-  asideBody: string[]
+  thesisLabel: string
   thesis: string
-  supportingText: string
   proofRail: SBPProofItem[]
   actions: SBPAction[]
   image: SBPImage
   imageOptions: SBPImage[]
-}
-
-export interface SBPPillar {
-  title: string
-  subtitle: string
-  body: string
-}
-
-export interface SBPPillarsData {
-  sectionLabel: string
-  heading: string
-  items: SBPPillar[]
 }
 
 export interface SBPMetadata {
@@ -440,28 +374,13 @@ export interface SBPStandardsData {
   items: SBPStandardItem[]
 }
 
-export interface SBPMarketHighlight {
-  value: string
-  label: string
-  body: string
-}
-
-export interface SBPMarketData {
-  sectionLabel: string
-  heading: string
-  intro: string
-  highlights: SBPMarketHighlight[]
-}
-
 export interface SBPPageData {
   metadata: SBPMetadata
   hero: SBPHeroData
-  pillars: SBPPillarsData
   overview: SBPOverviewData
   proof: SBPProofData
   operatingModel: SBPOperatingModelData
   standards: SBPStandardsData
-  market: SBPMarketData
 }
 
 // ─── Partners ────────────────────────────────────────────────────────────────────
@@ -476,46 +395,36 @@ export interface PartnersHeroData {
   headline: string
   body: string
   primaryCta: { label: string; href: string }
-  secondaryCta: { label: string; href: string }
   ecosystemNodes: EcosystemNode[]
 }
 
-// ─── Partners Ecosystem ──────────────────────────────────────────────────────────
+// ─── Partner Network ─────────────────────────────────────────────────────────────
 
-export interface EcosystemColumn {
-  title: string
-  intro: string
-  bullets: string[]
+export interface PartnerNetworkPartner {
+  name: string
+  logoSrc: string
+  width: number
+  height: number
+  /** Short institutional credential shown under the logo (e.g. "Nasdaq: CLSK"). */
+  credential: string | null
 }
 
-export interface PartnersEcosystemData {
-  sectionLabel?: string
+export interface PartnerNetworkCategory {
+  id: string
+  title: string
+  partners: PartnerNetworkPartner[]
+  /** Partners listed by name only (no logo asset available). */
+  additionalNames: string[]
+  footnote: string | null
+}
+
+export interface PartnerNetworkData {
+  sectionLabel: string
   heading: string
   intro: string
-  columns: EcosystemColumn[]
-}
-
-// ─── Leadership ──────────────────────────────────────────────────────────────────
-
-export interface TeamMember {
-  name: string
-  role: string
-  previous: string
-  image: string
-  linkedin: string | null
-}
-
-export interface LeadershipMetadata {
-  title: string
-  description: string
-  ogTitle: string
-  ogDescription: string
-}
-
-export interface LeadershipData {
-  metadata: LeadershipMetadata
-  team: TeamMember[]
-  advisors: TeamMember[]
+  categories: PartnerNetworkCategory[]
+  ctaLabel: string
+  ctaHref: string
 }
 
 // Naming: use PascalCase, suffix with the domain (e.g. PricingTier, TeamMember).

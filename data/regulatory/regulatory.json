@@ -3,14 +3,14 @@
   "heading": "Regulatory Infrastructure",
   "body": [
     "Sustainable Bitcoin Protocol operates within a multi-jurisdictional regulatory framework designed for institutional compliance. Our verification protocol adheres to international standards and is recognized by leading regulatory bodies across the GCC, EU, and North American markets.",
-    "The platform's attestation infrastructure integrates with existing mining infrastucture, enabling capital deployment for sovereign wealth funds, pension and other climate mandated institutions into Bitcoin."
+    "The platform's attestation infrastructure integrates with existing mining infrastructure, enabling capital deployment for sovereign wealth funds, pension and other climate mandated institutions into Bitcoin."
   ],
   "panelHeading": "Regulatory Alignment Status",
   "items": [
-    { "name": "EU MiCA", "description": "Energy disclosure provisions under review", "badge": "COMPLIANT", "badgeVariant": "compliant" },
+    { "name": "EU MiCA", "description": "", "badge": "COMPLIANT", "badgeVariant": "compliant" },
     { "name": "SEC Digital Asset Framework", "description": "", "badge": "MONITORING", "badgeVariant": "monitoring" },
-    { "name": "FSRA ADGM", "description": "Category 3C Virtual Asset License", "badge": null, "badgeVariant": null },
-    { "name": "ISO 14064", "description": "GHG verification standard", "badge": "ALIGNED", "badgeVariant": "aligned" }
+    { "name": "FSRA ADGM", "description": "", "badge": "REGULATED", "badgeVariant": "licensed" },
+    { "name": "Green House Gas Protocol", "description": "", "badge": "ALIGNED", "badgeVariant": "aligned" }
   ],
   "ecosystemHeading": "Built within a sovereign-backed institutional ecosystem",
   "ecosystemLogos": [
