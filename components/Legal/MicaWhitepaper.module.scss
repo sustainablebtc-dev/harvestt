@@ -183,7 +183,6 @@ $error-border: rgba(220, 38, 38, 0.2);
 .whitepaperContent {
   width: 100%;
   background-color: var(--color-bg-white);
-  overflow-x: auto;
   border: 1px solid var(--color-border-default);
   padding: var(--space-2);
 
@@ -194,6 +193,20 @@ $error-border: rgba(220, 38, 38, 0.2);
   @media (min-width: 1024px) {
     padding: var(--space-4);
   }
+}
+
+// Measured viewport for the A4 document; height is set from JS to the
+// scaled document height so the page doesn't reserve unscaled space.
+.scaleViewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+// The document renders at its native A4 width and is scaled down via
+// transform when the viewport is narrower.
+.shadowHost {
+  width: 794px;
+  margin: 0 auto;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

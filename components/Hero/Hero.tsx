@@ -9,7 +9,6 @@ export default function Hero() {
         {/* Left: copy */}
         <div className={styles.heroContent}>
           <div className={styles.titleGroup}>
-            <p className={styles.eyebrow}>Institutional Energy Infrastructure — 2026</p>
             <h1 id="hero-heading" className={styles.headline}>Where Climate Mandated Capital Meets Bitcoin</h1>
             <div className={styles.accentLine} aria-hidden="true" />
           </div>

@@ -3,10 +3,34 @@
 import { useRef, useEffect, useState } from 'react'
 import styles from './MicaWhitepaper.module.scss'
 
+// Natural width of the document's A4 pages (210mm at 96dpi).
+// The document is scaled, never reflowed, to preserve the layout
+// as notified to the regulator.
+const A4_WIDTH_PX = 794
+
 export default function MicaWhitepaper() {
   const shadowHostRef = useRef<HTMLDivElement>(null)
+  const viewportRef = useRef<HTMLDivElement>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [scale, setScale] = useState(1)
+  const [viewportHeight, setViewportHeight] = useState<number | null>(null)
+
+  useEffect(() => {
+    const update = () => {
+      const viewport = viewportRef.current
+      const host = shadowHostRef.current
+      if (!viewport || !host) return
+      const nextScale = Math.min(1, viewport.clientWidth / A4_WIDTH_PX)
+      setScale(nextScale)
+      setViewportHeight(nextScale < 1 ? host.scrollHeight * nextScale : null)
+    }
+    update()
+    const observer = new ResizeObserver(update)
+    if (viewportRef.current) observer.observe(viewportRef.current)
+    if (shadowHostRef.current) observer.observe(shadowHostRef.current)
+    return () => observer.disconnect()
+  }, [isLoading])
 
   useEffect(() => {
     const fetchAndRender = async () => {
@@ -37,25 +61,15 @@ export default function MicaWhitepaper() {
           shadowRoot = shadowHostRef.current.attachShadow({ mode: 'open' })
         }
 
-        // Inject styles and content
+        // Inject styles and content. The document keeps its native A4
+        // layout; responsiveness is handled by scaling the host element.
         shadowRoot.innerHTML = `
           <style>
             ${styleContent}
             :host {
               display: block;
               background-color: #ffffff !important;
-              overflow-x: auto;
               padding: 0 !important;
-              margin: 0 !important;
-            }
-            * {
-              max-width: 100% !important;
-              box-sizing: border-box;
-            }
-            table {
-              width: 100% !important;
-              table-layout: fixed;
-              word-wrap: break-word;
             }
           </style>
           ${bodyContent}
@@ -116,12 +130,21 @@ export default function MicaWhitepaper() {
                 </p>
               </div>
             )}
-            <div
-              ref={shadowHostRef}
-              className={styles.whitepaperContent}
-              role="document"
-              aria-label="MiCA Whitepaper document"
-            />
+            <div className={styles.whitepaperContent}>
+              <div
+                ref={viewportRef}
+                className={styles.scaleViewport}
+                style={viewportHeight !== null ? { height: viewportHeight } : undefined}
+              >
+                <div
+                  ref={shadowHostRef}
+                  className={styles.shadowHost}
+                  role="document"
+                  aria-label="MiCA Whitepaper document"
+                  style={scale < 1 ? { transform: `scale(${scale})`, transformOrigin: 'top left' } : undefined}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
