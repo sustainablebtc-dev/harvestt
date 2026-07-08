@@ -25,15 +25,15 @@
   width: var(--hero-content-width);
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
-  padding: var(--space-20) 0;
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
   z-index: 1;
 }
 
 .titleGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 .eyebrow {
