@@ -35,7 +35,7 @@ export async function getNewsPageData() {
          }`,
       {},
       {
-         cache: 'no-store'
+         next: { revalidate: 300 }
       }
    );
 }
@@ -54,7 +54,7 @@ export async function getArticleData(slug: string) {
       }`,
       {},
       {
-         cache: 'no-store'
+         next: { revalidate: 300 }
       }
    );
 }
