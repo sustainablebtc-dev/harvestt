@@ -73,10 +73,6 @@ export default function Navbar() {
     }
   }
 
-  // Mobile: close dropdown when clicking on a dropdown item
-  const handleDropdownItemClick = () => {
-    setOpenDropdown(null)
-  }
 
   return (
     <nav className={styles.navbar} aria-label="Main navigation">
@@ -210,7 +206,7 @@ export default function Navbar() {
                           key={item.href}
                           href={item.href}
                           className={styles.mobileDropdownItem}
-                          onClick={handleDropdownItemClick}
+                          onClick={closeMenu}
                           role="menuitem"
                         >
                           {item.label}
