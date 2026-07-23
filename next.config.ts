@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  turbopack: {
+    // Pin the workspace root — a stray lockfile in the home directory
+    // otherwise makes Turbopack treat all of ~ as the project.
+    root: __dirname,
+  },
   images: {
     remotePatterns: [
       {
