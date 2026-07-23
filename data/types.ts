@@ -65,6 +65,8 @@ export interface RegisteredOffice {
 export interface FooterConfig {
   tagline: string
   registeredOffice: RegisteredOffice
+  /** Parent-company attribution link (trade name). */
+  builtBy: { label: string; href: string }
   copyright: string
   bottomLinks: FooterBarLink[]
 }

@@ -36,6 +36,15 @@ export default function Footer() {
                   </span>
                 ))}
               </div>
+              <a
+                href={footerConfig.builtBy.href}
+                className={styles.builtByLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {footerConfig.builtBy.label}
+                <i className="bi bi-arrow-up-right" aria-hidden="true" />
+              </a>
             </div>
           </div>
 
