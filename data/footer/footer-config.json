@@ -5,8 +5,13 @@
     "lines": [
       "Abu Dhabi Global Market",
       "Al Maryah Island, Abu Dhabi, UAE",
-      "ADGM Reg. No. 26026"
+      "ADGM Reg. No. 26026",
+      "Harvestt is a trading name of Sustainable Digital Solutions, Limited"
     ]
+  },
+  "builtBy": {
+    "label": "Built by Harvestt",
+    "href": "https://www.harvestt.com"
   },
   "copyright": "© 2021-26 Sustainable Bitcoin Protocol. All rights reserved.",
   "bottomLinks": [
